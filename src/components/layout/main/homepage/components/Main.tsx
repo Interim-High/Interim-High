@@ -17,7 +17,7 @@ function Main() {
 
       <div className="flex flex-col items-center space-y-8">
         <h1 className="text-5xl font-bold text-gray-900 text-center mb-4">
-          PADMAWATI International College
+          DANPHELINK International College
         </h1>
 
         <p className="text-lg md:text-xl text-gray-700 text-center tracking-wide">

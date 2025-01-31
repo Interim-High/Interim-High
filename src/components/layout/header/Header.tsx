@@ -9,15 +9,15 @@ function Header() {
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center">
           <Image
-            src="/images/home/nav/logo.png"
+            src="/images/home/nav/danphelinklogo.png"
             alt="Logo"
-            width={50}
-            height={50}
+            width={150}
+            height={150}
             className="mr-3 rounded-lg shadow-lg"
           />
-          <span className="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+          {/* <span className="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
             DanpheLink
-          </span>
+          </span> */}
         </div>
 
         <nav className="hidden md:flex space-x-8">
