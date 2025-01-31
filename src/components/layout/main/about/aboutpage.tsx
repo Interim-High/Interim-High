@@ -1,5 +1,6 @@
 import Footer from "../../footer/Footer";
 import Header from "../../header/Header";
+import AboutAdventure from "./adventure";
 import AboutHero from "./hero";
 
 
@@ -8,7 +9,7 @@ function AboutPage() {
         <div>
             <Header />
             <AboutHero/>
-
+            <AboutAdventure/>
             <Footer />
         </div>
 
