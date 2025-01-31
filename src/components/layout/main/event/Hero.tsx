@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <main className="relative w-full h-[500vh]">
+    <main className="relative w-full h-fit">
       <div className="relative h-[60vh] w-full">
         <div className="absolute inset-0">
           <Image

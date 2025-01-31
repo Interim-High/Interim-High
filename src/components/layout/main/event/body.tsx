@@ -1,20 +1,38 @@
 import Image from "next/image";
 
- function BodyEvent() {
-    return (
-            <div className="relative w-[1240px]">
-                <div className="absolute inset-0 m-10">
-                    <Image
-                        src = "/images/events/events/Workshop.png"
-                        alt = "event"
-                        width={614}
-                        height={414}
-                        
-                    />
-                </div>
+interface BodyEventProps {
+  title: string;
+  description: string;
+  imageSrc: string;
+  isReverse?: boolean;
+}
 
-            </div>
-    )
- }
+function BodyEvent({ title, description, imageSrc, isReverse = false }: BodyEventProps) {
+  return (
+    <div className={`grid grid-cols-2 gap-6 m-auto mt-20 w-[1240px] items-center justify-center`}>
+      {isReverse ? (
+        <>
+          <div>
+            <Image src={imageSrc} alt="event" width={614} height={414} />
+          </div>
+          <div className="space-y-4 ml-10 p-2">
+            <h1 className="text-red-700 text-4xl">{title}</h1>
+            <p className="text-justify leading-relaxed text-gray-800 text-base">{description}</p>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="space-y-4 mr-10 p-2">
+            <h1 className="text-red-700 text-4xl">{title}</h1>
+            <p className="text-justify leading-relaxed text-gray-800 text-base">{description}</p>
+          </div>
+          <div>
+            <Image src={imageSrc} alt="event" width={614} height={414} />
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
 
- export default BodyEvent;
+export default BodyEvent;
