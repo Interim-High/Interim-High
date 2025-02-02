@@ -9,7 +9,7 @@ function AboutAdventure() {
         <h1 className="text-3xl text-red-700 font-bold mb-4">Academic Adventure</h1>
         <p className="text-lg text-justify">
           Danphelink is a leading institution committed to academic excellence,
-          innovation, and holistic development. Located in kamalpokhari,01, we offer
+          innovation, and holistic development. Located in kamalpokhari,01. we offer
           diverse programs, expert faculty, and modern facilities to prepare
           students for a dynamic world. Beyond academics, we foster community
           engagement and personal growth, empowering students to make meaningful
