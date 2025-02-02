@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/achievement-detail
 /.pnp
 .pnp.*
 .yarn/*
