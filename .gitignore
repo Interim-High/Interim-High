@@ -2,7 +2,8 @@
 
 # dependencies
 /node_modules
-/achievement-detail
+/admission
+/components/layout/main/admission
 /.pnp
 .pnp.*
 .yarn/*

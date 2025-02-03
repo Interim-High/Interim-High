@@ -3,17 +3,19 @@ import Link from "next/link";
 
 
 type CardProps = {
-    title: string,
+    title?: string,
+    personName? :string ,
     className?: string,
     description?: string,
     layout?: "achievement" | "program" | "governance" | "descriptionmodal",
     images?: string,
     skill?: string[],
-    designation?: string
+    designation?: string,
+   
 
 }
 
-const Card = ({ title, images, className, description, designation, skill, layout = "achievement" }: CardProps) => {
+const Card = ({ title,personName ,images, className, description, designation, skill, layout = "achievement" }: CardProps) => {
     return (
         <div>
             {
@@ -23,7 +25,7 @@ const Card = ({ title, images, className, description, designation, skill, layou
                             {images && (
                                 <Image
                                     src={images}
-                                    alt={title}
+                                    alt={title || "no image"}
                                     width={275}
                                     height={241}
                                     objectFit="cover"
@@ -47,21 +49,22 @@ const Card = ({ title, images, className, description, designation, skill, layou
             }
             {
                 layout === "governance" && (
-                    <div className="flex flex-col items-center justify-center p-1 bg-stone-300 overflow-hidden rounded-xl w-[275px] h-[fit] gap-2">
+                    <div className="flex flex-col items-center border border-blue-400 justify-center p-2 bg-stone-300 overflow-hidden rounded-xl w-fit h-fit  gap-2">
                         <div className="overflow-hidden rounded-xl ">
                             {images && (
                                 <Image
                                     src={images}
-                                    alt={title}
-                                    width={275}
-                                    height={241}
+                                    alt={personName || "hero"}
+                                    width={200}
+                                    height={300}
                                     objectFit="cover"
                                     objectPosition="center"
                                 />
                             )}
                         </div>
                         <div className=" w-full text-center gap-2 p-2 ">
-                            <h1 className="text-lg font-semibold">{title}</h1>
+                            <h1 className="text-lg font-semibold">{personName}</h1>
+                            <h1 className="text-lg font-semibold">{designation}</h1>
 
                         </div>
                     </div>
@@ -74,7 +77,7 @@ const Card = ({ title, images, className, description, designation, skill, layou
                         {images && (
                             <Image
                                 src={images}
-                                alt={title}
+                                alt={personName || "hero"}
                                 layout="fill"
                                 objectFit="cover"
                                 objectPosition="center"
