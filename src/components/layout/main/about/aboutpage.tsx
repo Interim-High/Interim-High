@@ -6,6 +6,7 @@ import AboutAdventure from "./adventure";
 import Facility from "./Facilities";
 //import Governance from "./governance";
 import AboutHero from "./hero";
+import PolicySection from "./policy";
 import StorySection from "./story";
 
 
@@ -19,6 +20,7 @@ function AboutPage() {
             <Achievement/>
             <Facility/>
             {/* <Governance/> */}
+            <PolicySection/>
             <Footer />
         </div>
 

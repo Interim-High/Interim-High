@@ -33,7 +33,7 @@ function Main() {
           </Link>
 
           <Link
-            href="/apply"
+            href="/admission"
             className="px-10 py-4 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             Apply Now
