@@ -10,7 +10,7 @@ interface InputProp {
 const Input :React.FC<InputProp> = ({type,value,name,label,placeholder ,onchange}) => {
     return(
         <div > 
-            <input className="w-[519px] h-[40px] rounded-sm"
+            <input className="w-[519px] h-[40px] rounded-sm p-3"
             type = {type}
             value={value}
             name={name}
