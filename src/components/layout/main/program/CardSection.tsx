@@ -2,23 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function CardSection() {
-  const postCards = Array(7).fill({
-    imageSrc: "/images/program/en1.png",
-    title: "Post Card",
-    description:
-      "An undergraduate degree that prepares students to solve engineering problems using scientific principles, mathematics, and new technologies.",
-    category: "Category",
-  });
+export const postCards = Array(7).fill({
+  id: 1,
+  imageSrc: "/images/program/en1.png",
+  title: "Post Card",
+  description:
+    "An undergraduate degree that prepares students to solve engineering problems using scientific principles, mathematics, and new technologies.",
+  category: "Category",
+});
 
-  const underCards = Array(7).fill({
-    imageSrc: "/images/program/en1.png",
-    title: "Under Card",
-    description:
-      "An undergraduate degree that prepares students to solve engineering problems using scientific principles, mathematics, and new technologies.",
-    category: "Category",
-    slug: "Under-Card",
-  });
+export const underCards = Array(7).fill({
+  id: 1,
+  imageSrc: "/images/program/en1.png",
+  title: "Under Card",
+  description:
+    "An undergraduate degree that prepares students to solve engineering problems using scientific principles, mathematics, and new technologies.",
+  category: "Category",
+  slug: "Under-Card",
+});
+export default function CardSection() {
   return (
     <div className="mx-28">
       <CardGrid title={"Under Graduate"} data={underCards} />
