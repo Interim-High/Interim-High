@@ -62,7 +62,7 @@ const StorySection: React.FC = () => {
       <h2 className="text-3xl font-normal mb-4 text-red-700">Our Story</h2>
 
       {selectedStory && (
-        <div className="w-[1234px] grid grid-cols-2 p-4  gap-8 rounded-lg shadow-lg">
+        <div className="w-[1280px] grid grid-cols-2 p-4  gap-8 rounded-lg shadow-lg">
             <div className=" relative w-[607px] h-[421px] overflow-hidden rounded-tl-[60px] rounded-br-[60px]">
             <Image
             src={selectedStory.image}
@@ -74,9 +74,9 @@ const StorySection: React.FC = () => {
           />
             </div>
         
-          <div className="flex flex-col gap-4  p-10  ">
+          <div className="flex flex-col gap-4  ">
           <h3 className="text-xl font-semibold mt-2">{selectedStory.title}</h3>
-          <p className="text-[#1D1D1D] text-sm mt-1 text-justify">{selectedStory.description}</p>
+          <p className="text-[#1D1D1D] text-base mt-1 text-justify">{selectedStory.description}</p>
           </div>
         </div>
       )}

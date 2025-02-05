@@ -1,16 +1,18 @@
-interface InputProp {
+export type InputProp ={
     type ?: string,
     value ?: string,
-    name ?: string,
+    name : string,
     label ?: string,
     placeholder ?: string,
-    onchange : (event : React.ChangeEvent<HTMLInputElement>) => void;
+    onchange? : (event : React.ChangeEvent<HTMLInputElement>) => void;
+    className? : string
 }
 
-const Input :React.FC<InputProp> = ({type,value,name,label,placeholder ,onchange}) => {
+const Input :React.FC<InputProp> = ({type,value,name,label,placeholder ,onchange ,className}) => {
     return(
         <div > 
-            <input className="w-[519px] h-[40px] rounded-sm p-3"
+        
+          <input className={` ${className || "w-[519px] h-[40px] rounded-sm p-3"}`} 
             type = {type}
             value={value}
             name={name}
