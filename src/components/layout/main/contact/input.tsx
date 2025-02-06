@@ -19,9 +19,24 @@ const Input :React.FC<InputProp> = ({type,value,name,label,placeholder ,onchange
             placeholder={placeholder}
             onChange={onchange}
 
+        onChange(event);
+    };
+
+    return (
+        <div>
+            {label && <label className="block font-medium">{label}</label>}
+            <input
+                className="w-[519px] h-[40px] rounded-sm p-3 border border-gray-300 focus:border-blue-500 focus:outline-none"
+                type={type}
+                value={value}
+                name={name}
+                placeholder={placeholder}
+                onChange={validateInput}
+                required={isRequired}
             />
+            {error && <p className="text-red-600 text-sm">{error}</p>}
         </div>
-    )
-}
+    );
+};
 
 export default Input;

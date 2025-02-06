@@ -18,6 +18,7 @@ const TextArea: React.FC<TextAreaProps> = ({placeholder,name,value,onchange,rows
                 name={name}
                 value = {value}
                 rows={rows}
+                required = {isRequired}
                 // cols={cols}
                 onChange={onchange}
             />
