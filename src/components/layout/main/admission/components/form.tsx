@@ -79,7 +79,8 @@ export default function FormComponent() {
                         type="text"
                         name="fullname"
                         value={formData.fullname}
-                        onchange={handleInputChange}
+                        onChange={handleInputChange}
+                        isRequired={true}
 
                     />
                 </div>
@@ -90,7 +91,8 @@ export default function FormComponent() {
                         type="text"
                         name="email"
                         value={formData.email}
-                        onchange={handleInputChange}
+                        onChange={handleInputChange}
+                        isRequired={true}
                     />
                 </div>
 
@@ -102,7 +104,8 @@ export default function FormComponent() {
                             type="text"
                             name="phonenumber"
                             value={formData.phonenumber}
-                            onchange={handleInputChange}
+                            onChange={handleInputChange}
+                            isRequired={true}
                         />
                     </div>
                     <div className="flex flex-col gap-2">
@@ -112,7 +115,8 @@ export default function FormComponent() {
                             type="text"
                             name="address"
                             value={formData.address}
-                            onchange={handleInputChange}
+                            onChange={handleInputChange}
+                            isRequired={true}
                         />
                     </div>
                 </div>
@@ -129,12 +133,14 @@ export default function FormComponent() {
                 <div className="flex flex-col gap-2 ">
                     <label className="font-medium"> Queries</label>
                     <TextArea
+                    
                         name={"queries"}
                         value={formData.queries}
                         onchange={handleInputChange}
                         rows={2}
                         cols={2}
                         className={"border-2 rounded-xl"}
+                        isRequired={true}
                     />
                 </div>
                 <button

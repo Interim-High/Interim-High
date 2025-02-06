@@ -20,7 +20,7 @@ const images: achievementProps[] = [
 
     },
     {
-        name: "professional",
+        name: "Athletic",
         extension:"png",
 
     },

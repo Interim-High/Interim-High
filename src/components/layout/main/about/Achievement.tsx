@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./card";
-interface AchievementProps {
+type AchievementProps ={
     title: string,
     description: string,
     images: string,
