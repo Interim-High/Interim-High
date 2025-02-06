@@ -1,3 +1,5 @@
+import { ClassNames } from "@emotion/react";
+
 interface TextAreaProps {
     placeholder ?: string,
     name ?: string,
@@ -5,14 +7,13 @@ interface TextAreaProps {
     rows ?: number,
     cols?: number,
     onchange : (event : React.ChangeEvent<HTMLTextAreaElement>) => void;
-    isRequired : true
-
+    className? : string
 }
 
-const TextArea: React.FC<TextAreaProps> = ({placeholder,name,value,onchange,rows= 6,isRequired}) =>{
+const TextArea: React.FC<TextAreaProps> = ({placeholder,name,value,onchange,rows= 6 ,className}) =>{
     return (
         <div>
-            <textarea className="w-full p-3 rounded-sm"
+            <textarea className={`w-full p-3 rounded-sm ${className}`}
                 placeholder={placeholder}
                 name={name}
                 value = {value}

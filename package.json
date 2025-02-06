@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@flaticon/flaticon-uicons": "^3.3.1",
+    "@mui/icons-material": "^6.4.2",
+    "@mui/lab": "^6.0.0-beta.25",
     "daisyui": "^4.12.23",
     "flaticon": "^0.1.0",
     "lucide-react": "^0.474.0",

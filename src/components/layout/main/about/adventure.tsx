@@ -2,10 +2,10 @@ import Image from "next/image";
 
 function AboutAdventure() {
   return (
-    <div className="flex justify-center items-center w-full  mt-16">
-        <div className=" flex flex-row w-fit bg-[#EBE3E3] rounded-xl relative gap-2 p-10 "> 
+    // <div className="flex justify-center items-center w-full border mt-16">
+        <div className=" flex flex-row  mt-16 bg-[#EBE3E3] rounded-xl m-auto items-center justify-between w-[1240px] relative gap-2 p-10 "> 
 
-        <div className="border  w-[729px] h-auto p-5">
+        <div className="w-[729px] h-auto ">
         <h1 className="text-3xl text-red-700 font-bold mb-4">Academic Adventure</h1>
         <p className="text-lg text-justify">
           Danphelink is a leading institution committed to academic excellence,
@@ -28,7 +28,7 @@ function AboutAdventure() {
       </div>
         </div>
       
-    </div>
+    // </div>
   );
 }
 

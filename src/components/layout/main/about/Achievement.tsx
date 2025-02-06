@@ -30,15 +30,15 @@ const Achievementcards: AchievementProps[] = [{
 
 function Achievement() {
     return (
-        <div className="flex flex-col  mt-16 justify-center  items-center  gap-4">
+        
 
-            <div className="flex flex-col w-fit rounded-3xl justify-center  gap-5 items-start">
+            <div className="flex flex-col w-[1242px] bg-[#EDEDED] mt-16 p-4 rounded-3xl border justify-center m-auto  gap-5 items-start">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-5xl font-normal text-red-700"> Danphelink Achievement</h1>
                     <p className="text-2xl">Explore our academic achievements with us</p>
                 </div>
 
-                <div className="flex flex-wrap p-2 bg-[#EDEDED]  rounded-3xl justify-center  gap-4 items-center">
+                <div className="flex flex-wrap p-2  w-full rounded-3xl justify-center  gap-6 items-center">
                     {Achievementcards.map((achievement, index) => (
                         <Card
                             key={index}
@@ -49,7 +49,7 @@ function Achievement() {
                     ))}
                 </div>
             </div>
-        </div>
+        
     );
 }
 export default Achievement;
