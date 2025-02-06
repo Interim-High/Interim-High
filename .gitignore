@@ -2,8 +2,7 @@
 
 # dependencies
 /node_modules
-/admission
-/components/layout/main/admission
+
 /.pnp
 .pnp.*
 .yarn/*

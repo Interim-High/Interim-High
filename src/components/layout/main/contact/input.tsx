@@ -8,17 +8,17 @@ interface InputProp {
     placeholder?: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     isRequired: boolean;
-    className ?: string 
+   className ?: string;
 }
 
-const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeholder, onChange, isRequired }) => {
+const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeholder, className,onChange, isRequired }) => {
     const [error, setError] = useState("");
 
     const validateInput = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target;
 
         if (isRequired && value.trim() === "") {
-            setError(`${name} is required.`);
+            setError(`${name} is required`);
         } else if (type === "tel" && !/^\d{10}$/.test(value)) {
             setError("Phone number must be exactly 10 digits.");
         } else if (type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
@@ -34,7 +34,7 @@ const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeho
         <div>
             {label && <label className="block font-medium">{label}</label>}
             <input
-                className="w-full h-[40px] rounded-sm p-3 border border-gray-300 focus:border-amber-600 focus:outline-2"
+            className={` ${className||"w-[519px] h-[40px] rounded-sm p-3 border border-gray-300 focus:border-blue-500 focus:outline-none"}`}
                 type={type}
                 value={value}
                 name={name}
