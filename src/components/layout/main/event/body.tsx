@@ -16,14 +16,14 @@ function BodyEvent({ title, description, imageSrc, isReverse = false }: BodyEven
             <Image src={imageSrc} alt="event" width={614} height={414} />
           </div>
           <div className="space-y-4 ml-10 p-2">
-            <h1 className="text-red-700 text-4xl">{title}</h1>
+            <h1 className="text-orange-600 text-4xl">{title}</h1>
             <p className="text-justify leading-relaxed text-gray-800 text-base">{description}</p>
           </div>
         </>
       ) : (
         <>
           <div className="space-y-4 mr-10 p-2">
-            <h1 className="text-red-700 text-4xl">{title}</h1>
+            <h1 className="text-orange-600 text-4xl">{title}</h1>
             <p className="text-justify leading-relaxed text-gray-800 text-base">{description}</p>
           </div>
           <div>

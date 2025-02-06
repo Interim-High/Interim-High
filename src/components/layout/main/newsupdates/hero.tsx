@@ -1,28 +1,31 @@
 import Image from "next/image";
 
 function HeroSection() {
-    return (
-        <main className="relative w-full h-[450px]">
-            <div className="relative w-full h-[60vh]">
-                <div className="absolute inset-0">
-                    <Image
-                    src = "/images/newsandupdates/Hero.png"
-                    alt = "Hero"
-                    layout="fill"
-                    objectPosition="center"
-                    objectFit="cover"
-                    />
-                </div>
-                <div className="absolute inset-0 bg-black opacity-50"></div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center space-y-5">
-                    <h1 className="text-8xl text-white font-bold">News and Updates</h1>
-                    <p className="text-4xl text-red-600">Be notified with us.</p>
-                </div>
-            </div>
+  return (
+    <main className="relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px]">
+      <div className="absolute inset-0">
+        <Image
+          src="/images/newsandupdates/Hero.png"
+          alt="Hero"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          priority
+        />
+      </div>
 
-        </main>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
 
-    )
+      <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 px-4 text-center">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold">
+          News and Updates
+        </h1>
+        <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-orange-600">
+          Be notified with us.
+        </p>
+      </div>
+    </main>
+  );
 }
 
 export default HeroSection;

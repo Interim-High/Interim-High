@@ -2,7 +2,6 @@ import React from "react";
 
 type Story = {
   title: string;
-  slug: string;
   image: string;
   content: string;
   date: string;
@@ -24,8 +23,8 @@ const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
     .slice(0, 5);
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg w-[940 px]">
-      <h3 className="font-bold text-[40px] text-red-600 border-b pb-2">Top Stories</h3>
+    <div className="bg-gray-100 p-4 rounded-lg">
+      <h3 className="font-bold text-[40px] text-orange-600 border-b pb-2">Top Stories</h3>
       <ul className="mt-2 space-y-2">
         {latestStories.length > 0 ? (
           latestStories.map((story, index) => (

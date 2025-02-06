@@ -10,13 +10,15 @@ function ContactHero() {
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"
+                    // width={1440}
+                    // height={500}
                 />
             </div>
             <div className="absolute inset-0 bg-black opacity-50 space-y-4"></div>
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <h1 className="text-8xl text-white font-bold">Contact Us</h1>
-                <p className="text-red-600 text-4xl ">  Stay Connected, We're Here to Help! </p>
-            </div>
+                <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold">Contact Us</h1>
+                <p className="text-orange-600 text-lg sm:text-2xl md:text-3xl lg:text-4xl">  Stay Connected, We're Here to Help! </p>
+            </div>              
         </div>
     )
 }

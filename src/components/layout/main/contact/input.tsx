@@ -8,6 +8,7 @@ interface InputProp {
     placeholder?: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     isRequired: boolean;
+    className ?: string 
 }
 
 const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeholder, onChange, isRequired }) => {
@@ -33,7 +34,7 @@ const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeho
         <div>
             {label && <label className="block font-medium">{label}</label>}
             <input
-                className="w-[519px] h-[40px] rounded-sm p-3 border border-gray-300 focus:border-blue-500 focus:outline-none"
+                className="w-full h-[40px] rounded-sm p-3 border border-gray-300 focus:border-amber-600 focus:outline-2"
                 type={type}
                 value={value}
                 name={name}

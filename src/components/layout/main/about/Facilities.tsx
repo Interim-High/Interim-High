@@ -3,9 +3,9 @@ import Image from "next/image";
 
     const facility :string[]=[
         "Academic Facilities",
-        "Hostel Facilities",
+        "Parking Facilities",
         "Recreational Facilities",
-        "Transportation",
+        "Career Counselling",
         "ExtraCurricular Services"
     ]
 
