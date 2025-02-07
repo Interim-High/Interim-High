@@ -27,8 +27,8 @@ function Form() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center md:w-full">
-        <div className="bg-gray-300 p-8 shadow-lg rounded-lg w-full md:max-w-2xl border-black">
+    <main className="flex flex-col items-center justify-center md:max-w-2xl">
+        <div className="bg-gray-300 p-8 shadow-lg rounded-lg w-full md:max-w-3xl border-black">
           <h1 className="text-4xl text-orange-600 font-semibold text-center">
             Get in Touch
           </h1>
@@ -65,6 +65,7 @@ function Form() {
               name="message"
               value={formdata.message}
               onchange={handleInputChange}
+              isRequired
             />
             <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white w-full h-9">
               Send

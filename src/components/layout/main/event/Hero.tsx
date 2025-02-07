@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-      <div className="relative h-[350px] w-full sm:h-[400px] md:[450px] lg:[500px]">
-        <div className="absolute inset-0">
+      <div className="relative w-full h-[60vh]">
+        <div>
           <Image
             src="/images/events/hero/HeroImg.png"
             alt="Hero"

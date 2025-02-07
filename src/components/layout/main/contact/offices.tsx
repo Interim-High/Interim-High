@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function Offices() {
   return (
-    <main className=" flex flex-col items-center max-w-2xl w-full mx-auto px-4 py-8 ">
+    <main className=" flex flex-col items-center max-w-2xl w-full mx-auto py-8 ">
       <h1 className="text-orange-600 text-center font-semibold text-4xl">
         Our Office
       </h1>

@@ -34,7 +34,7 @@ const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeho
         <div>
             {label && <label className="block font-medium">{label}</label>}
             <input
-            className={` ${className||"w-[519px] h-[40px] rounded-sm p-3 border border-gray-300 focus:border-blue-500 focus:outline-none"}`}
+            className={` ${className||"w-full h-[40px] rounded-sm p-3 border border-gray-300 focus:border-blue-500 focus:outline-none"}`}
                 type={type}
                 value={value}
                 name={name}
