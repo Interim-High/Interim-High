@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Input from "./input";
-import TextArea from "./textarea";
+import Input from "../../../shared/input";
+import TextArea from "../../../shared/textarea";
 function Form() {
   const [formdata, setFormData] = useState({
     name: "",

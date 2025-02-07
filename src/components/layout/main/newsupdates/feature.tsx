@@ -14,7 +14,7 @@ const Features: React.FC<{ feature: Feature }> = ({ feature }) => {
         alt={feature.title}
         className="w-[399px] h-fit object-cover rounded mt-2"
       />
-      <p className="text-sm mt-2 text-left text-blue-600 hover:underline">{feature.title}</p>
+      <p className="text-sm mt-2 text-left text-blue-900 hover:underline">{feature.title}</p>
     </div>
   );
 };

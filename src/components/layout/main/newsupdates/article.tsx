@@ -13,7 +13,7 @@ type Props = {
 
 const Article: React.FC<Props> = ({ story }) => {
   return (
-    <div className="col-span-2 bg-white p-6 shadow rounded w-full">
+    <div className="col-span-2 bg-white p-6 shadow space-y-4 rounded w-full">
       <h1 className="text-[40px] text-orange-600 font-bold">{story.title}</h1>
       <p className="text-gray-500 text-sm">Published on: {story.date}</p>
       <img

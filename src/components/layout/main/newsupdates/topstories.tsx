@@ -31,7 +31,7 @@ const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
             <li key={index}>
               <button
                 onClick={() => onSelectStory(story)}
-                className="w-full text-left text-blue-600 hover:underline"
+                className="w-full text-left text-blue-900 hover:underline"
               >
                 <div className="bg-slate-300 w-full h-fit p-2 rounded-xl">
                   <p className="text-sm font-semibold">{story.title}</p>

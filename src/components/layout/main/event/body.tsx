@@ -9,7 +9,7 @@ interface BodyEventProps {
 
 function BodyEvent({ title, description, imageSrc, isReverse = false }: BodyEventProps) {
   return (
-    <div className={`grid grid-cols-2 gap-6 m-auto mt-20 w-[1240px] items-center justify-center`}>
+    <div className={`grid grid-cols-2 gap-6 m-auto mt-20 w-[1240px] items-center justify-center p-10 xl:p-2`}>
       {isReverse ? (
         <>
           <div>
