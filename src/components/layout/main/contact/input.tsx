@@ -45,6 +45,6 @@ const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeho
             {error && <p className="text-red-600 text-sm">{error}</p>}
         </div>
     );
-};
+}; 
 
 export default Input;
