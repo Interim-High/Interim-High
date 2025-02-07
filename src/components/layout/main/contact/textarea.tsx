@@ -7,13 +7,11 @@ interface TextAreaProps {
     rows ?: number,
     cols?: number,
     onchange : (event : React.ChangeEvent<HTMLTextAreaElement>) => void;
-    isRequired : true
-    className?: string
-
-
+    className? : string
+    isRequired : boolean
 }
 
-const TextArea: React.FC<TextAreaProps> = ({placeholder,name,value,className,onchange,rows= 6,isRequired}) =>{
+const TextArea: React.FC<TextAreaProps> = ({placeholder,  isRequired,name,value,onchange,rows= 6 ,className}) =>{
     return (
         <div>
             <textarea className={`w-full p-3 rounded-sm ${className}`}
