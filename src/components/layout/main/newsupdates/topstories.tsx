@@ -2,7 +2,6 @@ import React from "react";
 
 type Story = {
   title: string;
-  slug: string;
   image: string;
   content: string;
   date: string;
@@ -24,15 +23,15 @@ const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
     .slice(0, 5);
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg w-[940 px]">
-      <h3 className="font-bold text-[40px] text-red-600 border-b pb-2">Top Stories</h3>
-      <ul className="mt-2 space-y-2">
+    <div className="bg-gray-100 p-4 rounded-lg">
+      <h3 className="font-bold text-[40px] text-orange-600 border-b pb-2">Top Stories</h3>
+      <ul className="mt-2 space-y-4">
         {latestStories.length > 0 ? (
           latestStories.map((story, index) => (
             <li key={index}>
               <button
                 onClick={() => onSelectStory(story)}
-                className="w-full text-left text-blue-600 hover:underline"
+                className="w-full text-left text-blue-900 hover:underline"
               >
                 <div className="bg-slate-300 w-full h-fit p-2 rounded-xl">
                   <p className="text-sm font-semibold">{story.title}</p>
