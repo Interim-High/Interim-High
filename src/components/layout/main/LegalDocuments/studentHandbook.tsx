@@ -23,8 +23,8 @@ function Policies() {
                         {Object.keys(policies).map((policy) => (
                             <li key={policy}>
                                 <button
-                                    className={`block p-3 rounded-md w-full text-left hover:bg-gray-700 transition ${
-                                        selectedPolicy === policy ? "bg-gray-700" : ""
+                                    className={`block p-3 rounded-md w-full text-left hover:bg-blue-900 transition ${
+                                        selectedPolicy === policy ? "bg-blue-900" : ""
                                     }`}
                                     onClick={() => setSelectedPolicy(policy as PolicyKey)}
                                 >
@@ -37,7 +37,7 @@ function Policies() {
             </aside>
 
             <main className="flex-1 ml-64 p-8">
-                <h1 className="text-5xl font-semibold text-center">{selectedPolicy}</h1>
+                <h1 className="text-5xl font-semibold text-center text-orange-600">{selectedPolicy}</h1>
                 <p className="mt-6 text-lg text-gray-700">
                     {policies[selectedPolicy]}
                 </p>

@@ -82,7 +82,6 @@ const MainSection: React.FC = () => {
       </div>
 
       <aside className="space-y-6">
-        {/* Pass sorted stories to ensure correct order */}
         <TopStories stories={sortedStories} onSelectStory={setSelectedStory} />
         <Features feature={feature} />
       </aside>
