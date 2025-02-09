@@ -9,7 +9,7 @@ function Header() {
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center">
           <Image
-            src="/images/home/nav/danphelinklogo.png"
+            src="/images/home/nav/Logo.png"
             alt="Logo"
             width={150}
             height={150}
@@ -31,8 +31,8 @@ function Header() {
                   .replace(/ /g, "-")}`}
                 className="relative text-gray-700 font-medium group"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-10 rounded-md transition duration-300"></span>
-                <span className="relative group-hover:text-blue-600 transition duration-300">
+                {/* <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-10 rounded-md transition duration-300"></span> */}
+                <span className="relative hover:text-orange-600 transition duration-300">
                   {item}
                 </span>
               </Link>

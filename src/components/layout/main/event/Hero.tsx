@@ -7,9 +7,10 @@ function HeroSection() {
         <Image
           src="/images/events/hero/HeroImg.png"
           alt="Hero"
+          // width={1536}
+          // height={45}
           layout="fill"
-          objectFit="cover"
-          objectPosition="center"
+          className="object-center object-cover"
         />
       </div>
 

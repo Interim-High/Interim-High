@@ -2,15 +2,13 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <main className="relative w-full h-[350px]">
+    <main className="relative w-full h-[60vh]">
       <div className="absolute inset-0">
         <Image
           src="/images/newsandupdates/Hero.png"
           alt="Hero"
           layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          priority
+          className="object-center object-cover"
         />
       </div>
 

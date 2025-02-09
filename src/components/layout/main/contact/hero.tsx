@@ -8,10 +8,7 @@ function ContactHero() {
                     src="/images/contact/contact.png"
                     alt="hero"
                     layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
-                    // width={1440}
-                    // height={500}
+                    className="object-cover object-center"
                 />
             </div>
             <div className="absolute inset-0 bg-black opacity-50 space-y-4"></div>

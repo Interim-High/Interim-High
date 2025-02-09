@@ -38,7 +38,7 @@ function EventPage() {
             <BodyEvent
                 title="CyberSecurity Workshop"
                 description="Our Cybersecurity Workshop provided students with hands-on experience and in-depth knowledge of digital security practices, ethical hacking, and the latest cybersecurity trends. Led by experts in the field, the workshop covered topics such as network security, data protection, and vulnerability assessment. Participants gained practical skills through real-world simulations, preparing them for a successful career in cybersecurity and empowering them to protect against evolving digital threats."
-                imageSrc="/images/events/events/Workshop.png"
+                imageSrc="/images/events/events/Workshop.jpg"
                 isReverse = {true}
             />
             <Footer/>

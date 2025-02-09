@@ -11,14 +11,14 @@ export default function Offices() {
         forward to hearing from you soon.
       </p>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-between">
+      {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-between"> */}
         {/* Main Office */}
-        <div className="flex flex-col space-y-4 p-6 rounded-lg shadow-lg bg-white">
+        <div className="flex flex-col space-y-4 p-6 rounded-lg shadow-lg">
           <h2 className="text-xl font-semibold">Main Office</h2>
           <div className="flex items-center gap-6">
-            <MapPin className="w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-10 lg:h-10 text-gray-700" />
+            <MapPin className="w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-6 lg:h-6 text-gray-700" />
             <p className="max-w-md text-wrap">
-              2nd Floor, RemWork Kamalpokhari 01, Kathmandu, Nepal
+              Kamalpokhari 01, Kathmandu, Nepal
             </p>
           </div>
           <div className="flex items-center gap-6">
@@ -46,7 +46,7 @@ export default function Offices() {
           </div>
         </div>
 
-        {/* Branch Office */}
+        {/* Branch Office
         <div className="flex flex-col space-y-4 p-6 rounded-lg shadow-lg bg-white">
           <h2 className="text-xl font-semibold">Branch Office</h2>
           <div className="flex items-center gap-6">
@@ -71,8 +71,8 @@ export default function Offices() {
               </a>
             </p>
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </main>
   );
 }
