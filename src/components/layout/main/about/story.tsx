@@ -59,7 +59,7 @@ const StorySection: React.FC = () => {
           />
         ))}
       </div>
-      <h2 className="text-3xl font-normal mb-4 text-red-700">Our Story</h2>
+      <h2 className="text-3xl mb-4 text-orange-600 font-semibold">Our Story</h2>
 
       {selectedStory && (
         <div className="w-[1280px] grid grid-cols-2 p-4  gap-8 rounded-lg shadow-lg">

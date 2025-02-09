@@ -7,7 +7,7 @@ function Main() {
     <main className="relative w-full h-[2000px]">
       <div className="relative h-[60vh] w-full">
         <Image
-          src="/images/home/hero/hero.png"
+          src="/images/home/hero/herosection.png"
           alt="Hero"
           layout="fill"
           objectFit="cover"

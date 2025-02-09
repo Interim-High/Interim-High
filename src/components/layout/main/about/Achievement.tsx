@@ -34,7 +34,7 @@ function Achievement() {
 
             <div className="flex flex-col w-[1242px] bg-[#EDEDED] mt-16 p-4 rounded-3xl border justify-center m-auto  gap-5 items-start">
                 <div className="flex flex-col gap-4">
-                    <h1 className="text-5xl font-normal text-red-700"> Danphelink Achievement</h1>
+                    <h1 className="text-5xl font-normal text-orange-600"> Danphelink Achievement</h1>
                     <p className="text-2xl">Explore our academic achievements with us</p>
                 </div>
 

@@ -6,7 +6,7 @@ function AboutAdventure() {
         <div className=" flex flex-row  mt-16 bg-[#EBE3E3] rounded-xl m-auto items-center justify-between w-[1240px] relative gap-2 p-10 "> 
 
         <div className="w-[729px] h-auto ">
-        <h1 className="text-3xl text-red-700 font-bold mb-4">Academic Adventure</h1>
+        <h1 className="text-3xl text-orange-600 font-bold mb-4">Academic Adventure</h1>
         <p className="text-lg text-justify">
           Danphelink is a leading institution committed to academic excellence,
           innovation, and holistic development. Located in kamalpokhari,01. we offer

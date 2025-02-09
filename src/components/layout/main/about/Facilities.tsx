@@ -14,11 +14,11 @@ import Image from "next/image";
 function Facility() {
     return (
       
-            <div className=" border-2 mx-auto bg-[#EDEDED] mt-16 flex flex-row justify-between items-center p-4 w-[1340px] rounded-2xl gap-[240px]">
-            <div className="flex flex-col   gap-8">
+            <div className="border-2 mx-auto bg-[#EDEDED] mt-16 flex flex-row justify-between items-center p-4 max-w-7xl rounded-2xl">
+            <div className="flex flex-col gap-8 mx-6">
                 {/* <span className="flex flex-col gap-2 items-start "> */}
 
-                    <h1 className="text-5xl font-normal text-red-700">Our Facilities</h1>
+                    <h1 className="text-5xl font-normal text-orange-600">Our Facilities</h1>
                     <p className="text-[16px]">Different Campus Facilities for you   </p>
                 {/* </span> */}
                 {
@@ -34,7 +34,7 @@ function Facility() {
 
 
             </div>
-            <div className="relative  w-[537px] h-[418px] ">
+            <div className="relative w-[537px] h-[418px] ">
                
                     <Image
                         src="/images/about/facilities1.png"
