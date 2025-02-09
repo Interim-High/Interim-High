@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function SideNav({ onSelect }: { onSelect: (item: string) => void }) {
-    const menuItems = ["Director", "Advisor", "Faculty", "Staff"];
+    const menuItems = ["Director", "Advisor", "Faculty",];
     const [activeItem, setActiveItem] = useState("Director"); 
 
     const handleSelect = (item: string) => {

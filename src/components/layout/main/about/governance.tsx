@@ -4,7 +4,7 @@ import Link from "next/link"
 
 function Governance() {
     return (
-        <div className="w-[1280px] grid grid-cols-2 p-4 mx-auto mt-16 justify-center text-justify gap-8 rounded-lg shadow-lg">
+        <div className="w-[1280px] grid grid-cols-2 p-4 mx-auto mt-16 justify-center text-justify gap-8 rounded-[60px] shadow-lg">
             <div className="flex flex-col mt-8 gap-4">
                 <h1 className="text-4xl text-red-700"> Message From The Principle</h1>
                 <span className="flex flex-col mt-6 gap-8">

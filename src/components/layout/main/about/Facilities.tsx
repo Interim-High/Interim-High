@@ -3,9 +3,8 @@ import Image from "next/image";
 
     const facility :string[]=[
         "Academic Facilities",
-        "Hostel Facilities",
         "Recreational Facilities",
-        "Transportation",
+        "Parking Facilities",
         "ExtraCurricular Services"
     ]
 
@@ -19,7 +18,7 @@ function Facility() {
                 {/* <span className="flex flex-col gap-2 items-start "> */}
 
                     <h1 className="text-5xl font-normal text-red-700">Our Facilities</h1>
-                    <p className="text-[16px]">Different Campus Facilities for you   </p>
+                    <p className="text-[16px]">Different Academy Facilities for you   </p>
                 {/* </span> */}
                 {
                     facility.map((facility,index)=>(
@@ -45,9 +44,9 @@ function Facility() {
                     />
               
                     <Image
-                        src="/images/about/facilities2.png"
+                        src="/images/about/facility1.jpg"
                         alt="Hero"
-                        className="absolute bottom-0 left-0"
+                        className="absolute rounded-xl bottom-0 left-0"
                         width={355}
                         height={237}
                      

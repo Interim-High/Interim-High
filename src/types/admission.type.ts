@@ -20,27 +20,31 @@ export type Governance= {
     designation : string,
     images : string
     description :string 
-    skills : string[]
+    email : string
+    skills? : string[]
   }[],
   Advisor :{
     name : string,
     designation : string,
     images : string
     description :string 
-    skills : string[]
+    skills? : string[]
+    email: string
   }[],
   Faculty :{
     name : string,
     designation: string,
     images : string
     description :string 
-    skills : string[]
+    email:string
+    skills?: string[]
   }[],
-  Staff :{
+  Professionals ?:{ 
     name : string,
     designation : string,
     images : string ,
     description :string 
-    skills : string[]
+    email : string,
+    skills?: string[]
   }[]
 }

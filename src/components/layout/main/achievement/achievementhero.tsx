@@ -5,42 +5,42 @@ type achievementProps = {
 }
 const images: achievementProps[] = [
     {
-        name: "Artistic",
+        name: "academy",
         extension:"png",
 
     },
     {
-        name: "Artistic",
+        name: "institutional",
         extension:"png",
 
     },
     {
-        name: "Athletic",
+        name: "student",
         extension:"png",
 
     },
     {
-        name: "Athletic",
+        name: "workshop",
         extension:"png",
 
     },
     {
-        name: "Artistic",
+        name: "institution2",
         extension:"png",
 
     },
     {
-        name: "Artistic",
+        name: "student",
         extension:"png",
 
     },
     {
-        name: "Artistic",
+        name: "workshop",
         extension:"png",
 
     },
     {
-        name: "Artistic",
+        name: "institutional",
         extension:"png",
 
     },
@@ -55,12 +55,13 @@ function Hero() {
             <div  className=" grid grid-cols-4 gap-4 w-fit ">
             {
                 images.map((image, index) => (
-                    <div key={index} className="w-fit  ">
+                    <div key={index} className="w-fit h-fit border border-black">
                         <Image
-                            src={`/images/achievement/${image.name}.${image.extension}`}
+                            src={`/images/about/${image.name}.${image.extension}`}
                             alt={image.name}
                             width={295}
                             height={255}
+                            className="object-center object-cover aspect-[3/2]"
                         />
                     </div>
                 ))
