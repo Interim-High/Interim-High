@@ -3,7 +3,7 @@ import { Mail,MapPin, Phone, Youtube } from "lucide-react";
 import Link from "next/link";
 import Head from "./Head";
 
-const QuickLinks: string[] = ["Programs", "Events", "News", "Gallary","Policy"];
+const QuickLinks: string[] = ["Programs", "Events", "News & Updates", "Gallary","Policy"];
 const GetToknow: string[] = [
   "About",
   "Admission",
@@ -24,6 +24,7 @@ export default function QuickLink() {
               key={quicklink}
               href={`${quicklink
                 .toLowerCase()
+                .replace(/ & /, "")
               }`}
               className=" text-gray-300 font-medium hover:underline"
             >

@@ -12,10 +12,10 @@
 // }[]
 
 export type Content = {
-    description: string;
+    description?: string;
     Topic: {
       title: string;
-      description: string;
+      description?: string;
       points?: {
         point_Title: string;
         point_description: string;

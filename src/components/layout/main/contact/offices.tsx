@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function Offices() {
   return (
-    <main className=" flex flex-col items-center max-w-2xl w-full mx-auto py-8">
+    <main className="flex flex-col items-center w-2/4 mx-auto py-8">
       <h1 className="text-orange-600 text-center font-semibold text-4xl">
         Our Office
       </h1>
@@ -14,7 +14,7 @@ export default function Offices() {
       {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-between"> */}
         {/* Main Office */}
         <div className="flex flex-col space-y-4 p-6 rounded-lg shadow-lg">
-          <h2 className="text-xl font-semibold">Main Office</h2>
+          {/* <h2 className="text-xl font-semibold">Main Office</h2> */} 
           <div className="flex items-center gap-6">
             <MapPin className="w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-6 lg:h-6 text-gray-700" />
             <p className="max-w-md text-wrap">
@@ -44,7 +44,7 @@ export default function Offices() {
               </a>
             </p>
           </div>
-        </div>
+        </div> 
 
         {/* Branch Office
         <div className="flex flex-col space-y-4 p-6 rounded-lg shadow-lg bg-white">

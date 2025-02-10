@@ -79,8 +79,8 @@ export default function FormComponent() {
                         type="text"
                         name="fullname"
                         value={formData.fullname}
-                        onchange={handleInputChange}
-
+                        onChange={handleInputChange}
+                        isRequired
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -90,7 +90,8 @@ export default function FormComponent() {
                         type="text"
                         name="email"
                         value={formData.email}
-                        onchange={handleInputChange}
+                        onChange={handleInputChange}
+                        isRequired
                     />
                 </div>
 
@@ -102,7 +103,8 @@ export default function FormComponent() {
                             type="text"
                             name="phonenumber"
                             value={formData.phonenumber}
-                            onchange={handleInputChange}
+                            onChange={handleInputChange}
+                            isRequired
                         />
                     </div>
                     <div className="flex flex-col gap-2">
@@ -112,7 +114,8 @@ export default function FormComponent() {
                             type="text"
                             name="address"
                             value={formData.address}
-                            onchange={handleInputChange}
+                            onChange={handleInputChange}
+                            isRequired
                         />
                     </div>
                 </div>
@@ -131,10 +134,11 @@ export default function FormComponent() {
                     <TextArea
                         name={"queries"}
                         value={formData.queries}
-                        onchange={handleInputChange}
+                        onChange={handleInputChange}
                         rows={2}
                         cols={2}
                         className={"border-2 rounded-xl"}
+                        isRequired
                     />
                 </div>
                 <button
