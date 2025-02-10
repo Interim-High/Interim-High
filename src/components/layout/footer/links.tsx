@@ -15,8 +15,8 @@ export default function QuickLink() {
   return (
     <main className="bg-red-900 px-8" >
     <Head/>
-    <div className="flex flex-row gap-96 justify-center p-4">
-      <div className="space-y-4">
+    <div className="flex xl:flex-row md:flex-row xl:gap-96 flex-col gap-20 justify-center p-4">
+      <div className="space-y-4"> 
         <h1 className="text-white font-semibold">Quick Links</h1>
         <ul className="flex flex-col space-y-2">
           {QuickLinks.map((quicklink) => (

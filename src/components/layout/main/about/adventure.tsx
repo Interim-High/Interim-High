@@ -3,9 +3,9 @@ import Image from "next/image";
 function AboutAdventure() {
   return (
     // <div className="flex justify-center items-center w-full border mt-16">
-        <div className=" flex flex-row  mt-16 bg-[#EBE3E3] rounded-xl m-auto items-center justify-between w-[1240px] relative gap-2 p-10 "> 
+        <div className="flex flex-row  mt-16 bg-[#EBE3E3] rounded-xl m-auto items-center justify-between max-w-7xl relative gap-2 p-10 "> 
 
-        <div className="w-[729px] h-auto ">
+        <div className="w-full p-4 h-auto ">
         <h1 className="text-3xl text-orange-600 font-bold mb-4">Academic Adventure</h1>
         <p className="text-lg text-justify">
           Danphelink is a leading institution committed to academic excellence,

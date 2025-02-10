@@ -5,8 +5,7 @@ import { useState } from "react";
 function Policies() {
   type PolicyKey = "Privacy Policies" | "Terms and Conditions";
 
-  const [selectedPolicy, setSelectedPolicy] =
-    useState<PolicyKey>("Privacy Policies");
+  const [selectedPolicy, setSelectedPolicy] = useState<PolicyKey>("Privacy Policies");
 
   const contents: Content[] = [
     {
@@ -125,7 +124,7 @@ function Policies() {
         {
           title: "Termination of Enrollment",
           bullet: [
-            "Danphelink reserves the right to terminate a student’s enrollment for reasons such as academic dishonesty or violation of the code of conduct.",
+            "Danphelink reserves the right to terminate a student's enrollment for reasons such as academic dishonesty or violation of the code of conduct.",
           ],
         },
         {
@@ -144,6 +143,7 @@ function Policies() {
           title: "Governing Law",
           description:
             "These terms and conditions shall be governed by and interpreted in accordance with the laws of Nepal.",
+
         },
         
       ],
@@ -177,7 +177,6 @@ function Policies() {
         </div>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 ml-64 p-8">
         <h1 className="text-5xl font-semibold text-center text-orange-600">
           {selectedPolicy}
@@ -193,7 +192,7 @@ function Policies() {
                 {cont.Topic.map((topic, tIndex) => (
                   <div key={tIndex} className="mt-6">
                     <h2 className="font-bold text-lg">{topic.title}</h2>
-                    <p className="text-base text-gray-600">{topic.description}</p>
+                    <p className="text-lg text-gray-600">{topic.description}</p>
 
                     {/* Checking if topic.points exist before mapping */}
                     {topic.points && topic.points.length > 0 && (
