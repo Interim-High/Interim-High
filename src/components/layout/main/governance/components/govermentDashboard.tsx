@@ -4,16 +4,11 @@ import SideNav from "./sidenav";
 import { Governance } from "@/types/admission.type";
 import Card from "../../about/card";
 import { Button, Modal } from "flowbite-react"
-import { XIcon } from "lucide-react";
-
-
-
 const governance: Governance = {
   Director: [
     {
       name: "Vijay Amrit Chaudary", images: "/images/governance/danphelink/vijay.jpg", designation: "Operational Head",
       description: "With over a decade of experience in the industry, he has played a crucial role in driving innovation and excellence. His expertise spans across multiple domains, including strategic leadership, project management, and mentorship. Having worked with diverse teams, he has a proven track record of fostering collaboration and delivering impactful results. Passionate about continuous learning, he frequently engages in professional development programs and shares his knowledge through seminars and workshops.",
-      //skills:["Motion graphics", "photoshop", "multimedia"],
       email: "vijay@danphelink.com.np"
     },
   ],
@@ -22,13 +17,11 @@ const governance: Governance = {
     {
       name: "Dharti Bimali", images: "/images/governance/danphelink/dharti.png", designation: "career Counselor",
       description: "Dharti Bimali is a versatile professional who excels both as a seasoned Web Developer and a dedicated Career Counselor. With a strong background in project management, Dharti effectively oversees the development of web applications, ensuring they meet client requirements and industry standards. Her technical skills complement her ability to provide insightful career counseling to students, guiding them through their academic and professional journeys. Dharti’s empathetic approach and deep understanding of career pathways make her a trusted advisor for many. Her dual roles enable her to contribute significantly to both technical projects and students' personal growth.",
-      skills: ["Motion graphics", "photoshop", "multimedia"],
       email: "dhartii@danphelink.com.np"
     },
     {
       name: "Aarya Dahal", images: "/images/governance/danphelink/aarya.jpg", designation: "Cyber Security Advisor/ Student Counselor",
       description: "Aarya Dahal is an esteemed Cyber Security Advisor with extensive expertise in safeguarding digital assets and protecting against cyber threats. Her deep knowledge in the field of cyber security makes her an invaluable resource for organizations looking to strengthen their security measures. In addition to her technical role, Aarya is also a dedicated Student Counselor, providing guidance and support to students as they navigate their academic journeys. Her ability to blend technical expertise with compassionate counseling ensures that students receive holistic support. Aarya’s dual focus on security and student well-being underscores her commitment to making a positive impact in both domains.",
-      skills: ["Motion graphics", "photoshop", "multimedia"],
       email: "aarya@danphelink.com.np"
     },
   ],
@@ -74,43 +67,9 @@ const governance: Governance = {
     {
       name: "Karishma Khadka", images: "/images/governance/danphelink/karishma.jpg", designation: "UI / UX Designer | Instructor",
       description: "From designing experiences to teaching them—shaping the next generation of UI/UX designers.",
-      // skills: ["Motion graphics", "photoshop", "multimedia"],
       email: "karishmakhadka7@gmail.com"
     },
   ],
-
-  // Professionals: [
-  //   {
-  //     name: "Shankar Kumar Yadav", images: "/images/governance/danphelink/krishna.jpg", designation: "Lead Developer/Technical Operations Coordinator",
-  //     description: "Shankar Yadav is a dynamic and skilled Full Stack Developer, leading the development team with a focus on creating seamless and functional web applications. His technical prowess spans both front-end and back-end development, ensuring that all aspects of a project integrate perfectly. As the Technical Operations Coordinator, Shankar is responsible for managing the technical aspects of operations, ensuring that all systems and processes run smoothly. His ability to troubleshoot and optimize technical workflows enhances the overall efficiency of the team. Shankar's dedication to staying updated with the latest technologies and best practices makes him a pivotal figure in delivering high-quality technical solutions.",
-  //     // skills:["Motion graphics", "photoshop", "multimedia"],
-  //     email: "kryss@danphelink.com.np"
-  //   },
-  //   {
-  //     name: "Kusum Katwal", images: "/images/governance/danphelink/kusum.jpg", designation: "Frontend Developer",
-  //     description: "Kusum Katwal is a forward-thinking front-end developer who excels at crafting dynamic, visually captivating, and highly responsive web interfaces. With proficiency in modern technologies such as HTML, CSS, JavaScript, SCSS, Tailwind, Bootstrap, and ReactJS, she transforms designs into engaging, functional user experiences. Kusum combines creativity with technical expertise, ensuring every element—from layout to interaction—is meticulously crafted for seamless use. Renowned for her attention to detail and quality, she consistently delivers sleek, scalable web solutions that shine in both aesthetics and performance. Passionate about staying on the cutting edge, she continually explores emerging technologies and trends to stay ahead in the rapidly changing landscape of web development.",
-  //     //skills:["Motion graphics", "photoshop", "multimedia"],
-  //     email: "kusumkatwal74@gmail.com"
-  //   },
-  //   {
-  //     name: "Aastha Mishra", images: "/images/governance/danphelink/aastha.jpg", designation: "Frontend Developer",
-  //     description: "Aastha Mishra is an innovative front-end developer with a sharp focus on creating dynamic, visually stunning, and highly responsive web interfaces. With expertise in cutting-edge technologies like HTML, CSS, JavaScript, SCSS, Tailwind, Bootstrap, and ReactJS, she brings designs to life with seamless functionality and user-centric experiences. Her approach marries creativity with technical prowess, ensuring every detail—from layout to interaction—is polished and intuitive. Known for her commitment to quality, Aastha consistently delivers sleek, scalable solutions that stand out in both design and performance. Driven by a passion for innovation, she’s always exploring new technologies and trends to stay ahead in the fast-evolving world of web development.",
-  //     //skills:["Motion graphics", "photoshop", "multimedia"],
-  //     email: "aasthamishra175@gmail.com"
-  //   },
-  //   {
-  //     name: "Sushant Khanal", images: "/images/governance/danphelink/sushant.jpg", designation: "Graphic Designer",
-  //     description: "Sushant Khanal is a creative and technically proficient Multimedia Specialist, known for his ability to enhance both visual and audio elements of projects. His work encompasses a wide array of multimedia production, including graphic design, video editing, and audio engineering. Sushant’s creative approach and technical skills bring a unique perspective to the team, allowing him to create compelling multimedia content that stands out. His commitment to excellence and innovation is reflected in the high-quality output of his projects. Sushant’s passion for multimedia arts drives him to continually push the boundaries of creativity and technology.",
-  //     //skills:["Motion graphics", "photoshop", "multimedia"],
-  //     email: " sushant@danphelink.com.np"
-  //   },
-  //   {
-  //     name: "Irfan Hussain", images: "/images/governance/danphelink/irfan.jpg", designation: "Multimedia Specialist",
-  //     description: "Irfan Hussain is a highly skilled Multimedia Specialist with a broad range of expertise spanning various media formats. His ability to produce high-quality content is evident in his meticulous approach to multimedia production. Irfan’s work includes creating visually appealing graphics, engaging videos, and interactive media that capture the audience's attention. His innovative techniques and a keen eye for detail ensure that every project he undertakes is of the highest standard. Irfan’s dedication to continuous learning and adapting to new media trends keeps his work fresh and relevant, making him a valuable asset in the ever-evolving field of multimedia.",
-  //     // skills:["Motion graphics", "photoshop", "multimedia"],
-  //     email: "irfan@danhpelink.com.np"
-  //   }
-  // ],
 };
 
 function Governancesection() {
@@ -129,21 +88,21 @@ function Governancesection() {
 
 
   return (
-    <div className="flex flex-col lg:flex-row gap-4 justify-center p-2 lg:p-6">
-      <div className="h-fit bg-white py-4">
+    <div className="flex flex-col lg:flex-row  gap-4 justify-center p-2 lg:p-6">
+      <div className="h-fit rounded-xl lg:rounded-2xl bg-white py-2">
         <SideNav onSelect={setSelectedPage} />
       </div>
       <div className="h-fit w-full p-4 lg:p-10">
         <h1 className="text-4xl text-orange-500 font-bold">{selectedPage}</h1>
-        <div className="mt-4 w-fit rounded-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 gap-y-10">
+        <div className="mt-4 w-fit rounded-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-5 gap-y-10">
           {selectedPage === "Director" && (
             <>
-              <h2 className="col-span-full text-justify inltext-base lg:text-xl font-base">
+              <h2 className="col-span-full text-justify text-base lg:text-xl font-base">
                 Our Board Members are highly trained and professionally experienced individuals who oversee the overall functioning of the institution. Their collective commitment to qualitative higher education, academic excellence, and student achievement helps guide every student in realizing their full educational potential.
               </h2>
               {governance.Director.map((person, index) => (
                 <div key={index}
-                  className="border-2  border-white bg-[#EDEDED] p-2 rounded-2xl cursor-pointer hover:scale-[1.01]"
+                  className="border-2 border-white bg-[#EDEDED] p-2 rounded-2xl cursor-pointer hover:scale-[1.01]"
                   onClick={() => handleClick(person)}
                 >
                   <Card
@@ -159,7 +118,7 @@ function Governancesection() {
 
           {selectedPage === "Advisor" && (
             <>
-              <h2 className="col-span-full text-xl font-normal ">Our Advisors provide valuable guidance and expertise, ensuring we stay on track to achieve our goals while facing the challenges of a rapidly changing world.</h2>
+              <h2 className="col-span-full text-base lg:text-xl  font-normal ">Our Advisors provide valuable guidance and expertise, ensuring we stay on track to achieve our goals while facing the challenges of a rapidly changing world.</h2>
               {governance.Advisor.map((person, index) => (
                 <div key={index}
                   className="border-2  border-white bg-[#EDEDED] p-2 rounded-2xl cursor-pointer hover:scale-[1.01]"
@@ -177,7 +136,7 @@ function Governancesection() {
 
           {selectedPage === "Faculty" && (
             <>
-              <div className="col-span-full space-y-4 text-xl font-normal leading-normal">
+              <div className="col-span-full space-y-4 text-base lg:text-xl font-normal leading-normal">
                 <p>
                   Our Faculty is dedicated to delivering top-tier education, shaping the future of our students with their knowledge, innovation, and passion for teaching.
                 </p>
@@ -200,37 +159,16 @@ function Governancesection() {
               ))}
             </>
           )}
-
-          {/* {selectedPage === "Professionals" && (
-            <>
-              <h2 className="col-span-full text-xl font-normal ">Our Staff plays a critical role in supporting our day-to-day operations, providing the essential services that help students thrive both academically and personally.</h2>
-              {governance.Professionals.map((person, index) => (
-                <div key={index}
-                  className="border-2  border-white bg-[#EDEDED] p-2 rounded-2xl cursor-pointer hover:scale-[1.01]"
-                  onClick={() => handleClick(person)} >
-                  <Card
-                    layout="governance"
-                    personName={person.name}
-                    images={person.images}
-                    designation={person.designation}
-                    email={person.email}
-                  />
-                </div>
-              ))}
-            </>
-          )} */}
         </div>
       </div>
 
       {selectedPerson && (
 
-        <Modal dismissible show={!!selectedPerson} onClose={() => setSelectedPerson(null)} className="flex mx-auto mt-24 z-[9999]  justify-center items-center h-fit w-fit">
-
-          <Modal.Body className="backdrop-blur-md rounded-2xl" >
-
-            <XIcon onClick={() => setSelectedPerson(null)} className="text-red-700 float-end" />
-            <Card
-              className="flex flex-row rounded-2xl p-4 w-fit gap-4 backdrop-blur-xl"
+        <Modal dismissible show={!!selectedPerson} onClose={() => setSelectedPerson(null)} popup className=" w-fit h-fit m-auto">
+        <Modal.Body className="max-w-[90vw] space-y-7 w-fit lg:max-w-[60vw] max-h-[80vh] overflow-y-auto p-2 rounded-xl shadow-lg">
+        <Card
+              className="flex flex-col lg:flex-row rounded-xl overflow-hidden lg:gap-10 bg-slate-100"
+              onClick={()=>setSelectedPerson(null)}
               layout={"descriptionmodal"}
               description={selectedPerson.description}
               images={selectedPerson.images}
@@ -239,14 +177,10 @@ function Governancesection() {
               skill={selectedPerson.skills}
               email={selectedPerson.email}
             />
-          </Modal.Body>
-        </Modal>
-
+        </Modal.Body>
+      </Modal>
       )}
-
     </div>
-
-
   );
 }
 

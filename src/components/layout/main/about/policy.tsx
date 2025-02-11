@@ -14,7 +14,7 @@ const policies: string[] = [
 function PolicySection() {
   return (
     <div className="  bg-[#EDEDED]  my-16 max-w-7xl mx-auto flex flex-row p-4 rounded-2xl justify-between items-center">
-      <div className="relative  w-[537px] h-[418px] ">
+      <div className="max-md:hidden relative  w-[537px] h-[418px] ">
         <Image
           src="/images/about/Facilities1.jpeg"
           alt="Hero"

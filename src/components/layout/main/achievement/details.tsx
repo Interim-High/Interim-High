@@ -23,13 +23,13 @@ const Achievementdetails: Achievement[] =
 
 function Details() {
     return (
-        <div className=" mt-20">
-            <div className="flex flex-col gap-16  p-4 justify-center items-center">
+        <div className=" mt-2 lg:mt-16">
+            <div className="flex flex-col gap-8 lg:gap-16  p-4 lg:p-8 justify-center text-center items-center">
                 {
                     Achievementdetails.map((detail,index)=>(
-                        <div className="flex flex-col justify-center items-center gap-4  w-[1100px]" key={index}>
-                            <h1 className="text-4xl font-normal text-red-700"> {detail.title}</h1>
-                            <p className="text-[#1D1D1D] text-justify">{detail.description}</p>
+                        <div className="flex flex-col justify-center items-center gap-4  max-w-7xl" key={index}>
+                            <h1 className=" text-3xl lg:text-4xl font-normal text-red-700"> {detail.title}</h1>
+                            <p className=" text-lg lg:text-2xl text-[#1D1D1D] text-justify">{detail.description}</p>
                             </div>
                     ))
 

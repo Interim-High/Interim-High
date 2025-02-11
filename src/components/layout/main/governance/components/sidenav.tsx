@@ -13,9 +13,9 @@ function SideNav({ onSelect }: { onSelect: (item: string) => void }) {
     };
 
     return (
-        <div className="lg:w-[250px] border border-red-700 w-full">
+        <div className="lg:w-[250px] w-full">
 
-            <div className="lg:hidden px-4 border border-gray-900 text-black flex items-center justify-between cursor-pointer"
+            <div className="lg:hidden px-4 text-black flex items-center justify-between cursor-pointer"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <span className="text-lg font-semibold">Our People</span>
