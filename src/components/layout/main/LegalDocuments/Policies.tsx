@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { PanelLeftCloseIcon, PanelLeftOpenIcon } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { contents } from "./Content";
 import { Termscontents } from "./TermContent";
 
@@ -44,7 +44,7 @@ function Policies() {
         onClick={() => setIsOpen(!isOpen)}
         className={`absolute top-4 ${isOpen ? "left-64" : "left-12"} p-2 text-black`}
       >
-        {isOpen ? <PanelLeftOpenIcon size={20} /> : <PanelLeftCloseIcon size={20} />}
+        {isOpen ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
       </button>
 
       {/* Main Content */}
