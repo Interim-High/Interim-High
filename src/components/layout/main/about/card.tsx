@@ -30,8 +30,7 @@ const Card = ({ title, personName, images, className, email, description, design
                                     alt={title || "no image"}
                                     width={275}
                                     height={241}
-                                    objectFit="cover"
-                                    objectPosition="center"
+                                    className='object-center object-cover'
                                 />
                             )}
                         </div>

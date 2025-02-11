@@ -7,8 +7,7 @@ import { Termscontents } from "./TermContent";
 function Policies() {
   type PolicyKey = "Privacy Policies" | "Terms and Conditions";
 
-  const [selectedPolicy, setSelectedPolicy] =
-    useState<PolicyKey>("Privacy Policies");
+  const [selectedPolicy, setSelectedPolicy] = useState<PolicyKey>("Privacy Policies");
   const [isOpen, setIsOpen] = useState(true);
 
   const policies: Record<PolicyKey, string> = {
@@ -17,13 +16,12 @@ function Policies() {
   };
 
   return (
-    <div className="flex">
+    <div className="flex relative">
+      {/* Sidebar */}
       <aside
-        className={`fixed left-0 z-40 ${
-          isOpen ? "w-64" : "w-12"
-        } h-full bg-gray-800 text-white shadow-lg transition-width duration-300`}
+        className={`fixed left-0 z-40 ${isOpen ? "w-64" : "w-0"} h-full bg-gray-800 text-white shadow-lg transition-width duration-200`}
       >
-        <div className="px-3 py-4 overflow-y-auto">
+        <div className="px-3 py-4">
           <h2 className={`text-2xl text-center font-semibold mb-4 ${isOpen ? "" : "hidden"}`}>
             Policies
           </h2>
@@ -31,9 +29,7 @@ function Policies() {
             {Object.keys(policies).map((policy) => (
               <li key={policy}>
                 <button
-                  className={`block p-3 rounded-md w-full text-left ${
-                    isOpen ? "hover:bg-blue-900 transition" : ""
-                  } ${selectedPolicy === policy ? "bg-transparent" : ""}`}
+                  className={`block p-3 rounded-md w-full text-left ${isOpen ? "hover:bg-blue-900 transition" : ""}`}
                   onClick={() => setSelectedPolicy(policy as PolicyKey)}
                 >
                   {isOpen ? policy : ""}
@@ -41,43 +37,36 @@ function Policies() {
               </li>
             ))}
           </ul>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="absolute top-4 right-0 p-2 text-white"
-          >
-            {isOpen ? <PanelLeftOpenIcon size={20} /> : <PanelLeftCloseIcon size={20} />}
-          </button>
         </div>
       </aside>
 
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className={`absolute top-4 ${isOpen ? "left-64" : "left-12"} p-2 text-black`}
+      >
+        {isOpen ? <PanelLeftOpenIcon size={20} /> : <PanelLeftCloseIcon size={20} />}
+      </button>
+
       {/* Main Content */}
-      <main className="flex-1 ml-64 p-8">
-        <h1 className="text-5xl font-semibold text-center text-orange-600">
-          {selectedPolicy}
-        </h1>
+      <main className={`flex-1 p-8 ${isOpen ? "ml-64" : "ml-14"} transition-all duration-200`}>
+        <h1 className="text-5xl font-semibold text-center text-orange-600">{selectedPolicy}</h1>
 
         {selectedPolicy === "Privacy Policies" && (
           <div>
             {contents.map((cont, index) => (
               <div key={index}>
-                <p className="mt-4 text-base text-gray-900">
-                  {cont.description}
-                </p>
+                <p className="mt-4 text-lg text-gray-900">{cont.description}</p>
                 {cont.Topic.map((topic, tIndex) => (
                   <div key={tIndex} className="mt-6">
                     <h2 className="font-bold text-lg">{topic.title}</h2>
-                    <p className="text-lg text-gray-600">{topic.description}</p>
+                    <p className="text-lg text-gray-700">{topic.description}</p>
 
                     {/* Checking if topic.points exist before mapping */}
                     {topic.points && topic.points.length > 0 && (
                       <ul className="mt-4 list-disc list-inside px-7">
                         {topic.points.map((point, pIndex) => (
                           <li key={pIndex} className="mt-2">
-                            <strong>
-                              {point.point_Title
-                                ? `${point.point_Title}: `
-                                : ""}
-                            </strong>
+                            <strong>{point.point_Title ? `${point.point_Title}: ` : ""}</strong>
                             {point.point_description}
                           </li>
                         ))}
@@ -103,24 +92,18 @@ function Policies() {
           <div>
             {Termscontents.map((cont, index) => (
               <div key={index}>
-                <p className="mt-4 text-base text-gray-900">
-                  {cont.description}
-                </p>
+                <p className="mt-4 text-lg text-gray-900">{cont.description}</p>
                 {cont.Topic.map((topic, tIndex) => (
                   <div key={tIndex} className="mt-6">
                     <h2 className="font-bold text-lg">{topic.title}</h2>
-                    <p className="text-lg text-gray-600">{topic.description}</p>
+                    <p className="text-lg text-gray-700">{topic.description}</p>
 
                     {/* Checking if topic.points exist before mapping */}
                     {topic.points && topic.points.length > 0 && (
                       <ul className="mt-4 list-disc list-inside px-7">
                         {topic.points.map((point, pIndex) => (
                           <li key={pIndex} className="mt-2">
-                            <strong>
-                              {point.point_Title
-                                ? `${point.point_Title}: `
-                                : ""}
-                            </strong>
+                            <strong>{point.point_Title ? `${point.point_Title}: ` : ""}</strong>
                             {point.point_description}
                           </li>
                         ))}

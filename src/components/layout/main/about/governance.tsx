@@ -27,9 +27,7 @@ function Governance() {
                     alt="ceo phto"
                     width={607}
                     height={720}
-                    objectFit="cover"
-                   
-                    objectPosition="center"
+                    className="object-cover object-center"
                 />
             </div>
 

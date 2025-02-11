@@ -67,10 +67,8 @@ const StorySection: React.FC = () => {
             <Image
             src={selectedStory.image}
             alt={selectedStory.title}
-            
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            fill
+            className="object-fill object-center"
           />
             </div>
         
