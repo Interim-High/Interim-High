@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-interface InputProp {
+type InputProp =  {
     type?: string;
     value?: string;
     name?: string;

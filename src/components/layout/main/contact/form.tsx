@@ -27,7 +27,7 @@ function Form() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center xl:w-1/3">
         <div className="bg-gray-300 p-8 shadow-lg rounded-lg w-full border-black">
           <h1 className="text-4xl text-orange-600 font-semibold text-center">
             Get in Touch
@@ -64,7 +64,7 @@ function Form() {
               placeholder="Message *"
               name="message"
               value={formdata.message}
-              onchange={handleInputChange}
+              onChange={handleInputChange}
               isRequired
             />
             <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white w-full h-9">

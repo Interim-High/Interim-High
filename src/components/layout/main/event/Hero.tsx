@@ -7,9 +7,10 @@ function HeroSection() {
         <Image
           src="/images/events/hero/HeroImg.png"
           alt="Hero"
+          // width={1536}
+          // height={45}
           layout="fill"
-          objectFit="cover"
-          objectPosition="center"
+          className="object-center object-cover"
         />
       </div>
 
@@ -21,7 +22,7 @@ function HeroSection() {
           Our Events
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-orange-500 mt-2 sm:mt-4">
-          From Learning to Celebration – Every Event Counts!
+          From Learning to Celebration - Every Event Counts!
         </p>
       </div>
     </div>

@@ -1,20 +1,22 @@
 import { Facebook, Instagram, LinkedIn, YouTube } from "@mui/icons-material";
 import { Mail,MapPin, Phone, Youtube } from "lucide-react";
 import Link from "next/link";
+import Head from "./Head";
 
-const QuickLinks: string[] = ["Programs", "Events", "News", "Gallary","Policy"];
+const QuickLinks: string[] = ["Programs", "Events", "News & Updates", "Gallary","Policy"];
 const GetToknow: string[] = [
   "About",
   "Admission",
   "Partner",
   "Facilities",
-  "Student Handbook",
   "Terms and Condition",
 ];
 export default function QuickLink() {
   return (
-    <main className="flex flex-row gap-40 justify-center p-8  bg-red-900">
-      <div className="space-y-4">
+    <main className="bg-red-900 px-8" >
+    <Head/>
+    <div className="flex xl:flex-row md:flex-row xl:gap-96 flex-col gap-20 justify-center p-4">
+      <div className="space-y-4"> 
         <h1 className="text-white font-semibold">Quick Links</h1>
         <ul className="flex flex-col space-y-2">
           {QuickLinks.map((quicklink) => (
@@ -22,8 +24,9 @@ export default function QuickLink() {
               key={quicklink}
               href={`${quicklink
                 .toLowerCase()
+                .replace(/ & /, "")
               }`}
-              className=" text-white font-medium hover:underline"
+              className=" text-gray-300 font-medium hover:underline"
             >
               {quicklink}
             </Link>
@@ -41,7 +44,7 @@ export default function QuickLink() {
                       .toLowerCase()
                       .replace(/ /g,"-")
                     }`}
-                    className="text-white font-medium hover:underline"
+                    className="text-gray-300 font-medium hover:underline"
                     >
                         {know}
                     </Link>
@@ -54,43 +57,43 @@ export default function QuickLink() {
           Contact us
         </h1>
         <div className="flex items-center gap-6">
-            <MapPin className="text-white" />
-            <p className="max-w-md text-white">
-              2nd Floor, Rem Work Kamalpokhari 01,
-              Kathmandu, Nepal
+            <MapPin className="text-gray-300" />
+            <p className="max-w-md text-gray-300">
+              Kamalpokhari, Kathmandu, Nepal
             </p>
           </div>
           <div className="flex items-center gap-6">
-            <Phone className="text-white" />
+            <Phone className="text-gray-300" />
             <p className="max-w-md text-white text-wrap">
-              <a href="tel:+9779865326884" className="text-white hover:underline">
+              <a href="tel:+9779865326884" className="text-gray-300 hover:underline">
                 +977 9707861393
               </a> <br></br>
-              <a href="tel:+9779865326884" className="text-white hover:underline">
+              <a href="tel:+9779865326884" className="text-gray-300 hover:underline">
                 +977 9707861394
               </a>
             </p>
           </div>
           <div className="flex items-center gap-6">
-          <Mail className="text-white" />
+          <Mail className="text-gray-300" />
           <p className="max-w-md text-white text-wrap">
-              <a href="mailto:info@DanpheLink.com" className="text-white hover:underline">
+              <a href="mailto:info@DanpheLink.com" className="text-gray-300 hover:underline">
                 info@DanpheLink.com
               </a>
               <br />
-              <a href="mailto:support@DanpheLink.com" className="text-white hover:underline">
+              <a href="mailto:support@DanpheLink.com" className="text-gray-300 hover:underline">
                 support@DanpheLink.com
               </a>
             </p>
           </div>
           <div className="flex flex-row space-x-5">
-          <LinkedIn className="text-white w-6 h-6"/>
-          <YouTube className="text-white w-6 h-6"/>
-          <Facebook className="text-white w-6 h-6"/>
-          <Instagram className="text-white w-6 h-6"/>
+          <LinkedIn className="text-gray-300 w-6 h-6"/>
+          <YouTube className="text-gray-300 w-6 h-6"/>
+          <Facebook className="text-gray-300 w-6 h-6"/>
+          <Instagram className="text-gray-300 w-6 h-6"/>
           </div>
       </div>
 
+    </div>
     </main>
   );
 }

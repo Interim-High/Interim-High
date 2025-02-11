@@ -59,11 +59,11 @@ const StorySection: React.FC = () => {
           />
         ))}
       </div>
-      <h2 className="text-3xl font-normal mb-4 text-red-700">Our Story</h2>
+      <h2 className="text-3xl mb-4 text-orange-600 font-semibold">Our Story</h2>
 
       {selectedStory && (
-        <div className="w-[1280px] grid grid-cols-2 p-4  gap-8 rounded-lg shadow-lg">
-            <div className=" relative w-[607px] h-[421px] overflow-hidden rounded-tl-[60px] rounded-br-[60px]">
+        <div className="max-w-7xl grid grid-cols-2 p-4  gap-8 rounded-lg shadow-lg">
+            <div className=" relative max-w-xl h-[421px] overflow-hidden rounded-tl-[60px] rounded-br-[60px]">
             <Image
             src={selectedStory.image}
             alt={selectedStory.title}

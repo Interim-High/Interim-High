@@ -43,31 +43,31 @@ const MainSection: React.FC = () => {
         "The academy will host an Generative AI workshop Summit next month, bringing together industry experts and researchers to explore the latest advancements in technology.",
       date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 48)), 
     },
+    // {
+    //   title: "Celebrating Saraswati Puja at DanpheLink Academy",
+    //   image: "/images/newsandupdates/saraswati.png",
+    //   content:
+    //     "Our academy came together to celebrate Saraswati Puja, honoring the Goddess of Wisdom and Learning. Students and faculty participated in prayers, cultural performances, and knowledge-sharing sessions.",
+    //   date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 72)), // 3 days ago
+    // },
     {
-      title: "Celebrating Saraswati Puja at DanpheLink Academy",
-      image: "/images/newsandupdates/saraswati.png",
-      content:
-        "Our academy came together to celebrate Saraswati Puja, honoring the Goddess of Wisdom and Learning. Students and faculty participated in prayers, cultural performances, and knowledge-sharing sessions.",
-      date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 72)), // 3 days ago
-    },
-    {
-      title: "Cybersecurity Lab Inaugurated at Academy",
+      title: "DanpheLink host Recreational Workshop",
       image: "/images/events/events/Insight.png",
       content:
         "The academy has launched a state-of-the-art cybersecurity lab to provide students with hands-on training in digital security and ethical hacking.",
       date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 96)), 
     },
-    {
-      title: " Danphelink Academy Introduces Smart Learning Hub",
-      image: "/images/newsandupdates/image1.jpg", 
-      content:
-        "A new Smart Learning Hub has been introduced, featuring digital resources, interactive sessions, and AI-driven study tools to enhance learning experiences.",
-      date: formatDate(new Date()),
-    },
+    // {
+    //   title: " Danphelink Academy Introduces Smart Learning Hub",
+    //   image: "/images/newsandupdates/image1.jpg", 
+    //   content:
+    //     "A new Smart Learning Hub has been introduced, featuring digital resources, interactive sessions, and AI-driven study tools to enhance learning experiences.",
+    //   date: formatDate(new Date()),
+    // },
   ];
   
   const feature = {
-    title: "Faculty Member Wins National Award for Teaching Excellence",
+    title: "Generative AI: What to Expect at the Upcoming Summit",
     image: "/images/events/events/Workshop.jpg", 
   };
 
@@ -85,6 +85,7 @@ const MainSection: React.FC = () => {
         <TopStories stories={sortedStories} onSelectStory={setSelectedStory} />
         <Features feature={feature} />
       </aside>
+      
     </div>
   );
 };
