@@ -88,7 +88,7 @@ function Main() {
     <main className="relative w-full h-[2000px]">
       <div className="relative h-[60vh] w-full">
         <Image
-          src="/images/home/hero/hero.png"
+          src="/images/home/hero/herosection.png"
           alt="Hero"
           layout="fill"
           objectFit="cover"
@@ -98,7 +98,7 @@ function Main() {
 
       <div className="flex flex-col items-center space-y-8 relative">
         <h1 className="text-5xl font-bold text-gray-900 text-center mb-4">
-          DANPHELINK International College
+          Danphelink Academy
         </h1>
 
         <p className="text-lg md:text-xl text-gray-700 text-center tracking-wide">
@@ -114,7 +114,7 @@ function Main() {
           </Link>
 
           <Link
-            href="/apply"
+            href="/admission"
             className="px-10 py-4 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             Apply Now
