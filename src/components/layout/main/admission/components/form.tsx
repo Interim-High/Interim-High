@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Input from "../../contact/input";
+import Input from "../../../../shared/input";
 import Select from "@/components/shared/selectoption";
-import TextArea from "../../contact/textarea";
+import TextArea from "../../../../shared/textarea";
 
 const options = [
     { label: "Software Development", value: "software-development" },

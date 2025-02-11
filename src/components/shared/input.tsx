@@ -18,7 +18,7 @@ const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeho
         const { name, value } = event.target;
 
         if (isRequired && value.trim() === "") {
-            setError(`${name} is required.`);
+            setError(`${name} is required`);
         } else if (type === "tel" && !/^\d{10}$/.test(value)) {
             setError("Phone number must be exactly 10 digits.");
         } else if (type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
@@ -34,7 +34,7 @@ const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeho
         <div>
             {label && <label className="block font-medium">{label}</label>}
             <input
-            className={` ${className||"w-[519px] h-[40px] rounded-sm p-3 border border-gray-300 focus:border-blue-500 focus:outline-none"}`}
+            className={` ${className||"w-full h-[40px] rounded-sm p-3 border border-gray-300 focus:border-blue-500 focus:outline-none"}`}
                 type={type}
                 value={value}
                 name={name}
@@ -45,6 +45,6 @@ const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeho
             {error && <p className="text-red-600 text-sm">{error}</p>}
         </div>
     );
-}; 
+};
 
 export default Input;
