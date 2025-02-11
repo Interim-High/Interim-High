@@ -17,12 +17,12 @@ const stories: StoryProps[] = [
     "This is the start of an incredible adventure. As the sun rises over the horizon, the protagonist embarks on a journey filled with uncertainty, excitement, and the promise of discovery. The road ahead is long and unknown, but every step is filled with potential. The air is thick with the promise of untold secrets, and each decision shapes their path, leading to hidden truths, unexpected allies, and challenges that test their courage. Though hardship and doubt may arise, the call to discover something greater pulls them onward, knowing that this journey will transform them in ways they can’t yet imagine.",
     image: "/images/about/story1.jpg",
   },
-  {
-    id: "2",
-    title: "New Building For IT Sector",
-    description:"Deputy is now helping more than 320,000 workplaces internationally. Businesses across industries can manage their staff more efficiently, give teams an easy way to track their shifts, and free up time for people to focus on what’s important to them. We’ve picked up some very flattering accolades and reviews along the way. Deputy is now helping more than 320,000 workplaces internationally. Businesses across industries can manage their staff more efficiently, give teams an easy way to track their shifts, and free up time for people to focus on what’s important to them. We’ve picked up some very flattering accolades and reviews along the way.",
-    image: "/images/about/story2.jpg",
-  },
+  // {
+  //   id: "2",
+  //   title: "New Building For IT Sector",
+  //   description:"Deputy is now helping more than 320,000 workplaces internationally. Businesses across industries can manage their staff more efficiently, give teams an easy way to track their shifts, and free up time for people to focus on what’s important to them. We’ve picked up some very flattering accolades and reviews along the way. Deputy is now helping more than 320,000 workplaces internationally. Businesses across industries can manage their staff more efficiently, give teams an easy way to track their shifts, and free up time for people to focus on what’s important to them. We’ve picked up some very flattering accolades and reviews along the way.",
+  //   image: "/images/about/story2.jpg",
+  // },
 //   {
 //     id: "3",
 //     title: "AI Revolution in 2025",

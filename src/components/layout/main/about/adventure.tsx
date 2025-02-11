@@ -16,7 +16,7 @@ function AboutAdventure() {
           contributions to society. Join us and shape your future with
           opportunity and purpose.
         </p>
-      </div>
+      </div> 
 
       <div className="relative w-[357px] h-[295px]">
         <Image
