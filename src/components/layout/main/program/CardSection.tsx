@@ -22,7 +22,7 @@ export const underCards = Array(7).fill({
 });
 export default function CardSection() {
   return (
-    <div className="mx-28">
+    <div className="px-28">
       <CardGrid title={"Under Graduate"} data={underCards} />
       <CardGrid title={"Post Graduate"} data={postCards} />
     </div>
@@ -30,7 +30,7 @@ export default function CardSection() {
 }
 
 const Card = ({ imageSrc, title, description, category, slug }) => (
-  <div className="relative bg-white rounded-lg overflow-hidden shadow-lg">
+  <div className="relative bg-white pb-2 rounded-lg overflow-hidden shadow-lg">
     <Image
       src={imageSrc}
       alt={title}
@@ -38,12 +38,12 @@ const Card = ({ imageSrc, title, description, category, slug }) => (
       height={200}
       className="w-full h-48 object-cover"
     />
-    <div className="p-4">
+    <div className="p-4 ">
       <h2 className="text-xl font-semibold">{title}</h2>
-      <p className="text-gray-700 text-sm mt-2">{description}</p>
+      <p className="text-gray-700 text-sm my-2">{description}</p>
       <Link
         href={`/programs/${slug}`}
-        className="mt-3 bg-[#FF6D04] text-white px-4 py-2 rounded-md"
+        className=" bg-[#FF6D04] text-white  px-4 py-2 rounded-md"
       >
         Read More
       </Link>

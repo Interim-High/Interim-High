@@ -5,9 +5,8 @@ import Head from "./Head";
 function Footer() {
   return (
     <footer>
-      {/* <h1>footer</h1> */}
       <div>
-        <QuickLink/>
+        <QuickLink />
       </div>
     </footer>
   );
