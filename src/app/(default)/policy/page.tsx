@@ -1,5 +1,5 @@
 import Header from "@/components/layout/header/Header";
-import Policies from "@/components/layout/main/LegalDocuments/studentHandbook";
+import Policies from "@/components/layout/main/LegalDocuments/Policies";
 
 function LegalDocument (){
 return (

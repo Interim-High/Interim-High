@@ -1,24 +1,23 @@
 import { CheckCircle } from "lucide-react"; // Importing the CheckCircle icon
 import Image from "next/image";
 
-    const facility :string[]=[
-        "Academic Facilities",
-        "Recreational Facilities",
-        "Parking Facilities",
-        "ExtraCurricular Services"
-    ]
-
-
+const facility: string[] = [
+  "Academic Facilities",
+  "Parking Facilities",
+  "Recreational Facilities",
+  "Career Counselling",
+  "ExtraCurricular Services",
+];
 
 function Facility() {
     return (
       
-            <div className=" border-2 mx-auto bg-[#EDEDED] mt-16 flex flex-row justify-between items-center p-4 w-[1340px] rounded-2xl gap-[240px]">
-            <div className="flex flex-col   gap-8">
+            <div className="border-2 mx-auto bg-[#EDEDED] mt-16 flex flex-row justify-between items-center p-4 max-w-7xl rounded-2xl">
+            <div className="flex flex-col gap-8 mx-6">
                 {/* <span className="flex flex-col gap-2 items-start "> */}
 
-                    <h1 className="text-5xl font-normal text-red-700">Our Facilities</h1>
-                    <p className="text-[16px]">Different Academy Facilities for you   </p>
+                    <h1 className="text-5xl font-normal text-orange-600">Our Facilities</h1>
+                    <p className="text-[16px]">Different Campus Facilities for you   </p>
                 {/* </span> */}
                 {
                     facility.map((facility,index)=>(
@@ -33,7 +32,7 @@ function Facility() {
 
 
             </div>
-            <div className="relative  w-[537px] h-[418px] ">
+            <div className="relative w-[537px] h-[418px] ">
                
                     <Image
                         src="/images/about/facilities1.png"
@@ -44,9 +43,9 @@ function Facility() {
                     />
               
                     <Image
-                        src="/images/about/facility1.jpg"
+                        src="/images/about/facilities2.png"
                         alt="Hero"
-                        className="absolute rounded-xl bottom-0 left-0"
+                        className="absolute bottom-0 left-0"
                         width={355}
                         height={237}
                      

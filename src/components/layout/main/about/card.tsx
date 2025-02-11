@@ -22,7 +22,7 @@ const Card = ({ title, personName, images, className, email, description, design
         <div>
             {
                 layout === "achievement" && (
-                    <div className="flex flex-col items-center justify-center p-1 bg-stone-300 overflow-hidden rounded-xl w-[275px] h-[fit] gap-2">
+                    <div className="flex flex-col items-center justify-center p-2 bg-stone-300 overflow-hidden rounded-xl w-[275px] h-[fit] gap-2">
                         <div className="overflow-hidden rounded-xl ">
                             {images && (
                                 <Image

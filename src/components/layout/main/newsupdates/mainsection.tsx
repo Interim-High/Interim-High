@@ -1,18 +1,17 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Article from "./article";
 import TopStories from "./topstories";
 import Features from "./feature";
-// Story Type
+
 type Story = {
   title: string;
-  slug: string;
   image: string;
   content: string;
   date: string;
 };
 
-// Format exact date function
+// Format date function
 const formatDate = (date: Date): string => {
   return new Intl.DateTimeFormat("en-US", {
     year: "numeric",
@@ -24,63 +23,69 @@ const formatDate = (date: Date): string => {
 const MainSection: React.FC = () => {
   const stories: Story[] = [
     {
-      title: "Padmavati International College Hosts Faculty Development Program",
-      slug: "faculty-development",
-      image: "/images/events/events/Carnival.png",
+      title: "Danphelink Academy Hosts CyberSecurity Workshop",
+      image: "/images/events/events/Workshop.jpg",
       content:
-        "Padmawati International College successfully conducted a two-day Faculty Development Program focused on enhancing the professional skills of its teaching staff. The program featured sessions on modern teaching methodologies, classroom management strategies, and technology integration in education.Designed to equip faculty members with innovative tools and techniques, the program emphasized fostering academic excellence and creating an engaging learning environment for students.Key topics included assignments, assessments, and case studies, with renowned education experts leading the sessions and sharing valuable insights on effective pedagogy and addressing contemporary challenges in higher education.The event saw active participation from faculty members, with the college leadership commending their enthusiasm. Executive ChairmanMr. Bheshraj Pokhrel, Chief of Academics Prof. Dr. Govinda Prasad Acharya, Managing Director Mr. Jitendra Kumar Bakhu, and Business Development Director Mr. Narayan Pokhrel thanked the participants. They reiterated the institution’s commitment to professional development, highlighting how such programs enhance teaching standards and align with global educational practices.This initiative underscores padmawati International College’s dedication to academic excellence and its proactive approach to equipping educators with the evolving demands of higher education.",
-      date: formatDate(new Date()), // Current date
+        "The academy successfully conducted Cybesecurity workshop to enhance instructional techniques and integrate modern technology into the learning process.",
+      date: formatDate(new Date(Date.now()- 1000 * 60 * 60 * 24)), // Current date
     },
     {
-      title: "College Achieves 85% Placement Record",
-      slug: "placement-record",
-      image: "/images/events/events/Carnival.png",
+      title: "Academic Success for our Students in Development",
+      image: "/images/events/events/Academic.png",
       content:
-        "The college reported an 85% placement record, a testament to its industry-aligned curriculum and student excellence.",
+        "This year, the academy recorded an impressive Academic record, emphasizing its commitment to career-oriented education and strong industry collaboration.",
       date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 24)), // 1 day ago
     },
     {
-      title: "Annual Curriculum Test to Begin Next Month",
-      slug: "curriculum-test",
-      image: "/images/events/events/Carnival.png",
+      title: "Generative AI workshop Summit Scheduled for Next Month",
+      image: "/images/events/events/Seminar.png",
       content:
-        "The annual curriculum test for students will commence next month, assessing their academic progress and knowledge retention.",
-      date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 48)), // 2 days ago
+        "The academy will host an Generative AI workshop Summit next month, bringing together industry experts and researchers to explore the latest advancements in technology.",
+      date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 48)), 
     },
+    // {
+    //   title: "Celebrating Saraswati Puja at DanpheLink Academy",
+    //   image: "/images/newsandupdates/saraswati.png",
+    //   content:
+    //     "Our academy came together to celebrate Saraswati Puja, honoring the Goddess of Wisdom and Learning. Students and faculty participated in prayers, cultural performances, and knowledge-sharing sessions.",
+    //   date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 72)), // 3 days ago
+    // },
     {
-      title: "Padmavati International College Hosts Faculty Development Program",
-      slug: "faculty-development",
-      image: "/images/events/events/Carnival.png",
+      title: "DanpheLink host Recreational Workshop",
+      image: "/images/events/events/Insight.png",
       content:
-        "Padmawati International College successfully conducted a two-day Faculty Development Program focused on enhancing the professional skills of its teaching staff. The program featured sessions on modern teaching methodologies, classroom management strategies, and technology integration in education.Designed to equip faculty members with innovative tools and techniques, the program emphasized fostering academic excellence and creating an engaging learning environment for students.Key topics included assignments, assessments, and case studies, with renowned education experts leading the sessions and sharing valuable insights on effective pedagogy and addressing contemporary challenges in higher education.The event saw active participation from faculty members, with the college leadership commending their enthusiasm. Executive ChairmanMr. Bheshraj Pokhrel, Chief of Academics Prof. Dr. Govinda Prasad Acharya, Managing Director Mr. Jitendra Kumar Bakhu, and Business Development Director Mr. Narayan Pokhrel thanked the participants. They reiterated the institution’s commitment to professional development, highlighting how such programs enhance teaching standards and align with global educational practices.This initiative underscores padmawati International College’s dedication to academic excellence and its proactive approach to equipping educators with the evolving demands of higher education.",
-      date: formatDate(new Date(Date.now() - 1000 * 60* 60 *72 )), 
+        "The academy has launched a state-of-the-art cybersecurity lab to provide students with hands-on training in digital security and ethical hacking.",
+      date: formatDate(new Date(Date.now() - 1000 * 60 * 60 * 96)), 
     },
-    {
-      title: "Padmavati International College Hosts Faculty Development Program",
-      slug: "faculty-development",
-      image: "/images/events/events/Carnival.png",
-      content:
-        "Padmawati International College successfully conducted a two-day Faculty Development Program focused on enhancing the professional skills of its teaching staff. The program featured sessions on modern teaching methodologies, classroom management strategies, and technology integration in education.Designed to equip faculty members with innovative tools and techniques, the program emphasized fostering academic excellence and creating an engaging learning environment for students.Key topics included assignments, assessments, and case studies, with renowned education experts leading the sessions and sharing valuable insights on effective pedagogy and addressing contemporary challenges in higher education.The event saw active participation from faculty members, with the college leadership commending their enthusiasm. Executive ChairmanMr. Bheshraj Pokhrel, Chief of Academics Prof. Dr. Govinda Prasad Acharya, Managing Director Mr. Jitendra Kumar Bakhu, and Business Development Director Mr. Narayan Pokhrel thanked the participants. They reiterated the institution’s commitment to professional development, highlighting how such programs enhance teaching standards and align with global educational practices.This initiative underscores padmawati International College’s dedication to academic excellence and its proactive approach to equipping educators with the evolving demands of higher education.",
-      date: formatDate(new Date()), 
-    }
+    // {
+    //   title: " Danphelink Academy Introduces Smart Learning Hub",
+    //   image: "/images/newsandupdates/image1.jpg", 
+    //   content:
+    //     "A new Smart Learning Hub has been introduced, featuring digital resources, interactive sessions, and AI-driven study tools to enhance learning experiences.",
+    //   date: formatDate(new Date()),
+    // },
   ];
-
+  
   const feature = {
-    title: "Faculty Member Wins National Award for Teaching Excellence",
-    image: "/images/events/events/Carnival.png",
+    title: "Generative AI: What to Expect at the Upcoming Summit",
+    image: "/images/events/events/Workshop.jpg", 
   };
 
-  // Default story (first in the list)
-  const [selectedStory, setSelectedStory] = useState<Story>(stories[0]);
+  const sortedStories = [...stories].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  
+  const [selectedStory, setSelectedStory] = useState<Story>(sortedStories[0]);
 
   return (
-    <div className="grid grid-cols-3 ml-[100px] mr-[100px] gap-2 p-6" >
-      <Article story={selectedStory} />
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 mt-12 md:px-24">
+      <div className="col-span-2">
+        <Article story={selectedStory} />
+      </div>
 
-      <aside className="col-span-1 space-y-6">
-        <TopStories stories={stories} onSelectStory={setSelectedStory} />
+      <aside className="space-y-6">
+        <TopStories stories={sortedStories} onSelectStory={setSelectedStory} />
         <Features feature={feature} />
       </aside>
+      
     </div>
   );
 };
