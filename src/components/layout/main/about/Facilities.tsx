@@ -14,8 +14,8 @@ import Image from "next/image";
 function Facility() {
     return (
       
-            <div className="border-2 mx-auto bg-[#EDEDED] mt-16 flex flex-row justify-between items-center p-4 max-w-7xl rounded-2xl">
-            <div className="flex flex-col gap-8 mx-6">
+            <div className="m-auto bg-[#EDEDED] mt-16 flex flex-row items-center justify-between px-8 max-w-7xl rounded-2xl">
+            <div className="flex flex-col gap-6">
                 {/* <span className="flex flex-col gap-2 items-start "> */}
 
                     <h1 className="text-5xl font-normal text-orange-600">Our Facilities</h1>
@@ -34,7 +34,7 @@ function Facility() {
 
 
             </div>
-            <div className="relative w-[537px] h-[418px] ">
+            <div className="relative w-[537px] h-[418px] p-4">
                
                     <Image
                         src="/images/about/facilities1.png"

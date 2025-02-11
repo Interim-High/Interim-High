@@ -13,26 +13,26 @@ const policies: string[] = [
 
 function PolicySection() {
   return (
-    <div className="  bg-[#EDEDED]  my-16 max-w-7xl mx-auto flex flex-row p-4 rounded-2xl justify-between items-center">
-      <div className="relative  w-[537px] h-[418px] ">
+    <div className="bg-[#EDEDED] my-16 max-w-7xl mx-auto flex flex-row p-4 rounded-2xl justify-between items-center">
+      <div className="relative w-[600px] h-[418px]">
         <Image
           src="/images/about/Facilities1.jpeg"
           alt="Hero"
-          className="absolute left-2 rounded-lg "
-          width={450}
-          height={300}
+          className="absolute left-1 rounded-lg "
+          width={500}
+          height={320}
         />
 
         <Image
           src="/images/about/facilities2.jpg"
           alt="Hero"
           className="absolute bottom-0 right-0 rounded-lg"
-          width={355}
-          height={237}
+          width={340}
+          height={230}
         />
       </div>
-      <div className="flex flex-col h-fit justify-normal items-start space-y-4 mt-2 p-5 gap-2 w-96  bg-[#EDEDED] rounded-3xl">
-        <span className="flex flex-col gap-4 items-start ">
+      <div className="flex flex-col h-fit justify-normal items-start space-y-4 mt-2 p-5 gap-2 max-w-7xl bg-[#EDEDED] rounded-3xl">
+        <span className="flex flex-col gap-4 items-start">
           <h1 className="text-5xl font-normal text-orange-600">Our Policies</h1>
           <p className="text-[16px]">Know about our policies </p>
         </span>
