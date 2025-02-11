@@ -25,7 +25,7 @@ function ColorlibStepIcon(props: StepIconProps) {
     { label: "Application Form", icon: <DescriptionIcon /> },
     { label: "Required Documents", icon: <AttachFileIcon /> },
     { label: "Document Review", icon: <RateReviewIcon /> },
-    { label: "Admission Fee", icon: <PaymentIcon /> },
+    // { label: "Admission Fee", icon: <PaymentIcon /> },
     { label: "Admission Confirmation", icon: <CheckCircleIcon /> },
   ];
  
@@ -50,9 +50,9 @@ const steps: StepData[] = [
   { label: "Document Review", icon: <RateReviewIcon /> ,list: [
     "The institution will review the submitted documents for eligibility",
   ]},
-  { label: "Admission Fee", icon: <PaymentIcon /> ,list: [
-    "If approved, pay the required admission or enrollment fee by visiting institution account section",
-  ]},
+  // { label: "Admission Fee", icon: <PaymentIcon /> ,list: [
+  //   "If approved, pay the required admission or enrollment fee by visiting institution account section",
+  // ]},
   { label: "Admission Confirmation", icon: <CheckCircleIcon /> ,list: [
     "Once payment is verified, the institution issues an admission letter, confirming enrollment through email,text or phone",
   ]},

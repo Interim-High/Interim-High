@@ -1,15 +1,13 @@
 import { CheckCircle } from "lucide-react"; // Importing the CheckCircle icon
 import Image from "next/image";
 
-    const facility :string[]=[
-        "Academic Facilities",
-        "Parking Facilities",
-        "Recreational Facilities",
-        "Career Counselling",
-        "ExtraCurricular Services"
-    ]
-
-
+const facility: string[] = [
+  "Academic Facilities",
+  "Parking Facilities",
+  "Recreational Facilities",
+  "Career Counselling",
+  "ExtraCurricular Services",
+];
 
 function Facility() {
     return (

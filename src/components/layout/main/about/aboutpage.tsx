@@ -4,6 +4,7 @@ import Header from "../../header/Header";
 import Achievement from "./Achievement";
 import AboutAdventure from "./adventure";
 import Facility from "./Facilities";
+import Governance from "./governance";
 //import Governance from "./governance";
 import AboutHero from "./hero";
 import PolicySection from "./policy";
@@ -18,8 +19,8 @@ function AboutPage() {
             <AboutAdventure/>
             <StorySection/>
             <Achievement/>
+            <Governance/>
             <Facility/>
-            {/* <Governance/> */}
             <PolicySection/>
             <Footer />
         </div>
