@@ -65,20 +65,20 @@ export default function QuickLink() {
           <div className="flex items-center gap-6">
             <Phone className="text-gray-300" />
             <p className="max-w-md text-white text-wrap">
-              <a href="tel:+9779865326884" className="text-gray-300 hover:underline">
+              <Link href="tel:+9779865326884" className="text-gray-300 hover:underline">
                 +977 9707861393
-              </a> <br></br>
-              <a href="tel:+9779865326884" className="text-gray-300 hover:underline">
+              </Link> <br></br>
+              <Link href="tel:+9779865326884" className="text-gray-300 hover:underline">
                 +977 9707861394
-              </a>
+              </Link>
             </p>
           </div>
           <div className="flex items-center gap-6">
           <Mail className="text-gray-300" />
           <p className="max-w-md text-white text-wrap">
-              <a href="mailto:info@DanpheLink.com" className="text-gray-300 hover:underline">
+              <Link href="mailto:info@DanpheLink.com" className="text-gray-300 hover:underline">
                 info@DanpheLink.com
-              </a>
+              </Link>
               <br />
               <a href="mailto:support@DanpheLink.com" className="text-gray-300 hover:underline">
                 support@DanpheLink.com
