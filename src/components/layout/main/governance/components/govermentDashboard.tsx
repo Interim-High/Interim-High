@@ -129,16 +129,16 @@ function Governancesection() {
 
 
   return (
-    <div className="flex flex-row gap-4 justify-center p-6">
+    <div className="flex flex-col lg:flex-row gap-4 justify-center p-2 lg:p-6">
       <div className="h-fit bg-white py-4">
         <SideNav onSelect={setSelectedPage} />
       </div>
-      <div className="h-fit w-full p-10">
+      <div className="h-fit w-full p-4 lg:p-10">
         <h1 className="text-4xl text-orange-500 font-bold">{selectedPage}</h1>
         <div className="mt-4 w-fit rounded-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 gap-y-10">
           {selectedPage === "Director" && (
             <>
-              <h2 className="col-span-full text-xl font-base">
+              <h2 className="col-span-full text-justify inltext-base lg:text-xl font-base">
                 Our Board Members are highly trained and professionally experienced individuals who oversee the overall functioning of the institution. Their collective commitment to qualitative higher education, academic excellence, and student achievement helps guide every student in realizing their full educational potential.
               </h2>
               {governance.Director.map((person, index) => (

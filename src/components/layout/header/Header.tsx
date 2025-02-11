@@ -25,7 +25,7 @@ function Header() {
             (item) => (
               <Link
                 key={item}
-                href={`/${item
+                 href={`/${item
                   .toLowerCase()
                   .replace(/ & /, "")
                   .replace(/ /g, "-")}`}

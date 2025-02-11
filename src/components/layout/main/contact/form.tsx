@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import Input from "../../../shared/input";
+import Input from "../../../shared/inputfield";
 import TextArea from "../../../shared/textarea";
 
 function Form() {

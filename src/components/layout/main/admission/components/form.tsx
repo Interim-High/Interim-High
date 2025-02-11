@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Input from "../../../../shared/input";
 import Select from "@/components/shared/selectoption";
 import TextArea from "../../../../shared/textarea";
+import Input from "@/components/shared/inputfield";
 
 const options = [
     { label: "Software Development", value: "software-development" },
@@ -56,7 +56,7 @@ export default function FormComponent() {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center w-[717px] mx-auto p-4 gap-2 bg-[#EDEDED] rounded-lg shadow-md">
+        <div className="flex flex-col justify-center items-center md:w-[717px] mx-auto p-4 gap-2 bg-[#EDEDED] rounded-lg shadow-md">
             <h2 className="font-semibold mb-4 text-[#BD1313] text-4xl">Admission Form</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
                 {/* {Inputfields.map((input, index) => (
