@@ -4,6 +4,8 @@ import SideNav from "./sidenav";
 import { Governance } from "@/types/admission.type";
 import Card from "../../about/card";
 import { Button, Modal } from "flowbite-react"
+import { XIcon } from "lucide-react";
+
 const governance: Governance = {
   Director: [
     {

@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function Offices() {
   return (
@@ -24,24 +25,24 @@ export default function Offices() {
           <div className="flex items-center gap-6">
             <Phone className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-6 lg:h-6 text-gray-700" />
             <p>
-              <a href="tel:+9779865326884" className="text-black hover:underline">
+              <Link href="tel:+9779865326884" className="text-black hover:underline">
                 +977 9707861393
-              </a> <br></br>
-              <a href="tel:+9779865326884" className="text-black hover:underline">
+              </Link> <br></br>
+              <Link href="tel:+9779865326884" className="text-black hover:underline">
                 +977 9707861394
-              </a>
+              </Link>
             </p>
           </div>
           <div className="flex items-center gap-6">
           <Mail className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-6 lg:h-6 text-gray-700" />
           <p>
-              <a href="mailto:info@DanpheLink.com" className="text-black hover:underline">
+              <Link href="mailto:info@DanpheLink.com" className="text-black hover:underline">
                 info@DanpheLink.com
-              </a>
+              </Link>
               <br />
-              <a href="mailto:support@DanpheLink.com" className="text-black hover:underline">
+              <Link href="mailto:support@DanpheLink.com" className="text-black hover:underline">
                 support@DanpheLink.com
-              </a>
+              </Link>
             </p>
           </div>
         </div> 
@@ -58,17 +59,17 @@ export default function Offices() {
           <div className="flex items-center gap-6">
             <Phone className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-6 lg:h-6 text-gray-700" />
             <p>
-              <a href="tel:+971508765432" className="text-black hover:underline">
+              <Link href="tel:+971508765432" className="text-black hover:underline">
                 +971 026228107
-              </a>
+              </Link>
             </p>
           </div>
           <div className="flex items-center gap-6">
             <Mail className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-6 lg:h-6 text-gray-700" />
             <p>
-              <a href="mailto:training@arrownet.com" className="text-black hover:underline">
+              <Link href="mailto:training@arrownet.com" className="text-black hover:underline">
                 training@arrownet.com
-              </a>
+              </Link>
             </p>
           </div>
         </div> */}
