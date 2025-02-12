@@ -39,6 +39,13 @@ export default function FormComponent() {
             interestedcourse: e.target.value
         }));
     };
+    // const handleSelectChange = (value: string) => {
+    //     setFormData((prev) => ({
+    //         ...prev,
+    //         interestedcourse: value
+    //     }));
+    // };
+    
 
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
