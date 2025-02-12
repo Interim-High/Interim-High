@@ -8,7 +8,7 @@ import Image from "next/image";
 function Header() {
   const pathname = usePathname();
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-2xl bg-white/50 shadow-lg">
+    <header className="sticky top-0 z-40 backdrop-blur-2xl bg-white/50 shadow-lg">
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center">
           <Image
@@ -41,7 +41,7 @@ function Header() {
             return (
               <Link
                 key={item}
-                 href={`/${item
+                href={`/${item
                   .toLowerCase()
                   .replace(/ & /, "")
                   .replace(/ /g, "-")}`}

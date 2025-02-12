@@ -18,7 +18,7 @@ export default function FormComponent() {
         interestedcourse: options[0].value,
         queries: "",
     });
-    const [error , setError] = useState<string> ();
+    const [error, setError] = useState<string>();
     const [success, setSuccess] = useState<string>();
 
 
@@ -63,7 +63,7 @@ export default function FormComponent() {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center md:w-[717px] mx-auto p-4 gap-2  rounded-lg shadow-md">
+        <div className="flex flex-col justify-center items-center md:w-[717px] mx-auto p-4 gap-2  rounded-lg ">
             <h2 className="font-semibold mb-4 text-[#BD1313] text-4xl">Admission Form</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
                 {/* {Inputfields.map((input, index) => (
@@ -82,7 +82,7 @@ export default function FormComponent() {
                 <div className="flex flex-col gap-2">
                     <label className="font-medium">Full Name </label>
                     <Input
-                    className="border w-full h-10 rounded-lg"
+                        className="h-30 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
                         type="text"
                         name="fullname"
                         value={formData.fullname}
@@ -93,7 +93,7 @@ export default function FormComponent() {
                 <div className="flex flex-col gap-2">
                     <label className="font-medium">Email</label>
                     <Input
-                      className="border w-full h-10 rounded-lg"
+                        className="h-30 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
                         type="text"
                         name="email"
                         value={formData.email}
@@ -104,9 +104,9 @@ export default function FormComponent() {
 
                 <div className="grid grid-cols-2 gap-4">
                     <div className="flex flex-col gap-2">
-                    <label className="font-medium">Phone Number</label>
+                        <label className="font-medium">Phone Number</label>
                         <Input
-                           className="border w-full h-10 rounded-lg"
+                            className="h-30 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
                             type="text"
                             name="phonenumber"
                             value={formData.phonenumber}
@@ -115,9 +115,9 @@ export default function FormComponent() {
                         />
                     </div>
                     <div className="flex flex-col gap-2">
-                    <label className="font-medium">Address</label>
+                        <label className="font-medium">Address</label>
                         <Input
-                          className="border w-full h-10 rounded-lg"
+                            className="h-30 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
                             type="text"
                             name="address"
                             value={formData.address}
@@ -126,12 +126,11 @@ export default function FormComponent() {
                         />
                     </div>
                 </div>
-
-
                 <div className="flex flex-col gap-2">
                     <label className="font-medium">Interested Course</label>
                     <Select
                         value={formData.interestedcourse}
+                        className="h-30 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
                         onChange={handleSelectChange}
                         options={options}
                     />
@@ -139,11 +138,11 @@ export default function FormComponent() {
                 <div className="flex flex-col gap-2 ">
                     <label className="font-medium"> Queries</label>
                     <TextArea
-                    
+
                         name={"queries"}
                         value={formData.queries}
                         onChange={handleInputChange}
-                        rows={2}
+                        rows={4}
                         cols={2}
                         className={"border-2 rounded-xl"}
                         isRequired

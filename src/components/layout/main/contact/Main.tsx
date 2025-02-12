@@ -5,15 +5,17 @@ import Parking from "./parking";
 
 export default function MainContact() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
-      <div className="flex flex-col md:flex-row gap-4 md:gap-4">
-        <Offices/>
+    <div className="mx-auto w-full px-4 py-6">
+      <div className="flex flex-col md:flex-row justify-center md:p-10 gap-4 md:gap-20">
         <Form/>
-      </div>
-      <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-10 md:mt-20">
-        <Parking/>
+        <div className="flex flex-col gap-2 ">
         <Map/>
+        <Offices/>
+
+        </div>
       </div>
+        <Parking />
+      
     </div>
   );
 }
