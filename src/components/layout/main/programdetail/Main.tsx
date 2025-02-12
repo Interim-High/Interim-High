@@ -1,8 +1,7 @@
-import { ProgramDetails } from "@/types/programDetails.type";
 import Image from "next/image";
 import React from "react";
 
-function Main({ title, image}) {
+function Main({ title, image }) {
   return (
     <main className="w-full relative">
       <HeroSection
@@ -30,7 +29,7 @@ const HeroSection = ({ title, subtitle, imageSrc }) => (
 
     <div className="relative flex flex-col items-center justify-center text-center min-h-[60vh]">
       <h1 className="text-white text-8xl font-bold">{title}</h1>
-      <p className="text-red-600 text-4xl mt-4">{subtitle}</p>
+      {/* <p className="text-red-600 text-4xl mt-4">{subtitle}</p> */}
     </div>
   </div>
 );
