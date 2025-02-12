@@ -27,17 +27,20 @@ function Form() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center xl:w-1/3">
-        <div className="bg-gray-300 p-8 shadow-lg rounded-lg w-full border-black">
+    <main className="flex flex-col  justify-center items-center xl:w-[40%]">
+        <div className=" p-8  rounded-lg w-full space-y-6 border-black">
+          <div className="space-y-3">
           <h1 className="text-4xl text-orange-600 font-semibold text-center">
             Get in Touch
           </h1>
-          <p className="text-gray-900 text-center mb-4">
+          <p className="text-gray-900 text-center text-xl mb-4">
             Start the Conversation, We’re Here for You!
           </p>
-          <form className="space-y-4" onSubmit={handleSubmit}>
+          </div>
+          <form className="space-y-10" onSubmit={handleSubmit}>
             <Input
-              type="text"
+              type="text" 
+              className="h-30 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
               name="name"
               placeholder="Name *"
               value={formdata.name}
@@ -47,6 +50,7 @@ function Form() {
             <Input
               type="email"
               name="email"
+              className="h-30 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl"
               placeholder="Email *"
               value={formdata.email}
               onChange={handleInputChange}
@@ -55,6 +59,7 @@ function Form() {
             <Input
               type="tel"
               name="phone"
+              className="h-30 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl"
               placeholder="Phone Number *"
               value={formdata.phone}
               onChange={handleInputChange}
@@ -63,11 +68,12 @@ function Form() {
             <TextArea
               placeholder="Message *"
               name="message"
+              className="rounded-md"
               value={formdata.message}
               onChange={handleInputChange}
               isRequired
             />
-            <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white w-full h-9">
+            <button type="submit" className="bg-orange-500 hover:bg-orange-600 rounded-md text-white w-full h-14">
               Send
             </button>
           </form>

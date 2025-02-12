@@ -12,7 +12,7 @@ type TextAreaProps =  {
 const TextArea: React.FC<TextAreaProps> = ({placeholder,name,value,onChange,rows= 6 ,className, isRequired = true}) =>{
     return (
         <div>
-            <textarea className={`w-full p-3 rounded-sm ${className}`}
+            <textarea className={`w-full p-3 rounded-sm focus:outline-2 focus:outline-orange-600 ${className}`}
                 placeholder={placeholder}
                 name={name}
                 value = {value}
