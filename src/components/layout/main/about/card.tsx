@@ -1,4 +1,4 @@
-import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';import { XIcon } from 'lucide-react';
+import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined'; import { XIcon } from 'lucide-react';
 ;
 import Image from "next/image";
 import Link from "next/link";
@@ -15,11 +15,11 @@ type CardProps = {
     skill?: string[],
     email?: string,
     designation?: string,
-    onClick?:(e: React.MouseEvent<HTMLButtonElement>) => void
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
 
 }
 
-const Card = ({ title, personName, images, className, email, description, designation, skill, layout = "achievement" ,onClick}: CardProps) => {
+const Card = ({ title, personName, images, className, email, description, designation, skill, layout = "achievement", onClick }: CardProps) => {
     return (
         <div>
             {
@@ -101,13 +101,13 @@ const Card = ({ title, personName, images, className, email, description, design
 
 
                         <div className="flex flex-col w-[700px] gap-4 p-2">
-                        <button onClick={onClick} className="ml-auto">
-    <XIcon />
-</button>
+                            <button onClick={onClick} className="ml-auto">
+                                <XIcon />
+                            </button>
 
                             <div className="flex flex-col gap-1">
                                 <h1 className="text-4xl font-bold "> {personName}</h1>
-                               
+
                                 <p className="text-xl font-light text-[#1D1D1D]">{designation}</p>
                             </div>
 

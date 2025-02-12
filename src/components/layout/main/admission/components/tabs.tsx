@@ -45,7 +45,7 @@ const RequirementsTab: React.FC = () => {
     };
 
     return (
-        <div className="flex flex-col-reverse lg:flex-row mt-16 p-2 border border-red-600 xl:p-4 justify-evenly lg:items-center gap-10">
+        <div className="flex flex-col-reverse lg:flex-row mt-16 p-2 xl:p-4 justify-evenly lg:items-center gap-10">
 
             <div className=" border-2 bg-[#EDEDED] w-full lg:w-1/2 rounded-2xl shadow-slate-500">
                 <Box sx={{ width: "100%", typography: "body1" }}>
@@ -78,7 +78,7 @@ const RequirementsTab: React.FC = () => {
                     </TabContext>
                 </Box>
             </div>
-            <div className="relative border  max-md:w-full lg:w-[537px] h-fit md:h-[200px] lg:h-[418px] ">
+            <div className="relative max-md:w-full lg:w-[537px] h-fit md:h-[200px] lg:h-[418px] ">
                 <div className="static md:absolute overflow-hidden right-0 md:right-2 w-full  top-0 lg:w-[450px] rounded-[5px] h-[250px] md:h-[300px]">
                     <Image
                         src="/images/admission/requirement/requiremnt1.png"

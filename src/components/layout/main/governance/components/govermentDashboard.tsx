@@ -165,7 +165,7 @@ function Governancesection() {
       {selectedPerson && (
 
         <Modal dismissible show={!!selectedPerson} onClose={() => setSelectedPerson(null)} popup className=" w-fit h-fit m-auto">
-        <Modal.Body className="max-w-[90vw] space-y-7 w-fit lg:max-w-[60vw] max-h-[80vh] overflow-y-auto p-2 rounded-xl shadow-lg">
+        <Modal.Body className="">
         <Card
               className="flex flex-col lg:flex-row rounded-xl overflow-hidden lg:gap-10 bg-slate-100"
               onClick={()=>setSelectedPerson(null)}
