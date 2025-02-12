@@ -81,7 +81,7 @@ function Achievement() {
     // </div>
     <div className="flex flex-col w-full max-w-7xl p-6 mt-16 mx-auto space-y-6">
       <div className="flex flex-col text-center space-y-2">
-        <h1 className="text-4xl md:text-6xl font-bold text-orange-600">
+        <h1 className="text-4xl md:text-4xl font-semibold text-orange-600">
           Danphelink Achievement
         </h1>
         <p className="text-lg md:text-xl text-gray-600">

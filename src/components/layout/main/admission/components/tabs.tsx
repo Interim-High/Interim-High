@@ -7,35 +7,7 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Image from "next/image";
 import { StudentRequirements } from "@/types/admission.type";
-
-
-
-
-const Requirements: StudentRequirements[] = [
-    {
-        Studenttype: "National Students",
-        details: {
-            list: [
-                "Applicants should have a fundamental understanding of computers. While a background in programming is preferred, it is not required.",
-                "Applicants must ensure that all personal details are accurate.Any incomplete or incorrect information may result in disqualification.",
-                "Admission depends on the availability of seats in the program.If applications exceed the available capacity, admission will be granted on a first - come, first - served basis.",
-                "Admission will be confirmed only after the required admission fee is paid within the designated deadline."
-            ],
-        },
-    },
-    {
-        Studenttype: "International Students",
-        details: {
-            list: [
-                "Applicants should have a fundamental understanding of computers. While a background in programming is preferred, it is not required.",
-                "Applicants must ensure that all personal details are accurate.Any incomplete or incorrect information may result in disqualification.",
-                "Admission is dependent on seat availability in the chosen program, and in case of excess applications, preference will be given based on first come ,first served basis.",
-                "Students must maintain a clean disciplinary record, and any history of misconduct, fraudulent activities may result in rejection.",
-                "Admission will only be confirmed after the required tuition fees and other necessary charges are paid within the stipulated deadline."
-            ],
-        },
-    },
-];
+import { Requirements } from "./Requirements";
 
 const RequirementsTab: React.FC = () => {
     const [value, setValue] = React.useState("0"); // Set default to first tab index
