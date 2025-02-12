@@ -63,7 +63,7 @@ export default function FormComponent() {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center md:w-[717px] mx-auto p-4 gap-2 bg-[#EDEDED] rounded-lg shadow-md">
+        <div className="flex flex-col justify-center items-center md:w-[717px] mx-auto p-4 gap-2  rounded-lg shadow-md">
             <h2 className="font-semibold mb-4 text-[#BD1313] text-4xl">Admission Form</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
                 {/* {Inputfields.map((input, index) => (
@@ -151,7 +151,7 @@ export default function FormComponent() {
                 </div>
                 <button
                     type="submit"
-                    className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+                    className="w-full bg-orange-600 text-white py-2 rounded-md hover:bg-orange-700 transition"
                 >
                     Submit
                 </button>
