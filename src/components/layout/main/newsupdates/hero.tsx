@@ -4,11 +4,12 @@ function HeroSection() {
   return (
     <main className="relative w-full h-[60vh]">
       <div className="absolute inset-0">
-        <Image
+      <Image
           src="/images/newsandupdates/Hero.png"
           alt="Hero"
-          layout="fill"
-          className="object-center object-cover"
+          fill
+          className="object-cover object-center" 
+          priority
         />
       </div>
 

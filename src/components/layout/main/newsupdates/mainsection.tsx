@@ -76,7 +76,7 @@ const MainSection: React.FC = () => {
   const [selectedStory, setSelectedStory] = useState<Story>(sortedStories[0]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 mt-12 md:px-24">
+    <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl m-auto gap-6 py-16">
       <div className="col-span-2">
         <Article story={selectedStory} />
       </div>

@@ -3,11 +3,11 @@ import Image from "next/image";
 function ContactHero() {
     return (
         <div className="relative w-full h-[60vh]">
-            <div>
+            <div className="absolute inset-0">
                 <Image
                     src="/images/contact/contact.png"
                     alt="hero"
-                    layout="fill"
+                    fill
                     className="object-cover object-center"
                 />
             </div>
