@@ -79,6 +79,7 @@ export default function QuickLink() {
     // <Head/>
     // <div className="flex xl:flex-row md:flex-row xl:gap-96 flex-col gap-20 justify-center p-4">
     //   <div className="space-y-4">
+    //   <div className="space-y-4">
     //     <h1 className="text-white font-semibold">Quick Links</h1>
     //     <ul className="flex flex-col space-y-2">
     //       {QuickLinks.map((quicklink) => (
@@ -100,6 +101,7 @@ export default function QuickLink() {
     //     <ul className="flex flex-col space-y-2">
     //         {
     //             GetToknow.map((know) =>(
+    //                 <Link
     //                 <Link
     //                 key={know}
     //                 href={`${know

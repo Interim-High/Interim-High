@@ -8,7 +8,7 @@ function AboutHero() {
                     src="/images/about/abouthero.jpg"
                     alt="Hero"
                     fill
-                    className="object-fit object-center"
+                    className="object-cover object-center"
                 />
             </div>
 
