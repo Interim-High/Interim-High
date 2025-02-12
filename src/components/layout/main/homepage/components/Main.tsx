@@ -12,6 +12,7 @@ const programs = [
   { id: "undergraduate", label: "Undergraduate" },
   { id: "postgraduate", label: "Postgraduate" },
 ];
+
 function Main() {
   const [selectedProgram, setSelectedProgram] = useState("undergraduate");
   const [selectedCategory, setSelectedCategory] = useState("recent-news");
@@ -268,21 +269,7 @@ function Main() {
           News <span className="text-orange-600">&</span> Updates
         </h1>
 
-        {/* <div className="flex justify-center space-x-6 my-6  pb-2">
-          {categories.map(({ id, label }) => (
-            <button
-              key={id}
-              onClick={() => setSelectedCategory(id)}
-              className={`px-4 py-2 text-lg font-medium transition-all duration-300 ${
-                selectedCategory === id
-                  ? "border-b-4 border-black text-black font-semibold"
-                  : "text-gray-600 hover:text-black"
-              }`}
-            >
-              {label}
-            </button>
-          ))}
-        </div> */}
+       
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6  ">
           <div className="w-full flex justify-center">
@@ -367,7 +354,19 @@ function Main() {
 
 export default Main;
 
-const CarouselCards = ({ items }) => {
+type CarouselCardsProps = {
+  items: Array<{
+    id: Number,
+    imageSrc: string,
+    title: string,
+    description:
+    string,
+    category: string,
+    slug: string,
+  }>;
+};
+
+const CarouselCards = ({ items }:CarouselCardsProps) => {
   return (
     <div className="w-full max-w-6xl mx-auto relative mt-5 pt-5">
       <Swiper
