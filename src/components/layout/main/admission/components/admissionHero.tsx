@@ -7,9 +7,8 @@ function AdmissionHero() {
                 <Image
                     src="/images/admission/hero/admissionhero.png"
                     alt="admission hero"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
+                    fill
+                   style={{objectFit:"cover"}}
                 />
             </div>
 

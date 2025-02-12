@@ -1,12 +1,17 @@
 import Image from "next/image";
+import { useParams } from "next/navigation";
 import React from "react";
+import { underCards } from "../program/CardSection";
 
 function Information() {
+  const { slug } = useParams();
+    const program = underCards.find((p) => p.slug === slug);
   return (
     <div className="flex flex-col lg:flex-row  lg:mx-28  relative  mx-4 lg:items-start my-5">
       <div className="w-full lg:max-w-[45%] aspect-[4/3]">
         <Image
-          src="/images/program/prd1.png"
+          // src="/images/program/prd1.png"
+          src= {program.imageSrc}
           alt="Bachelor of Engineering"
           layout="responsive"
           width={719}
@@ -15,20 +20,22 @@ function Information() {
         />
       </div>
 
-      <div className=" absolute lg:relative w-full lg:max-w-[50%] bg-[#D8D1D1] p-6 lg:p-8 rounded-2xl right-20 mt-6 lg:mt-0 flex flex-col gap-6 shadow-lg h-fit">
+      <div className=" absolute lg:relative w-full lg:max-w-[50%] bg-[#D8D1D1] p-6 lg:p-8 rounded-2xl right-20 mt-6 lg:my-auto flex flex-col gap-6 shadow-lg h-fit">
         <h2 className="text-2xl lg:text-3xl font-semibold text-black">
-          Bachelor of Engineering (B.E.)
+          {/* Bachelor of Engineering (B.E.) */}
+          {program.title}
         </h2>
 
         <p className="text-sm lg:text-base text-black leading-relaxed text-justify">
-          The Bachelor of Engineering (B.E. or B.Eng.) is a prestigious
+          {/* The Bachelor of Engineering (B.E. or B.Eng.) is a prestigious
           undergraduate degree designed to equip students with the technical
           knowledge and practical skills necessary for engineering professions.
           This degree is globally recognized and serves as a foundation for
           careers in engineering, research, technology development, and project
           management. The program focuses on the application of scientific
           principles to design, innovate, and improve structures, systems, and
-          processes that address complex, real-world challenges.
+          processes that address complex, real-world challenges. */}
+          {program. description}
         </p>
 
         <button className="bg-[#EFEDED] text-black px-6 py-3 text-lg font-medium rounded-md self-start hover:bg-gray-300 transition-all">

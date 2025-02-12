@@ -1,7 +1,8 @@
+import { ProgramDetails } from "@/types/programDetails.type";
 import Image from "next/image";
 import React from "react";
 
-function Main({ title, image }) {
+function Main({ title, image}) {
   return (
     <main className="w-full relative">
       <HeroSection

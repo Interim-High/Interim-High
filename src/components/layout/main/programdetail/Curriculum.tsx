@@ -126,7 +126,7 @@ function Curriculum() {
       <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
         Curriculum Structure
       </h1>
-      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      {/* <div className="grid gap-6">
         {curriculumData.map((semester) => (
           <AccordionItem
             key={semester.id}
