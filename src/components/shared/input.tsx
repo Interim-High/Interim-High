@@ -41,7 +41,7 @@ const Input: React.FC<InputProp> = ({ type = "text", value, name, label, placeho
                 onChange={validateInput}
                 required={isRequired}
             />
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-red-600 text-base">{error}</p>}
         </div>
     );
 };
