@@ -1,33 +1,35 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { Details } from "./content";
+import { Search } from "./search";
 
-export const postCards = Array(7).fill({
-  id: 1,
-  imageSrc: "/images/program/en1.png",
-  title: "Post Card",
-  description:
-    "An undergraduate degree that prepares students to solve engineering problems using scientific principles, mathematics, and new technologies.",
-  category: "Category",
-});
-
-export const underCards = Array(7).fill({
-  id: 1,
-  imageSrc: "/images/program/en1.png",
-  title: "Under Card",
-  description:
-    "An undergraduate degree that prepares students to solve engineering problems using scientific principles, mathematics, and new technologies.",
-  category: "Category",
-  slug: "Under-Card",
-});
 export default function CardSection() {
+  const [filteredCourses, setFilteredCourses] = useState(Details);
+
+  const handleCategoryChange = (selectedCategory) => {
+    if (selectedCategory === "all") {
+      setFilteredCourses(Details); // Show all courses
+    } else {
+      setFilteredCourses(
+        Details.filter(
+          (course) => course.category.toLowerCase().replace(/\s+/g, "-") === selectedCategory
+        )
+      );
+    }
+  };
+
   return (
-    <div className="px-28">
-      <CardGrid title={"Under Graduate"} data={underCards} />
-      <CardGrid title={"Post Graduate"} data={postCards} />
+    <div>
+      <Search onCategoryChange={handleCategoryChange} />
+      <div className="px-28">
+        <CardGrid title={"Available Courses"} data={filteredCourses} />
+      </div>
     </div>
   );
 }
+
 
 const Card = ({ imageSrc, title, description, category, slug }) => (
   <div className="relative bg-white pb-2 rounded-lg overflow-hidden shadow-lg">
@@ -40,10 +42,10 @@ const Card = ({ imageSrc, title, description, category, slug }) => (
     />
     <div className="p-4 ">
       <h2 className="text-xl font-semibold">{title}</h2>
-      <p className="text-gray-700 text-sm my-2">{description}</p>
+      <p className="text-gray-700 line-clamp-3 text-sm my-6">{description}</p>
       <Link
         href={`/programs/${slug}`}
-        className=" bg-[#FF6D04] text-white  px-4 py-2 rounded-md"
+        className=" bg-[#FF6D04] text-white px-4 py-2 rounded-md "
       >
         Read More
       </Link>
@@ -66,3 +68,4 @@ function CardGrid({ title, data }) {
     </div>
   );
 }
+

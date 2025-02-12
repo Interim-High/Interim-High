@@ -6,7 +6,7 @@ type InputProp =  {
     label?: string;
     placeholder?: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-    isRequired: boolean;
+    isRequired?: boolean;
    className ?: string;
 }
 

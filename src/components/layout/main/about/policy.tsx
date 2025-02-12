@@ -28,7 +28,7 @@ function PolicySection() {
         <Image
           src="/images/about/facilities2.jpg"
           alt="Hero"
-          className="absolute bottom-0 right-0 rounded-lg"
+          className="absolute bottom-0 -right-24 rounded-lg"
           width={340}
           height={230}
           style={{ height: "auto", width: "auto" }}
@@ -42,7 +42,7 @@ function PolicySection() {
         </span>
         {policies.map((policy, index) => (
           <ul className="flex flex-col list-none pl-0 " key={index}>
-            <li className="flex items-center space-y-2">
+            <li className="flex items-center space-y-2 space-x-4 ">
               <Image
                 src="/images/about/policy.png"
                 alt="policy"
@@ -54,7 +54,7 @@ function PolicySection() {
             </li>
           </ul>
         ))}
-        <span className="flex flex-row space-y-1 space-x-2 rounded-xl w-full justify-end items-end text-red-800 p-2">
+        <span className="flex flex-row space-y-1 space-x-8 rounded-xl w-full justify-end items-end text-red-800 p-2">
           <Link href={"/policy"}>Learn More</Link>
           <ChevronsRight className="text-red-800" size={20} />
         </span>

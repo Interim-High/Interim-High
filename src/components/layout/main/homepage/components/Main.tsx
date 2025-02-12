@@ -24,29 +24,29 @@ function Main() {
     {
       title: "Cultural Preservation in the Digital Age",
       date: "December 31, 2020",
-      category: "MANAGEMENT",
+      category: "Web Development",
     },
     {
       title: "The Impact of AI on Modern Economics",
       date: "January 15, 2021",
-      category: "ECONOMICS",
+      category: "Workshop",
     },
     {
       title: "Scientific Breakthroughs in Renewable Energy",
       date: "March 22, 2021",
-      category: "SCIENCE",
+      category: "Event",
     },
   ];
 
   const undergraduate = [
     {
-      title: "Computer Science",
+      title: "Web Development",
       description:
         "Learn the fundamentals of computer science and programming.",
       image: "/images/home/program/computer.png",
     },
     {
-      title: "Business Administration",
+      title: "Cyber Security",
       description:
         "Learn the fundamentals of business administration and management.",
       image: "/images/home/program/business.webp",
@@ -237,7 +237,7 @@ function Main() {
               key={index}
               className="flex flex-col items-center gap-5 p-8  rounded-2xl shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
             >
-              <div className="w-[100px] h-[100px] bg-[#905555] rounded-full flex justify-center items-center transition-all duration-300 group-hover:bg-[#5a5b57] shadow-md">
+              <div className="w-[100px] h-[100px] bg-[#905555] rounded-full flex justify-center items-center transition-all duration-300  group-hover:bg-[#5a5b57] shadow-md">
                 <div className="w-[75px] h-[75px] bg-gradient-to-tl from-[#510909] to-[#cecdcd] rounded-full flex justify-center items-center">
                   <Image
                     src={program.image}
@@ -263,10 +263,10 @@ function Main() {
 
       <div className="mx-5 md:mx-28 py-10 my-10 rounded-lg shadow-xl ">
         <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">
-          News <span className="text-orange-600">&</span> Announcement
+          News <span className="text-orange-600">&</span> Updates
         </h1>
 
-        <div className="flex justify-center space-x-6 my-6  pb-2">
+        {/* <div className="flex justify-center space-x-6 my-6  pb-2">
           {categories.map(({ id, label }) => (
             <button
               key={id}
@@ -280,7 +280,7 @@ function Main() {
               {label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6  ">
           <div className="w-full flex justify-center">

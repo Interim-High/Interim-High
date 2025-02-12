@@ -1,11 +1,7 @@
 import Image from "next/image";
+import { ApprovalCriterias } from "./Requirements";
 
-const ApprovalCriterias: string[] = [
-    "Applicants should have a basic understanding of computers. A foundation in programming is preferred but not required",
-    "Applicants must provide accurate personal details. Any incomplete or incorrect information may result in disqualification",
-    "Admission is subject to the availability of seats in the program. If the number of applications exceeds the available capacity, admission will be granted on a first-come, first-served basis",
-    "Admission is only confirmed once the required admission fee is paid within the specified deadline."
-];
+
 
 function ApproveSection() {
     return (
