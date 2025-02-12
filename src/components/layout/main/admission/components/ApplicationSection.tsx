@@ -136,12 +136,12 @@ export default function HorizontalNonLinearStepper() {
                 color="inherit"
                 disabled={activeStep === 0}
                 onClick={handleBack}
-                sx={{ mr: 1 }}
+                sx={{ mr: 1, fontSize:18}}
               >
                 Back
               </Button>
               <Box sx={{ flex: "1 1 auto" }} />
-              <Button onClick={handleNext} sx={{ mr: 1 }}>
+              <Button onClick={handleNext} sx={{ mr: 1, fontSize:18 }}>
                 {isLastStep()}
                 Next
               </Button>

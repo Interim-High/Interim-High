@@ -36,7 +36,7 @@ function Achievement() {
                     <p className="text-2xl">Explore our academic achievements with us</p>
                 </div>
 
-                <div className="flex flex-wrap w-full rounded-3xl items-start justify-between">
+                <div className="flex flex-wrap w-full rounded-3xl gap-5 items-start justify-between">
                     {Achievementcards.map((achievement, index) => (
                         <Card
                             key={index}

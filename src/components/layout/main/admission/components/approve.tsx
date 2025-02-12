@@ -11,7 +11,7 @@ function ApproveSection() {
     return (
         <div className="p-2">
             <div className=" flex lg:flex-row flex-col p-3 md:mx-auto gap-10 md:gap-20 justify-center items-center rounded-br-3xl rounded-tl-3xl w-md md:w-full drop-shadow-xl">
-                <div className="flex flex-col gap-3 border border-red-600 w-full lg:w-1/2 p-2">
+                <div className="flex flex-col gap-3 w-full lg:w-1/2 p-2">
                     <h1 className="text-2xl md:text-4xl text-red-700">Approval Criteria</h1>
                     <ul className="mt-2 list-disc pl-5">
                         {ApprovalCriterias.map((Criteria, index) => (
