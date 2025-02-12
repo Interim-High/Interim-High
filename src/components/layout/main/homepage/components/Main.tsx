@@ -314,7 +314,7 @@ function Main() {
 
       <div className="mx-5 md:mx-28 py-12 my-20 text-center  rounded-3xl ">
         <h1 className="text-5xl font-extrabold text-gray-900 mb-12 tracking-wide">
-          Meet Our <span className="text-orange-600">Trusted</span> Leaders
+          Meet Our <span className="text-orange-600">Trusted</span> Partners
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
