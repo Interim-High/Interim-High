@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
+import { Details } from "../../program/content";
 const programs = [
   { id: "undergraduate", label: "Undergraduate" },
   { id: "postgraduate", label: "Postgraduate" },
@@ -186,7 +187,7 @@ function Main() {
           and engaging environments beyond traditional classrooms.
         </p>
 
-        <div className="flex justify-center space-x-6 my-6 border-b border-gray-300 pb-2">
+        {/* <div className="flex justify-center space-x-6 my-6 border-b border-gray-300 pb-2">
           {programs.map(({ id, label }) => (
             <button
               key={id}
@@ -200,12 +201,13 @@ function Main() {
               {label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div>
           <CarouselCards
             items={
-              selectedProgram === "undergraduate" ? undergraduate : postgraduate
+              // selectedProgram === "undergraduate" ? undergraduate : postgraduate
+              Details
             }
           />
         </div>
@@ -367,7 +369,7 @@ export default Main;
 
 const CarouselCards = ({ items }) => {
   return (
-    <div className="w-full max-w-6xl mx-auto relative">
+    <div className="w-full max-w-6xl mx-auto relative mt-5 pt-5">
       <Swiper
         modules={[Pagination, Navigation]}
         spaceBetween={20}
@@ -418,7 +420,7 @@ const HoverCard = ({ item }) => {
         }`}
       >
         <Image
-          src={item.image}
+          src={item.imageSrc}
           alt={item.title}
           width={500}
           height={288}
@@ -433,7 +435,10 @@ const HoverCard = ({ item }) => {
         <div className="p-4 rounded-t-lg shadow-xl">
           <h3 className="text-lg font-bold text-[#F1822C]">{item.title}</h3>
           <p className="text-sm text-white">{item.description}</p>
-          <Link href="/apply" className="block mt-5 text-[#F1822C]">
+          <Link
+            href={`/programs/${item.slug}`}
+            className="block mt-5 text-[#F1822C]"
+          >
             Read More
           </Link>
         </div>

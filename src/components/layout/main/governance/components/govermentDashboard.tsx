@@ -1,12 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import SideNav from "./sidenav";
 import { Governance } from "@/types/admission.type";
 import Card from "../../about/card";
 import { XIcon } from "lucide-react";
 import { governance } from "./Details";
-
+import Image from "next/image";
+import Link from "next/link";
 
 function Governancesection() {
   const [selectedPage, setSelectedPage] = useState<string>("Director");
