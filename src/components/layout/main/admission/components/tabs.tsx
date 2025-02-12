@@ -45,9 +45,9 @@ const RequirementsTab: React.FC = () => {
     };
 
     return (
-        <div className="flex flex-row mt-16 p-4 justify-center items-center gap-10">
+        <div className="flex flex-col-reverse lg:flex-row mt-16 p-2 border border-red-600 xl:p-4 justify-evenly lg:items-center gap-10">
 
-            <div className=" border-2 bg-[#EDEDED] w-1/2 rounded-2xl shadow-slate-500">
+            <div className=" border-2 bg-[#EDEDED] w-full lg:w-1/2 rounded-2xl shadow-slate-500">
                 <Box sx={{ width: "100%", typography: "body1" }}>
                     <TabContext value={value}>
                         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -63,10 +63,10 @@ const RequirementsTab: React.FC = () => {
                                 <Box className="flex flex-row justify-between h-full items-center">
                                     {/* <Image src={requirement.details.image} alt={requirement.Studenttype} width={400} height={400} /> */}
                                     <div className="flex flex-col gap-4">
-                                        <h1 className="text-xl font-bold mb-2">{requirement.Studenttype}</h1>
+                                        <h1 className="text-xl md:text-2xl font-bold mb-2">{requirement.Studenttype}</h1>
                                         <ul className="list-disc ml-5 flex flex-col gap-2">
                                             {requirement.details.list.map((item, i) => (
-                                                <li key={i} className="mb-1">
+                                                <li key={i} className="text-base md:text-lg mb-1">
                                                     {item}
                                                 </li>
                                             ))}
@@ -78,33 +78,31 @@ const RequirementsTab: React.FC = () => {
                     </TabContext>
                 </Box>
             </div>
-            <div className="relative  w-[537px] h-[418px] ">
-                {/* First Image: Positioned on the right side */}
-                {/* <div className="absolute right-2 w-[450px] border border-red-600 rounded-[5px] h-[300px]"> */}
-                <Image
-                    src="/images/admission/requirement/requiremnt1.png"
-                    alt="Hero"
-                    className="absolute right-2 object-cover rounded-xl "
-                    width={450}
-                    height={300}
-                // objectPosition="center"
-                />
-                {/* </div> */}
-                {/* Second Image: Smaller size, positioned at the bottom-left */}
-                {/* <div className="absolute bottom-0 left-0 rounded-[5px] w-[355px] h-[237px]"> */}
-                <Image
-                    src="/images/admission/requirement/requirement2.png"
-                    alt="Hero"
-                    className="absolute bottom-0 left-0 rounded-xl"
-                    // layout="fill"
-                    width={355}
-                    height={237}
-
-
-                // objectFit="cover"
-                // objectPosition="center"
-                />
-                {/* </div> */}
+            <div className="relative border  max-md:w-full lg:w-[537px] h-fit md:h-[200px] lg:h-[418px] ">
+                <div className="static md:absolute overflow-hidden right-0 md:right-2 w-full  top-0 lg:w-[450px] rounded-[5px] h-[250px] md:h-[300px]">
+                    <Image
+                        src="/images/admission/requirement/requiremnt1.png"
+                        alt="Hero"
+                        // className="absolute right-2 object-cover rounded-xl "
+                        // width={450}
+                        // height={300}
+                        fill
+                        objectFit="cover"
+                        objectPosition="center"
+                    />
+                </div>
+                <div className="absolute max-lg:hidden overflow-hidden bottom-0 left-0 rounded-[5px] w-[250px] h-[180px] md:w-[355px] md:h-[220px]">
+                    <Image
+                        src="/images/admission/requirement/requirement2.png"
+                        alt="Hero"
+                        //className="absolute bottom-0 left-0 rounded-xl"
+                        layout="fill"
+                        // width={355}
+                        // height={237}
+                        objectFit="cover"
+                        objectPosition="center"
+                    />
+                </div>
             </div>
 
         </div>

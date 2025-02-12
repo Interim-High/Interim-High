@@ -1,0 +1,42 @@
+import Image from "next/image";
+import React from "react";
+
+function Information() {
+  return (
+    <div className="flex flex-col lg:flex-row  lg:mx-28  relative  mx-4 lg:items-start my-5">
+      <div className="w-full lg:max-w-[45%] aspect-[4/3]">
+        <Image
+          src="/images/program/prd1.png"
+          alt="Bachelor of Engineering"
+          layout="responsive"
+          width={719}
+          height={540}
+          className="w-full h-full object-cover rounded-tl-[60px] rounded-tr-[2px] rounded-br-[60px] rounded-bl-[2px]"
+        />
+      </div>
+
+      <div className=" absolute lg:relative w-full lg:max-w-[50%] bg-[#D8D1D1] p-6 lg:p-8 rounded-2xl right-20 mt-6 lg:mt-0 flex flex-col gap-6 shadow-lg h-fit">
+        <h2 className="text-2xl lg:text-3xl font-semibold text-black">
+          Bachelor of Engineering (B.E.)
+        </h2>
+
+        <p className="text-sm lg:text-base text-black leading-relaxed text-justify">
+          The Bachelor of Engineering (B.E. or B.Eng.) is a prestigious
+          undergraduate degree designed to equip students with the technical
+          knowledge and practical skills necessary for engineering professions.
+          This degree is globally recognized and serves as a foundation for
+          careers in engineering, research, technology development, and project
+          management. The program focuses on the application of scientific
+          principles to design, innovate, and improve structures, systems, and
+          processes that address complex, real-world challenges.
+        </p>
+
+        <button className="bg-[#EFEDED] text-black px-6 py-3 text-lg font-medium rounded-md self-start hover:bg-gray-300 transition-all">
+          Apply Now
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default Information;

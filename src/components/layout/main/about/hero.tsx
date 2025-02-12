@@ -5,7 +5,7 @@ function AboutHero() {
         <div className="relative w-full h-[60vh] ">
             <div className="relative w-full h-full">
                 <Image
-                    src="/images/about/abouthero.png"
+                    src="/images/about/abouthero.jpg"
                     alt="Hero"
                     fill
                     className="object-fit object-center"
