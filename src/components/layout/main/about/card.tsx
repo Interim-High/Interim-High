@@ -1,6 +1,8 @@
-import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';;
+import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';import { XIcon } from 'lucide-react';
+;
 import Image from "next/image";
 import Link from "next/link";
+import Button from './button';
 
 
 type CardProps = {
@@ -13,16 +15,16 @@ type CardProps = {
     skill?: string[],
     email?: string,
     designation?: string,
-
+    onClick?:(e: React.MouseEvent<HTMLButtonElement>) => void
 
 }
 
-const Card = ({ title, personName, images, className, email, description, designation, skill, layout = "achievement" }: CardProps) => {
+const Card = ({ title, personName, images, className, email, description, designation, skill, layout = "achievement" ,onClick}: CardProps) => {
     return (
         <div>
             {
                 layout === "achievement" && (
-                    <div className="flex flex-col items-center justify-center p-2 bg-stone-300 overflow-hidden rounded-xl w-[275px] h-[fit] gap-2">
+                    <div className="flex flex-col items-center justify-center p-2 bg-stone-300 overflow-hidden rounded-xl w-fit md:w-[275px] h-fit gap-2">
                         <div className="overflow-hidden rounded-xl ">
                             {images && (
                                 <Image
@@ -85,7 +87,7 @@ const Card = ({ title, personName, images, className, email, description, design
                             />
                         )}
                         </div> */}
-                        <div className="relative w-[500px] h-[550px] overflow-hidden">
+                        <div className="relative w-[500px] h-[550px] lg:my-auto overflow-hidden">
                             {images && (<Image
                                 src={images}
                                 alt={personName || "hero"}
@@ -98,9 +100,14 @@ const Card = ({ title, personName, images, className, email, description, design
                         </div>
 
 
-                        <div className="flex flex-col w-[700px] gap-4 p-4">
+                        <div className="flex flex-col w-[700px] gap-4 p-2">
+                        <button onClick={onClick} className="ml-auto">
+    <XIcon />
+</button>
+
                             <div className="flex flex-col gap-1">
                                 <h1 className="text-4xl font-bold "> {personName}</h1>
+                               
                                 <p className="text-xl font-light text-[#1D1D1D]">{designation}</p>
                             </div>
 

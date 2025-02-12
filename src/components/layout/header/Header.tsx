@@ -41,6 +41,10 @@ function Header() {
             return (
               <Link
                 key={item}
+                 href={`/${item
+                  .toLowerCase()
+                  .replace(/ & /, "")
+                  .replace(/ /g, "-")}`}
                 href={href}
                 className="relative text-gray-700 font-medium group"
               >

@@ -28,7 +28,7 @@ function ColorlibStepIcon(props: StepIconProps) {
     // { label: "Admission Fee", icon: <PaymentIcon /> },
     { label: "Admission Confirmation", icon: <CheckCircleIcon /> },
   ];
- 
+
   const currentStep = icons[Number(icon) - 1]; // Access the step data by icon index
 
   return (
@@ -39,23 +39,30 @@ function ColorlibStepIcon(props: StepIconProps) {
 }
 
 const steps: StepData[] = [
-  { label: "Application Form", icon: <DescriptionIcon /> ,list: [
-    "Complete the online or physical application form with accurate data",
-  ]
+  {
+    label: "Application Form", icon: <DescriptionIcon />, list: [
+      "Complete the online or physical application form with accurate data",
+    ]
 
   },
-  { label: "Required Documents", icon: <AttachFileIcon /> ,list: [
-    "Provide academic transcripts, identification, and other necessary documents",
-  ] },
-  { label: "Document Review", icon: <RateReviewIcon /> ,list: [
-    "The institution will review the submitted documents for eligibility",
-  ]},
+  {
+    label: "Requirements", icon: <AttachFileIcon />, list: [
+      "Provide required details accurately ",
+    ]
+  },
+  {
+    label: "Review", icon: <RateReviewIcon />, list: [
+      "The institution will review the submitted details ",
+    ]
+  },
   // { label: "Admission Fee", icon: <PaymentIcon /> ,list: [
   //   "If approved, pay the required admission or enrollment fee by visiting institution account section",
   // ]},
-  { label: "Admission Confirmation", icon: <CheckCircleIcon /> ,list: [
-    "Once payment is verified, the institution issues an admission letter, confirming enrollment through email,text or phone",
-  ]},
+  {
+    label: "Confirmation", icon: <CheckCircleIcon />, list: [
+      "Once payment is verified, the institution issues an admission letter, confirming enrollment through email,text or phone",
+    ]
+  },
 ];
 
 export default function HorizontalNonLinearStepper() {
@@ -82,53 +89,66 @@ export default function HorizontalNonLinearStepper() {
   };
 
   return (
-    <div className="flex flex-col mt-16 gap-4">
-     <div className="flex flex-col justify-center items-center gap-8">
-       <h1 className="text-5xl text-red-700"> Application Procedure</h1>
-       <p className="text-xl text-[#1D1D1D]"> Every stage of our admissions process is aimed at identifying the aspects of your academic trajectory and personal ambitions</p>
-     </div>
+    <div className="flex flex-col max-md:w-full p-2 mt-16 gap-4">
+      <div className="flex flex-col justify-center items-center text-center gap-8">
+        <h1 className="text-3xl md:text-5xl text-red-700"> Application Procedure</h1>
+        <p className="text-base md:text-xl text-[#1D1D1D]"> Every stage of our admissions process is aimed at identifying the aspects of your academic trajectory and personal ambitions</p>
+      </div>
 
-   <div className="">
-    <Box sx={{ width: "100%"}}>
-      <Stepper alternativeLabel activeStep={activeStep} connector={<ColorlibConnector />}>
-        {steps.map((step, index) => (
-          <Step key={step.label} completed={completed[index]}>
-            <StepLabel
-              StepIconComponent={ColorlibStepIcon}
-              onClick={handleStep(index)}
-              sx={{ cursor: "pointer" }} 
+      <div className="">
+        <Box sx={{ width: "100%", }}>
+          <Stepper alternativeLabel activeStep={activeStep} connector={<ColorlibConnector />}>
+            {steps.map((step, index) => (
+              <Step key={step.label} completed={completed[index]}>
+                <StepLabel
+                  StepIconComponent={ColorlibStepIcon}
+                  onClick={handleStep(index)}
+                  sx={{ cursor: "pointer",
+                    fontSize: { xs: 12, sm: 18, md: 20, lg: 24 }, 
+                   }}
+                >
+                  {step.label}
+                </StepLabel>
+              </Step>
+            ))}
+          </Stepper>
+
+          <div className=" flex flex-col items-center justify-center">
+            {steps[activeStep].list?.map((item, index) => (
+              <Typography
+              sx={{
+                mt: 2,
+                mb: 1,
+                py: 1,
+                fontSize: { xs: 12, sm: 18, md: 20, lg: 24 }, 
+                textAlign: "center", 
+              }}
+              key={index}
             >
-              {step.label}
-            </StepLabel>
-          </Step>
-        ))}
-      </Stepper>
+              {item}
+            </Typography>
+            
 
-      <div className=" flex flex-col items-center justify-center">
-        {steps[activeStep].list?.map((item, index) => (
-        <Typography sx={{ mt: 2, mb: 1, py: 1, fontSize:24}} key={index}>
-            {item}
-        </Typography>
-          ))}
+            ))}
 
-        <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-          <Button
-            color="inherit"
-            disabled={activeStep === 0}
-            onClick={handleBack}
-            sx={{ mr: 1 }}
-          >
-            Back
-          </Button>
-          <Box sx={{ flex: "1 1 auto" }} />
-          <Button onClick={handleNext} sx={{ mr: 1 }}>
-            {isLastStep() }
-            Next
-          </Button>
+            <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+              <Button
+                color="inherit"
+                disabled={activeStep === 0}
+                onClick={handleBack}
+                sx={{ mr: 1 }}
+              >
+                Back
+              </Button>
+              <Box sx={{ flex: "1 1 auto" }} />
+              <Button onClick={handleNext} sx={{ mr: 1 }}>
+                {isLastStep()}
+                Next
+              </Button>
+            </Box>
+          </div>
         </Box>
       </div>
-    </Box>
-    </div>
     </div>
   );
 }
