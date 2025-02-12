@@ -27,14 +27,6 @@ function Information() {
         </h2>
 
         <p className="text-sm lg:text-base text-black leading-relaxed text-justify">
-          {/* The Bachelor of Engineering (B.E. or B.Eng.) is a prestigious
-          undergraduate degree designed to equip students with the technical
-          knowledge and practical skills necessary for engineering professions.
-          This degree is globally recognized and serves as a foundation for
-          careers in engineering, research, technology development, and project
-          management. The program focuses on the application of scientific
-          principles to design, innovate, and improve structures, systems, and
-          processes that address complex, real-world challenges. */}
           {program?.description}
         </p>
 
