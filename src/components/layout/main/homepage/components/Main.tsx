@@ -7,10 +7,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
+import { Details } from "../../program/content";
 const programs = [
   { id: "undergraduate", label: "Undergraduate" },
   { id: "postgraduate", label: "Postgraduate" },
 ];
+
 function Main() {
   const [selectedProgram, setSelectedProgram] = useState("undergraduate");
   const [selectedCategory, setSelectedCategory] = useState("recent-news");
@@ -24,29 +26,29 @@ function Main() {
     {
       title: "Cultural Preservation in the Digital Age",
       date: "December 31, 2020",
-      category: "MANAGEMENT",
+      category: "Web Development",
     },
     {
       title: "The Impact of AI on Modern Economics",
       date: "January 15, 2021",
-      category: "ECONOMICS",
+      category: "Workshop",
     },
     {
       title: "Scientific Breakthroughs in Renewable Energy",
       date: "March 22, 2021",
-      category: "SCIENCE",
+      category: "Event",
     },
   ];
 
   const undergraduate = [
     {
-      title: "Computer Science",
+      title: "Web Development",
       description:
         "Learn the fundamentals of computer science and programming.",
       image: "/images/home/program/computer.png",
     },
     {
-      title: "Business Administration",
+      title: "Cyber Security",
       description:
         "Learn the fundamentals of business administration and management.",
       image: "/images/home/program/business.webp",
@@ -186,7 +188,7 @@ function Main() {
           and engaging environments beyond traditional classrooms.
         </p>
 
-        <div className="flex justify-center space-x-6 my-6 border-b border-gray-300 pb-2">
+        {/* <div className="flex justify-center space-x-6 my-6 border-b border-gray-300 pb-2">
           {programs.map(({ id, label }) => (
             <button
               key={id}
@@ -200,12 +202,13 @@ function Main() {
               {label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div>
           <CarouselCards
             items={
-              selectedProgram === "undergraduate" ? undergraduate : postgraduate
+              // selectedProgram === "undergraduate" ? undergraduate : postgraduate
+              Details
             }
           />
         </div>
@@ -237,7 +240,7 @@ function Main() {
               key={index}
               className="flex flex-col items-center gap-5 p-8  rounded-2xl shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
             >
-              <div className="w-[100px] h-[100px] bg-[#905555] rounded-full flex justify-center items-center transition-all duration-300 group-hover:bg-[#5a5b57] shadow-md">
+              <div className="w-[100px] h-[100px] bg-[#905555] rounded-full flex justify-center items-center transition-all duration-300  group-hover:bg-[#5a5b57] shadow-md">
                 <div className="w-[75px] h-[75px] bg-gradient-to-tl from-[#510909] to-[#cecdcd] rounded-full flex justify-center items-center">
                   <Image
                     src={program.image}
@@ -263,24 +266,10 @@ function Main() {
 
       <div className="mx-5 md:mx-28 py-10 my-10 rounded-lg shadow-xl ">
         <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">
-          News <span className="text-orange-600">&</span> Announcement
+          News <span className="text-orange-600">&</span> Updates
         </h1>
 
-        <div className="flex justify-center space-x-6 my-6  pb-2">
-          {categories.map(({ id, label }) => (
-            <button
-              key={id}
-              onClick={() => setSelectedCategory(id)}
-              className={`px-4 py-2 text-lg font-medium transition-all duration-300 ${
-                selectedCategory === id
-                  ? "border-b-4 border-black text-black font-semibold"
-                  : "text-gray-600 hover:text-black"
-              }`}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+       
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6  ">
           <div className="w-full flex justify-center">
@@ -314,7 +303,7 @@ function Main() {
 
       <div className="mx-5 md:mx-28 py-12 my-20 text-center  rounded-3xl ">
         <h1 className="text-5xl font-extrabold text-gray-900 mb-12 tracking-wide">
-          Meet Our <span className="text-orange-600">Trusted</span> Leaders
+          Meet Our <span className="text-orange-600">Trusted</span> Partners
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -365,9 +354,21 @@ function Main() {
 
 export default Main;
 
-const CarouselCards = ({ items }) => {
+type CarouselCardsProps = {
+  items: Array<{
+    id: Number,
+    imageSrc: string,
+    title: string,
+    description:
+    string,
+    category: string,
+    slug: string,
+  }>;
+};
+
+const CarouselCards = ({ items }:CarouselCardsProps) => {
   return (
-    <div className="w-full max-w-6xl mx-auto relative">
+    <div className="w-full max-w-6xl mx-auto relative mt-5 pt-5">
       <Swiper
         modules={[Pagination, Navigation]}
         spaceBetween={20}
@@ -418,7 +419,7 @@ const HoverCard = ({ item }) => {
         }`}
       >
         <Image
-          src={item.image}
+          src={item.imageSrc}
           alt={item.title}
           width={500}
           height={288}
@@ -433,7 +434,10 @@ const HoverCard = ({ item }) => {
         <div className="p-4 rounded-t-lg shadow-xl">
           <h3 className="text-lg font-bold text-[#F1822C]">{item.title}</h3>
           <p className="text-sm text-white">{item.description}</p>
-          <Link href="/apply" className="block mt-5 text-[#F1822C]">
+          <Link
+            href={`/programs/${item.slug}`}
+            className="block mt-5 text-[#F1822C]"
+          >
             Read More
           </Link>
         </div>

@@ -8,7 +8,7 @@ import Image from "next/image";
 function Header() {
   const pathname = usePathname();
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-2xl bg-white/50 shadow-lg">
+    <header className="sticky top-0 z-40 backdrop-blur-2xl bg-white/50 shadow-lg">
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center">
           <Image
@@ -36,21 +36,21 @@ function Header() {
                     .toLowerCase()
                     .replace(/ & /, "")
                     .replace(/ /g, "-")}`;
-            const isActive = pathname === href;
+
+            const isActive =
+              item === "Home" ? pathname === href : pathname.startsWith(href);
 
             return (
               <Link
                 key={item}
-                 href={`/${item
-                  .toLowerCase()
-                  .replace(/ & /, "")
-                  .replace(/ /g, "-")}`}
                 href={href}
                 className="relative text-gray-700 font-medium group"
               >
                 <span
                   className={`relative transition duration-300 ${
-                    isActive ? "text-orange-600" : "hover:text-orange-600"
+                    isActive
+                      ? "text-orange-600 font-semibold"
+                      : "hover:text-orange-600"
                   }`}
                 >
                   {item}
@@ -58,6 +58,7 @@ function Header() {
               </Link>
             );
           })}
+
           <Link
             href="/admission"
             className="px-5 py-1 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"

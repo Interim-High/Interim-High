@@ -10,12 +10,12 @@ import Typography from "@mui/material/Typography";
 import DescriptionIcon from "@mui/icons-material/Description";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import RateReviewIcon from "@mui/icons-material/RateReview";
-import PaymentIcon from "@mui/icons-material/Payment";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { StepIconProps } from "@mui/material/StepIcon";
 import { StepData } from "@/types/admission.type";
 import { ColorlibConnector } from "./line-connecter";
 import { ColorlibStepIconRoot } from "./stepIcon";
+import { steps } from "./Requirements";
 
 
 function ColorlibStepIcon(props: StepIconProps) {
@@ -38,32 +38,6 @@ function ColorlibStepIcon(props: StepIconProps) {
   );
 }
 
-const steps: StepData[] = [
-  {
-    label: "Application Form", icon: <DescriptionIcon />, list: [
-      "Complete the online or physical application form with accurate data",
-    ]
-
-  },
-  {
-    label: "Requirements", icon: <AttachFileIcon />, list: [
-      "Provide required details accurately ",
-    ]
-  },
-  {
-    label: "Review", icon: <RateReviewIcon />, list: [
-      "The institution will review the submitted details ",
-    ]
-  },
-  // { label: "Admission Fee", icon: <PaymentIcon /> ,list: [
-  //   "If approved, pay the required admission or enrollment fee by visiting institution account section",
-  // ]},
-  {
-    label: "Confirmation", icon: <CheckCircleIcon />, list: [
-      "Once payment is verified, the institution issues an admission letter, confirming enrollment through email,text or phone",
-    ]
-  },
-];
 
 export default function HorizontalNonLinearStepper() {
   const [activeStep, setActiveStep] = React.useState<number>(0);
