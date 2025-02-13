@@ -20,22 +20,22 @@ function Information() {
         />
       </div>
 
-      <div className=" absolute lg:relative w-full lg:max-w-[50%] bg-[#D8D1D1] p-6 lg:p-8 rounded-2xl right-20 mt-6 lg:my-auto flex flex-col gap-6 shadow-lg h-fit">
+      <div className=" absolute lg:relative w-full lg:max-w-[50%] bg-[#D8D1D1] p-6 lg:p-8 rounded-2xl right-20 mt-14 flex flex-col gap-6 shadow-lg h-fit">
         <h2 className="text-2xl lg:text-3xl font-semibold text-black">
           {/* Bachelor of Engineering (B.E.) */}
           {program.title}
         </h2>
 
         <p className="text-sm lg:text-base text-black leading-relaxed text-justify">
-          {/* The Bachelor of Engineering (B.E. or B.Eng.) is a prestigious
+          The Bachelor of Engineering (B.E. or B.Eng.) is a prestigious
           undergraduate degree designed to equip students with the technical
           knowledge and practical skills necessary for engineering professions.
           This degree is globally recognized and serves as a foundation for
           careers in engineering, research, technology development, and project
           management. The program focuses on the application of scientific
           principles to design, innovate, and improve structures, systems, and
-          processes that address complex, real-world challenges. */}
-          {program. description}
+          processes that address complex, real-world challenges.
+          {/* {program. description} */}
         </p>
 
         <button className="bg-[#EFEDED] text-black px-6 py-3 text-lg font-medium rounded-md self-start hover:bg-gray-300 transition-all">
