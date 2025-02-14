@@ -24,7 +24,7 @@ function Facility() {
           </ul>
         ))}
       </div>
-      <div className="max-md:hidden relative w-[537px] h-[418px] ">
+      <div className="max-md:hidden md:relative w-[537px] h-[418px] ">
         <Image
           src="/images/about/aboutfacility3.png"
           alt="Hero"
