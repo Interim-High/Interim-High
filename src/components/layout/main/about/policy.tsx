@@ -36,7 +36,7 @@ function PolicySection() {
         <h1 className="text-5xl font-semibold text-orange-600">Our Policies</h1>
         <p className="text-[16px] text-gray-700">Know about our policies</p>
 
-        <ul className="list-none space-y-3">
+        <ul className="list-none space-y-6">
           {policies.map((policy, index) => (
             <li key={index} className="flex items-center space-x-4">
               <Image
@@ -50,7 +50,7 @@ function PolicySection() {
           ))}
         </ul>
 
-        <div className="flex items-center space-x-2 text-red-800 font-medium hover:underline">
+        <div className="flex items-center space-x-1 text-red-800 font-medium hover:underline">
           <Link href="/policy">Learn More</Link>
           <ChevronsRight size={20} />
         </div>

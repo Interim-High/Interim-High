@@ -16,9 +16,9 @@ function Facility() {
         <h1 className="text-5xl font-normal text-orange-600">Our Facilities</h1>
         <p className="text-[16px]">Different Campus Facilities for you </p>
         {facility.map((facility, index) => (
-          <ul className="flex flex-col list-none pl-0 gap-4" key={index}>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="text-green-500" size={20} />
+          <ul className="flex flex-col list-none pl-0" key={index}>
+            <li className="flex items-center space-x-4">
+              <CheckCircle className="text-orange-600" size={20} />
               <span>{facility}</span>
             </li>
           </ul>
