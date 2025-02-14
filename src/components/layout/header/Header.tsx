@@ -12,7 +12,7 @@ function Header() {
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center">
           <Image
-            src="/images/home/nav/Logo.png"
+            src="/images/home/nav/AcademicLogoHeader.png"
             alt="Logo"
             width={150}
             height={150}
