@@ -269,8 +269,6 @@ function Main() {
           News <span className="text-orange-600">&</span> Updates
         </h1>
 
-       
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6  ">
           <div className="w-full flex justify-center">
             <Image
@@ -300,7 +298,7 @@ function Main() {
           </div>
         </div>
       </div>
-{/* Leadears type */}
+      {/* Leadears type */}
       <div className="mx-5 md:mx-28 py-12 my-20 text-center  rounded-3xl ">
         <h1 className="text-5xl font-extrabold text-gray-900 mb-12 tracking-wide">
           Meet Our <span className="text-orange-600">Trusted</span> Partners
@@ -310,38 +308,41 @@ function Main() {
           {[
             {
               img: "/images/home/leaders/Tnvc.png",
-              img_scr: "https://4dvfx.com"
+              link: "https://4dvfx.com",
             },
             {
               img: "/images/home/leaders/ssarrownex.png",
-              img_scr: "https://www.4dvfxacademy.com/"
+              link: "https://www.4dvfxacademy.com/",
             },
             {
               img: "/images/home/leaders/zuittlogo.png",
-              img_scr: "https://zuitt.co/"
+              link: "https://zuitt.co/",
             },
             {
               img: "/images/home/leaders/thinkThank.png",
-              img_scr: "https://www.arrownex.com/"
+              link: "https://www.arrownex.com/",
             },
-          ].map((leader, index) => (
-            <div
-              key={index}
-              className="relative  backdrop-blur-xl rounded-2xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-2xl "
-            >
-              <Image
-                src={leader.img}
-                alt="partner"
-                width={227}
-                height={195}
-                className="object-cover object-center rounded-xl w-full border border-gray-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-orange-50 to-transparent rounded-2xl opacity-30"></div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </main> 
+          ].map((partner, index) => (
+              <Link
+                key={index}
+                href={partner.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative backdrop-blur-xl bg-slate-600 rounded-2xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <Image
+                  src={partner.img}
+                  alt="Partner Logo"
+                  width={227}
+                  height={195}
+                  className="object-cover object-center rounded-xl w-full"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-orange-50 to-transparent rounded-2xl opacity-30"></div>
+              </Link>
+            ))}
+          </div>
+          </div>
+    </main>
   );
 }
 
@@ -349,17 +350,16 @@ export default Main;
 
 type CarouselCardsProps = {
   items: Array<{
-    id: Number,
-    imageSrc: string,
-    title: string,
-    description:
-    string,
-    category: string,
-    slug: string,
+    id: Number;
+    imageSrc: string;
+    title: string;
+    description: string;
+    category: string;
+    slug: string;
   }>;
 };
 
-const CarouselCards = ({ items }:CarouselCardsProps) => {
+const CarouselCards = ({ items }: CarouselCardsProps) => {
   return (
     <div className="w-full max-w-6xl mx-auto relative mt-5 pt-5">
       <Swiper
