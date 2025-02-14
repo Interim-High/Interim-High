@@ -160,7 +160,7 @@ function Main() {
               where innovation meets opportunity.
             </p>
             <Link
-              href="/apply"
+              href="/about"
               className="mt-6 inline-block px-10 py-4 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full transition-all duration-300 ease-in-out transform hover:bg-orange-500 hover:text-white hover:scale-105"
             >
               Read More

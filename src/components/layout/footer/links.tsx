@@ -191,6 +191,7 @@ export default function QuickLink() {
             text="info@DanpheLink.com"
             isLink
             href="mailto:info@DanpheLink.com"
+           
           />
           <ContactItem
             Icon={Mail}
