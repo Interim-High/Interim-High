@@ -50,7 +50,7 @@ function PolicySection() {
           ))}
         </ul>
 
-        <div className="flex items-center space-x-4 text-red-800 font-medium hover:underline">
+        <div className="flex items-center space-x-2 text-red-800 font-medium hover:underline">
           <Link href="/policy">Learn More</Link>
           <ChevronsRight size={20} />
         </div>
