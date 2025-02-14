@@ -26,7 +26,7 @@ function Facility() {
       </div>
       <div className="max-md:hidden relative w-[537px] h-[418px] ">
         <Image
-          src="/images/about/facilities1.png"
+          src="/images/about/aboutfacility3.png"
           alt="Hero"
           className="absolute right-2 "
           width={450}
@@ -35,7 +35,7 @@ function Facility() {
         />
 
         <Image
-          src="/images/about/facilities2.png"
+          src="/images/about/aboutfacility2.png"
           alt="Hero"
           className="absolute bottom-0 left-0"
           width={355}
