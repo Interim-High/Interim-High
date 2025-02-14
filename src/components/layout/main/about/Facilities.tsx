@@ -24,14 +24,14 @@ function Facility() {
           </ul>
         ))}
       </div>
-      <div className="max-md:hidden relative w-[537px] h-[418px] ">
+      <div className="max-md:hidden md:relative w-[537px] h-[418px] ">
         <Image
           src="/images/about/aboutfacility3.png"
           alt="Hero"
           className="absolute right-2 "
           width={450}
           height={300}
-          style={{ height: "auto", width: "auto" }}
+          // style={{ height: "auto", width: "auto" }}
         />
 
         <Image
@@ -40,7 +40,7 @@ function Facility() {
           className="absolute bottom-0 left-0"
           width={355}
           height={237}
-          style={{ height: "auto", width: "auto" }}
+          // style={{ height: "auto", width: "auto" }}
         />
       </div>
     </div>
