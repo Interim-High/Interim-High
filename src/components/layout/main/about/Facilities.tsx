@@ -31,7 +31,7 @@ function Facility() {
           className="absolute right-2 "
           width={450}
           height={300}
-          style={{ height: "auto", width: "auto" }}
+          // style={{ height: "auto", width: "auto" }}
         />
 
         <Image
@@ -40,7 +40,7 @@ function Facility() {
           className="absolute bottom-0 left-0"
           width={355}
           height={237}
-          style={{ height: "auto", width: "auto" }}
+          // style={{ height: "auto", width: "auto" }}
         />
       </div>
     </div>
