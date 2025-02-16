@@ -154,7 +154,7 @@ function Main() {
         <div className="flex flex-row bg-gradient-to-tl from-[#dcc7c7] to-[#afafaf] w-full  rounded-xl p-10 gap-6  ">
           <div className=" p-5">
             <h1 className="text-4xl font-bold text-orange-600 mb-4">
-             <span className="text-[#164561]" >Your College </span>Adventure
+              <span className="text-[#164561]">Your College </span>Adventure
             </h1>
             <p className="text-lg text-justify">
               Embark on a path of personal and professional growth with us,
@@ -169,13 +169,15 @@ function Main() {
           </div>
 
           <div>
-           <AdventureImage/>
+            <AdventureImage />
           </div>
         </div>
       </div>
 
       <div className="mx-5 md:mx-28  py-8 my-10 rounded-lg shadow-lg">
-        <h1 className="text-4xl font-bold text-center text-orange-600 mb-4"><span className="text-[#164561]" >Our </span>Programs</h1>
+        <h1 className="text-4xl font-bold text-center text-orange-600 mb-4">
+          <span className="text-[#164561]">Our </span>Programs
+        </h1>
         <p className="text-center text-gray-700 max-w- mx-auto">
           Our programs offer a perfect balance of theoretical knowledge,
           practical application, and observational learning, creating dynamic
@@ -317,25 +319,25 @@ function Main() {
               link: "https://www.arrownex.com/",
             },
           ].map((partner, index) => (
-              <Link
-                key={index}
-                href={partner.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative backdrop-blur-xl bg-slate-600 rounded-2xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <Image
-                  src={partner.img}
-                  alt="Partner Logo"
-                  width={227}
-                  height={195}
-                  className="object-cover object-center rounded-xl w-full"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-orange-50 to-transparent rounded-2xl opacity-30"></div>
-              </Link>
-            ))}
-          </div>
-          </div>
+            <Link
+              key={index}
+              href={partner.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative backdrop-blur-xl bg-slate-600 rounded-2xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <Image
+                src={partner.img}
+                alt="Partner Logo"
+                width={227}
+                height={195}
+                className="object-cover object-center rounded-xl w-full"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-orange-50 to-transparent rounded-2xl opacity-30"></div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </main>
   );
 }
