@@ -13,7 +13,7 @@ function Facility() {
   return (
     <div className="border-2 mx-auto max-lg-w-fit  bg-[#EDEDED] mt-16 flex flex-row justify-between items-center p-4 max-w-7xl rounded-2xl">
       <div className="flex flex-col max-lg:w-full gap-8 mx-6">
-        <h1 className="text-5xl font-normal text-orange-600">Our Facilities</h1>
+        <h1 className="text-4xl font-semibold text-orange-600"><span className="text-[#164561] ">Our</span> Facilities</h1>
         <p className="text-[16px]">Different Campus Facilities for you </p>
         {facility.map((facility, index) => (
           <ul className="flex flex-col list-none pl-0" key={index}>

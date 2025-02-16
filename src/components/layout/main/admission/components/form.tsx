@@ -64,7 +64,7 @@ export default function FormComponent() {
 
     return (
         <div className="flex flex-col justify-center items-center md:w-[717px] mx-auto p-4 gap-2  rounded-lg ">
-            <h2 className="font-semibold mb-4 text-[#BD1313] text-4xl">Admission Form</h2>
+            <h2 className="font-semibold mb-4 text-orange-600 text-4xl"><span className="text-[#164561] ">Admission</span> Form</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
                 {/* {Inputfields.map((input, index) => (
                      <div key={index} className="flex flex-col">

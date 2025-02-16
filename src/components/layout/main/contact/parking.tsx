@@ -3,8 +3,8 @@ import { CheckCheck } from "lucide-react";
 export default function Parking(){
     return(
         <div className="p-6 rounded-lg mx-auto shadow-md w-fit h-fit">
-        <h2 className="text-3xl text-center font-semibold text-orange-600 mb-4">
-          Parking Facilities Available
+        <h2 className="text-4xl text-center font-semibold text-orange-600 mb-4">
+         Parking  <span className="text-[#164561] ">Facilities </span>Available
         </h2>
 
         <p className="text-xl text-gray-800">

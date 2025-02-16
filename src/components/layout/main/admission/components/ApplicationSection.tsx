@@ -65,7 +65,7 @@ export default function HorizontalNonLinearStepper() {
   return (
     <div className="flex flex-col max-md:w-full p-2 mt-16 gap-4">
       <div className="flex flex-col justify-center items-center text-center gap-8">
-        <h1 className="text-3xl md:text-5xl text-red-700"> Application Procedure</h1>
+        <h1 className="text-3xl md:text-4xl font-semibold text-orange-600"><span className="text-[#164561] ">Application</span> Procedure</h1>
         <p className="text-base md:text-xl text-[#1D1D1D]"> Every stage of our admissions process is aimed at identifying the aspects of your academic trajectory and personal ambitions</p>
       </div>
 
