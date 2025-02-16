@@ -31,7 +31,7 @@ function Form() {
         <div className="  rounded-lg w-full space-y-6 border-black">
           <div className="space-y-3">
           <h1 className="text-4xl text-orange-600 font-semibold text-center">
-            Get in Touch
+            Get in <span className="text-[#164561] ">Touch</span>
           </h1>
           <p className="text-gray-900 text-center text-xl mb-4">
             Start the Conversation, We’re Here for You!

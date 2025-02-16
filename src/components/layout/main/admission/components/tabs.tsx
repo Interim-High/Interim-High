@@ -17,7 +17,9 @@ const RequirementsTab: React.FC = () => {
     };
 
     return (
+       
         <div className="flex flex-col-reverse lg:flex-row mt-16 p-2 xl:p-4 justify-evenly lg:items-center gap-10">
+            
             <div className=" border-2 bg-[#EDEDED] w-full lg:w-1/2 rounded-2xl shadow-slate-500">
                 <Box sx={{ width: "100%", typography: "body1" }}>
                     <TabContext value={value}>
@@ -60,7 +62,7 @@ const RequirementsTab: React.FC = () => {
                         fill
                         objectFit="cover"
                         objectPosition="center"
-                    />
+                        />
                 </div>
                 <div className="absolute max-lg:hidden overflow-hidden bottom-0 left-0 rounded-[5px] w-[250px] h-[180px] md:w-[355px] md:h-[220px]">
                     <Image
@@ -72,12 +74,13 @@ const RequirementsTab: React.FC = () => {
                         // height={237}
                         objectFit="cover"
                         objectPosition="center"
-                    />
+                        />
                 </div>
             </div>
 
         </div>
 
+                     
     );
 };
 

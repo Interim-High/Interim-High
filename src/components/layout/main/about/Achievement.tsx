@@ -82,7 +82,7 @@ function Achievement() {
     <div className="flex flex-col w-full max-w-7xl p-6 mt-16 mx-auto space-y-6">
       <div className="flex flex-col text-center space-y-2">
         <h1 className="text-4xl md:text-4xl font-semibold text-orange-600">
-          Danphelink Achievement
+         <span className="text-[#164561] ">Danphelink</span> Achievement
         </h1>
         <p className="text-lg md:text-xl text-gray-600">
           Explore our academic achievements with us

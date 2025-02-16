@@ -56,8 +56,8 @@ const Governance = () => {
     // </div>
     <div className="max-w-7xl h-fit grid grid-cols-1 lg:grid-cols-2 p-6 mx-auto mt-10 justify-center items-center text-justify gap-8 rounded-[40px] shadow-lg">
       <div className="flex flex-col w-full max-w-2xl lg:mt-8 gap-4">
-        <h1 className="text-3xl sm:text-4xl text-red-700 font-semibold text-center lg:text-left">
-          Message From The CEO
+        <h1 className="text-3xl sm:text-4xl text-orange-700 font-semibold text-center lg:text-left">
+          Message <span className="text-[#164561] ">From</span> The CEO
         </h1>
 
         <div className="flex flex-col mt-4 sm:mt-6 gap-6">

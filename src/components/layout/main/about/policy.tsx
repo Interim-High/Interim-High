@@ -33,7 +33,7 @@ function PolicySection() {
       </div>
 
       <div className="flex flex-col h-fit items-start space-y-4 p-5 rounded-3xl ">
-        <h1 className="text-5xl font-semibold text-orange-600">Our Policies</h1>
+        <h1 className="text-4xl font-semibold text-orange-600"><span className="text-[#164561] ">Our</span> Policies</h1>
         <p className="text-[16px] text-gray-700">Know about our policies</p>
 
         <ul className="list-none space-y-6">

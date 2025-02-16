@@ -220,7 +220,7 @@ function Main() {
             {
               title: "Vision",
               content:
-                "To empower students with quality education, innovation, and ethical values, fostering skilled and responsible global citizens.",
+                "To foster innovation, empower learners with essential skills, and inspire meaningful impact through inclusive and transformative education.",
               image: "/images/home/program/vision.svg",
             },
             {
