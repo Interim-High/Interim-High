@@ -11,8 +11,8 @@ function Information() {
       <div className="w-full lg:max-w-[45%] aspect-[4/3]">
         <Image
           // src="/images/program/prd1.png"
-          src={program?.imageSrc}
-          alt="Bachelor of Engineering"
+          src={program?.imageSrc ?? "/default-image.jpg"} 
+          alt="program image"
           layout="responsive"
           width={719}
           height={540}
@@ -20,7 +20,7 @@ function Information() {
         />
       </div>
 
-      <div className=" absolute lg:relative w-full lg:max-w-[50%] bg-[#D8D1D1] p-6 lg:p-8 rounded-2xl right-20 mt-6 lg:my-auto flex flex-col gap-6 shadow-lg h-fit">
+      <div className=" absolute lg:relative w-full lg:max-w-[50%] bg-[#D8D1D1] p-6 lg:p-8 rounded-2xl right-20 mt-14 flex flex-col gap-6 shadow-lg h-fit">
         <h2 className="text-2xl lg:text-3xl font-semibold text-black">
           {/* Bachelor of Engineering (B.E.) */}
           {program?.title}

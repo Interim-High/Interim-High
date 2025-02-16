@@ -18,7 +18,7 @@ function Hero() {
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <h1 className="text-white text-8xl font-bold">Our Programs</h1>
-          <p className="text-red-600 text-4xl mt-4">Explore our programs</p>
+          <p className="text-orange-600 text-4xl mt-4">Explore our programs</p>
         </div>
       </div>
     </main>

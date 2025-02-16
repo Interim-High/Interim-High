@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { Details } from "../../program/content";
+import AdventureImage from "../../about/adventureImage";
 const programs = [
   { id: "undergraduate", label: "Undergraduate" },
   { id: "postgraduate", label: "Postgraduate" },
@@ -152,37 +153,30 @@ function Main() {
       <div className="flex justify-center items-center w-full mt-16 px-28">
         <div className="flex flex-row bg-gradient-to-tl from-[#dcc7c7] to-[#afafaf] w-full  rounded-xl p-10 gap-6  ">
           <div className=" p-5">
-            <h1 className="text-3xl font-bold text-red-700 mb-4">
-              Your College Adventure
+            <h1 className="text-4xl font-bold text-orange-600 mb-4">
+             <span className="text-[#164561]" >Your College </span>Adventure
             </h1>
             <p className="text-lg text-justify">
               Embark on a path of personal and professional growth with us,
               where innovation meets opportunity.
             </p>
             <Link
-              href="/apply"
-              className="mt-6 inline-block px-10 py-4 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full transition-all duration-300 ease-in-out transform hover:bg-orange-500 hover:text-white hover:scale-105"
+              href="/about"
+              className="mt-6 inline-block px-10 py-4 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-full transition-all duration-300 ease-in-out transform hover:bg-orange-500 hover:text-white hover:scale-105"
             >
               Read More
             </Link>
           </div>
 
           <div>
-            <Image
-              src="/images/about/adventure.png"
-              alt="Academic Adventure"
-              layout="responsive"
-              width={357}
-              height={295}
-              className="object-cover object-center rounded-lg"
-            />
+           <AdventureImage/>
           </div>
         </div>
       </div>
 
       <div className="mx-5 md:mx-28  py-8 my-10 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold text-center mb-4">Our Programs</h1>
-        <p className="text-center text-gray-700 max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold text-center text-orange-600 mb-4"><span className="text-[#164561]" >Our </span>Programs</h1>
+        <p className="text-center text-gray-700 max-w- mx-auto">
           Our programs offer a perfect balance of theoretical knowledge,
           practical application, and observational learning, creating dynamic
           and engaging environments beyond traditional classrooms.
@@ -214,7 +208,7 @@ function Main() {
         </div>
       </div>
 
-      <div className="px-8 md:px-20 lg:px-28 py-16 ">
+      <div className="px-8 md:px-20 lg:px-28 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           {[
             {
@@ -226,7 +220,7 @@ function Main() {
             {
               title: "Vision",
               content:
-                "To empower students with quality education, innovation, and ethical values, fostering skilled and responsible global citizens.",
+                "To foster innovation, empower learners with essential skills, and inspire meaningful impact through inclusive and transformative education.",
               image: "/images/home/program/vision.svg",
             },
             {
@@ -240,8 +234,8 @@ function Main() {
               key={index}
               className="flex flex-col items-center gap-5 p-8  rounded-2xl shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
             >
-              <div className="w-[100px] h-[100px] bg-[#905555] rounded-full flex justify-center items-center transition-all duration-300  group-hover:bg-[#5a5b57] shadow-md">
-                <div className="w-[75px] h-[75px] bg-gradient-to-tl from-[#510909] to-[#cecdcd] rounded-full flex justify-center items-center">
+              <div className="w-[100px] h-[100px] bg-orange-600 rounded-full flex justify-center items-center transition-all duration-300  group-hover:bg-[#5a5b57] shadow-md">
+                <div className="w-[75px] h-[75px] bg-gradient-to-tl from-[#164561] to-[#164561] rounded-full flex justify-center items-center">
                   <Image
                     src={program.image}
                     alt={program.title}
@@ -252,7 +246,7 @@ function Main() {
                 </div>
               </div>
 
-              <h2 className="text-2xl font-extrabold text-[#510909]">
+              <h2 className="text-2xl font-extrabold text-[#164561]">
                 {program.title}
               </h2>
 
@@ -265,7 +259,7 @@ function Main() {
       </div>
 
       <div className="mx-5 md:mx-28 py-10 my-10 rounded-lg shadow-xl ">
-        <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">
+        <h1 className="text-4xl font-bold text-center text-[#164561] mb-6">
           News <span className="text-orange-600">&</span> Updates
         </h1>
 
@@ -298,54 +292,50 @@ function Main() {
           </div>
         </div>
       </div>
-
+      {/* Leadears type */}
       <div className="mx-5 md:mx-28 py-12 my-20 text-center  rounded-3xl ">
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-12 tracking-wide">
+        <h1 className="text-4xl font-extrabold text-[#164561] mb-12 tracking-wide">
           Meet Our <span className="text-orange-600">Trusted</span> Partners
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {[
             {
-              name: "Kristina Subedi",
-              role: "Chairperson",
-              img: "/images/home/leaders/leader1.png",
+              img: "/images/home/leaders/Tnvc.png",
+              link: "https://4dvfx.com",
             },
             {
-              name: "Dhurba Subedi",
-              role: "Chairperson",
-              img: "/images/home/leaders/leader2.png",
+              img: "/images/home/leaders/ssarrownex.png",
+              link: "https://www.4dvfxacademy.com/",
             },
             {
-              name: "Deepak Malla",
-              role: "HOD",
-              img: "/images/home/leaders/leader3.png",
+              img: "/images/home/leaders/zuittlogo.png",
+              link: "https://zuitt.co/",
             },
-          ].map((leader, index) => (
-            <div
-              key={index}
-              className="relative  backdrop-blur-xl rounded-2xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-2xl "
-            >
-              <Image
-                src={leader.img}
-                alt={leader.name}
-                width={357}
-                height={295}
-                className="object-cover object-center rounded-xl w-full border border-gray-300"
-              />
-              <div className="mt-6">
-                <h2 className="text-2xl font-bold text-gray-900">
-                  {leader.name}
-                </h2>
-                <p className="text-lg text-gray-600 font-medium">
-                  {leader.role}
-                </p>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-orange-50 to-transparent rounded-2xl opacity-30"></div>
-            </div>
-          ))}
-        </div>
-      </div>
+            {
+              img: "/images/home/leaders/thinkThank.png",
+              link: "https://www.arrownex.com/",
+            },
+          ].map((partner, index) => (
+              <Link
+                key={index}
+                href={partner.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative backdrop-blur-xl bg-slate-600 rounded-2xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <Image
+                  src={partner.img}
+                  alt="Partner Logo"
+                  width={227}
+                  height={195}
+                  className="object-cover object-center rounded-xl w-full"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-orange-50 to-transparent rounded-2xl opacity-30"></div>
+              </Link>
+            ))}
+          </div>
+          </div>
     </main>
   );
 }
@@ -412,7 +402,7 @@ const HoverCard = ({ item }) => {
     >
       <div
         className={`transition-transform duration-300 ${
-          hovered ? "scale-90" : "scale-100"
+          hovered ? "scale-105" : "scale-100"
         }`}
       >
         <Image
@@ -424,11 +414,11 @@ const HoverCard = ({ item }) => {
         />
       </div>
       <div
-        className={`absolute bottom-0 left-0 w-full py-5 rounded-xl bg-[#2c2c2c] transition-opacity duration-300 transform ${
+        className={`absolute bottom-0 left-5 w-[90%] py-2 rounded-xl bg-[#2c2c2c] transition-opacity duration-300 transform ${
           hovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
         }`}
       >
-        <div className="p-4 rounded-t-lg shadow-xl">
+        <div className="p-2 rounded-t-lg shadow-xl">
           <h3 className="text-lg font-bold text-[#F1822C]">{item.title}</h3>
           <p className="text-sm text-white">{item.description}</p>
           <Link

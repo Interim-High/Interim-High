@@ -89,7 +89,7 @@ export default function CardSection() {
         </div>
       </div>
       <div className="px-28 py-14">
-        <h1 className="text-2xl font-bold mb-6">Available Courses</h1>
+        <h1 className="text-4xl text-orange-600 font-bold mb-6"><span className="text-[#164561] ">Available </span>Courses</h1>
         <div className="grid grid-cols-3 gap-6">
           {filteredCourses.map((card, index) => (
             <Card key={index} {...card} />

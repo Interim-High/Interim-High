@@ -14,7 +14,7 @@ const policies: string[] = [
 
 function PolicySection() {
   return (
-    <div className="bg-[#EDEDED] my-16 max-w-7xl mx-auto flex flex-row p-6 rounded-2xl justify-stretch  items-center">
+    <div className="bg-[#EDEDED] my-16 max-w-7xl mx-auto flex flex-row p-6 rounded-2xl justify-between  items-center">
       <div className="hidden md:block relative w-[500px] h-[400px] border border-radius">
         <Image
           src="/images/about/Facilities1.jpeg"
@@ -33,10 +33,10 @@ function PolicySection() {
       </div>
 
       <div className="flex flex-col h-fit items-start space-y-4 p-5 rounded-3xl ">
-        <h1 className="text-5xl font-semibold text-orange-600">Our Policies</h1>
+        <h1 className="text-4xl font-semibold text-orange-600"><span className="text-[#164561] ">Our</span> Policies</h1>
         <p className="text-[16px] text-gray-700">Know about our policies</p>
 
-        <ul className="list-none space-y-3">
+        <ul className="list-none space-y-6">
           {policies.map((policy, index) => (
             <li key={index} className="flex items-center space-x-4">
               <Image
@@ -50,7 +50,7 @@ function PolicySection() {
           ))}
         </ul>
 
-        <div className="flex items-center space-x-4 text-red-800 font-medium hover:underline">
+        <div className="flex items-center space-x-1 text-red-800 font-medium hover:underline">
           <Link href="/policy">Learn More</Link>
           <ChevronsRight size={20} />
         </div>
