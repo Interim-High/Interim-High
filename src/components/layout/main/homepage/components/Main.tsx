@@ -269,8 +269,6 @@ function Main() {
           News <span className="text-orange-600">&</span> Updates
         </h1>
 
-       
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6  ">
           <div className="w-full flex justify-center">
             <Image
@@ -356,17 +354,16 @@ export default Main;
 
 type CarouselCardsProps = {
   items: Array<{
-    id: Number,
-    imageSrc: string,
-    title: string,
-    description:
-    string,
-    category: string,
-    slug: string,
+    id: Number;
+    imageSrc: string;
+    title: string;
+    description: string;
+    category: string;
+    slug: string;
   }>;
 };
 
-const CarouselCards = ({ items }:CarouselCardsProps) => {
+const CarouselCards = ({ items }: CarouselCardsProps) => {
   return (
     <div className="w-full max-w-6xl mx-auto relative mt-5 pt-5">
       <Swiper
