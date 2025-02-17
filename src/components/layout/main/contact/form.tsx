@@ -50,7 +50,7 @@ function Form() {
             <Input
               type="email"
               name="email"
-              className="h-20 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl"
+              className="h-20 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl "
               placeholder="Email *"
               value={formdata.email}
               onChange={handleInputChange}
