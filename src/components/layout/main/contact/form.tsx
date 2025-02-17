@@ -27,20 +27,20 @@ function Form() {
   };
 
   return (
-    <main className="flex flex-col  xl:w-[40%]">
+    <main className="flex flex-col xl:w-[40%]">
         <div className="  rounded-lg w-full space-y-6 border-black">
-          <div className="space-y-3">
+          {/* <div className="space-y-3">
           <h1 className="text-4xl text-orange-600 font-semibold text-center">
             Get in <span className="text-[#164561] ">Touch</span>
           </h1>
           <p className="text-gray-900 text-center text-xl mb-4">
             Start the Conversation, We’re Here for You!
           </p>
-          </div>
+          </div> */}
           <form className="space-y-10" onSubmit={handleSubmit}>
             <Input
               type="text" 
-              className="h-30 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
+              className="h-20 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
               name="name"
               placeholder="Name *"
               value={formdata.name}
@@ -50,7 +50,7 @@ function Form() {
             <Input
               type="email"
               name="email"
-              className="h-30 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl"
+              className="h-20 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl"
               placeholder="Email *"
               value={formdata.email}
               onChange={handleInputChange}
@@ -58,8 +58,9 @@ function Form() {
             />
             <Input
               type="tel"
+
               name="phone"
-              className="h-30 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl"
+              className="h-20 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl"
               placeholder="Phone Number *"
               value={formdata.phone}
               onChange={handleInputChange}
@@ -68,7 +69,7 @@ function Form() {
             <TextArea
               placeholder="Message *"
               name="message"
-              className="rounded-md"
+              className="rounded-md text-xl resize-none"
               value={formdata.message}
               onChange={handleInputChange}
               isRequired

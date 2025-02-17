@@ -42,7 +42,7 @@ function Policies() {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`absolute top-4 ${isOpen ? "left-64" : "left-12"} p-2 text-black`}
+        className={`absolute top-4 ${isOpen ? "left-64" : "left-12"} p-2 text-black animate-bounce`}
       >
         {isOpen ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
       </button>

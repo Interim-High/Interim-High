@@ -14,7 +14,7 @@ export default function Offices() {
 
       {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-between"> */}
         {/* Main Office */}
-        <div className="flex flex-col space-y-6 text-xl rounded-lg">
+        <div className="flex flex-col space-y-4 text-xl rounded-lg">
           {/* <h2 className="text-xl font-semibold">Main Office</h2> */} 
           <div className="flex items-center gap-4">
             <MapPin className="w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-8 lg:h-8 text-gray-700" />
@@ -37,7 +37,7 @@ export default function Offices() {
           <Mail className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-8 lg:h-8 text-gray-700" />
           <p>
               <Link href="mailto:info@DanpheLink.com" className="text-black hover:underline">
-                info@DanpheLink.com
+                info@DanpheLink.com.np
               </Link>
               <br />
               <Link href="mailto:support@DanpheLink.com" className="text-black hover:underline">
