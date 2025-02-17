@@ -1,18 +1,23 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const NotFound = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 text-center">
-      <div className="max-w-md p-6 bg-white shadow-lg rounded-lg">
-        <h1 className="text-4xl font-bold text-red-600">404</h1>
-        <p className="mt-2 text-xl text-gray-600">Oops! The page you're looking for doesn't exist.</p>
-        <Link href="/" passHref>
-          <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
-            Go Back to Home
-          </button>
-        </Link>
+ 
+      <div className="flex flex-col justify-center items-center w-full h-screen p-6 bg-gradient-to-br from-orange-200 via-gray-300 to-gray-200 shadow-lg rounded-lg">
+       <Image
+       src= "/images/error.png"
+       alt='error page'
+       height= {600}
+       width={600}
+
+       />
+        <p className="mt-2 text-2xl text-red-600">Oops! The page you're looking for doesn't exist.</p>
+        <Link href="/" passHref className='text-xl font-semibold text-orange-600 p-4  rounded-full  mt-2 border border-orange-600 hover:bg-orange-600 hover:text-white'>
+         Go to home
+         </Link>
       </div>
-    </div>
+    
   );
 };
 
