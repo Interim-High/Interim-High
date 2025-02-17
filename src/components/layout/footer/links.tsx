@@ -16,7 +16,7 @@ const GET_TO_KNOW = [
   "Admission",
   "Achievements",
   "Partner",
-  "Team",
+  "Teams",
   // "Terms and Condition",
 ];
 

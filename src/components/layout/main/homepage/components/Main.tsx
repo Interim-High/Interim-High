@@ -150,8 +150,8 @@ function Main() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center w-full mt-16 px-28">
-        <div className="flex flex-row bg-gradient-to-tl from-[#dcc7c7] to-[#afafaf] w-full  rounded-xl p-10 gap-6  ">
+      <div className="flex justify-center items-center md:w-full  p-2 mt-16 md:px-28">
+        <div className="flex flex-row bg-gradient-to-tl from-[#dcc7c7] to-[#afafaf] w-full rounded-xl p-10 gap-6  ">
           <div className=" p-5">
             <h1 className="text-4xl font-bold text-orange-600 mb-4">
               <span className="text-[#164561]">Your College </span>Adventure
