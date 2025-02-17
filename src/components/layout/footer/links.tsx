@@ -14,7 +14,8 @@ const QUICK_LINKS = [
 const GET_TO_KNOW = [
   "About",
   "Admission",
-  // "Partner",
+  "Achievements",
+  "Partner",
   "Team",
   // "Terms and Condition",
 ];
@@ -61,30 +62,29 @@ const ContactItem = ({
   isLink?: boolean;
   hrefs?: string[];
 }) => (
-  <div className="grid grid-cols-[auto_1fr] items-center gap-4 py-1">
-
-    <div className="row-span-2 flex items-center">
-      <Icon className="text-gray-500 w-6 h-6" />
+  <div className="flex items-start gap-4 py-2 ">
+   <div className="row-span-2 flex items-center">
+      <Icon className="text-gray-500 w-6 h-6x my-1" />
     </div>
-
-    <div className="flex flex-col">
+    <div className="flex flex-col h-fit my-1">
       {texts.map((text, index) =>
         isLink && hrefs ? (
-          <a
+          <Link
             key={index}
             href={hrefs[index]}
             className="text-gray-500 hover:underline"
           >
             {text}
-          </a>
+          </Link>
         ) : (
-          <p key={index} className="text-gray-500">{text}</p>
+          <p key={index} className="text-gray-500">
+            {text}
+          </p>
         )
       )}
     </div>
   </div>
 );
-
 
 const QuickLinkSection = ({
   title,

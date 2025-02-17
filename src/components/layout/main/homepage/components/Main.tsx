@@ -295,12 +295,12 @@ function Main() {
         </div>
       </div>
       {/* Leadears type */}
-      <div className="mx-5 md:mx-28 py-12 my-20 text-center  rounded-3xl ">
+      <div className="mx-5 md:mx-28 py-12 my-20 text-center rounded-3xl ">
         <h1 className="text-4xl font-extrabold text-[#164561] mb-12 tracking-wide">
           Meet Our <span className="text-orange-600">Trusted</span> Partners
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-4 gap-12">
           {[
             {
               img: "/images/home/leaders/Tnvc.png",
@@ -311,7 +311,7 @@ function Main() {
               link: "https://www.4dvfxacademy.com/",
             },
             {
-              img: "/images/home/leaders/Academy.svg",
+              img: "/images/home/leaders/Academy.png",
               link: "https://zuitt.co/",
             },
             {
@@ -324,16 +324,16 @@ function Main() {
               href={partner.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative backdrop-blur-xl bg-slate-600 rounded-2xl shadow-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+              className="relative backdrop-blur-xl rounded-2xl bg-gray-800 bg-blend-overlay p-4 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <Image
                 src={partner.img}
                 alt="Partner Logo"
-                width={227}
+                width={220}
                 height={195}
-                className="object-cover object-center rounded-xl w-full"
+                className="object-contain object-center aspect-[4/2] rounded-xl w-full"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-orange-50 to-transparent rounded-2xl opacity-30"></div>
+              <div className="absolute inset-0 rounded-2xl opacity-30"></div>
             </Link>
           ))}
         </div>
