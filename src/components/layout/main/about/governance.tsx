@@ -83,7 +83,7 @@ const Governance = () => {
         </div>
 
         <Link
-          href="/governance-structure"
+          href="/teams"
           className="p-3 sm:p-4 border-2 border-orange-500 w-fit mx-auto rounded-full hover:bg-orange-500 hover:text-white transition duration-300 text-center"
         >
           Meet Our People

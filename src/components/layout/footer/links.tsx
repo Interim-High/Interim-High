@@ -7,16 +7,16 @@ const QUICK_LINKS = [
   "Programs",
   "Events",
   "News & Updates",
-  "Gallery",
+  // "Gallery",
   "Policy",
 ];
 
 const GET_TO_KNOW = [
   "About",
   "Admission",
-  "Partner",
-  "Facilities",
-  "Terms and Condition",
+  // "Partner",
+  "Team",
+  // "Terms and Condition",
 ];
 
 const SocialIcon = ({
@@ -25,30 +25,66 @@ const SocialIcon = ({
   IconComponent: React.ElementType;
 }) => <IconComponent className="text-gray-500 w-6 h-6" />;
 
+// const ContactItem = ({
+//   Icon,
+//   text,
+//   isLink = false,
+//   href,
+// }: {
+//   Icon: React.ElementType;
+//   text: string;
+//   isLink?: boolean;
+//   href?: string;
+// }) => (
+//   <div className="flex items-center gap-6 py-2">
+//     <Icon className="text-gray-500" />
+//     <p className="max-w-md text-gray-500">
+//       {isLink ? (
+//         <a href={href} className="text-gray-500 hover:underline">
+//           {text}
+//         </a>
+//       ) : (
+//         text
+//       )}
+//     </p>
+//   </div>
+// );
+
 const ContactItem = ({
   Icon,
-  text,
+  texts,
   isLink = false,
-  href,
+  hrefs,
 }: {
   Icon: React.ElementType;
-  text: string;
+  texts: string[];
   isLink?: boolean;
-  href?: string;
+  hrefs?: string[];
 }) => (
-  <div className="flex items-center gap-6 py-2">
-    <Icon className="text-gray-500" />
-    <p className="max-w-md text-gray-500">
-      {isLink ? (
-        <a href={href} className="text-gray-500 hover:underline">
-          {text}
-        </a>
-      ) : (
-        text
+  <div className="grid grid-cols-[auto_1fr] items-center gap-4 py-1">
+
+    <div className="row-span-2 flex items-center">
+      <Icon className="text-gray-500 w-6 h-6" />
+    </div>
+
+    <div className="flex flex-col">
+      {texts.map((text, index) =>
+        isLink && hrefs ? (
+          <a
+            key={index}
+            href={hrefs[index]}
+            className="text-gray-500 hover:underline"
+          >
+            {text}
+          </a>
+        ) : (
+          <p key={index} className="text-gray-500">{text}</p>
+        )
       )}
-    </p>
+    </div>
   </div>
 );
+
 
 const QuickLinkSection = ({
   title,
@@ -171,33 +207,23 @@ export default function QuickLink() {
         <div>
           <h1 className="text-2xl font-semibold text-black">Contact Us</h1>
 
-          <ContactItem Icon={MapPin} text="Kamalpokhari, Kathmandu, Nepal" />
+          <ContactItem Icon={MapPin} texts = {["Kamalpokhari, Kathmandu, Nepal"]} />
 
           <ContactItem
             Icon={Phone}
-            text="+977 9707861393"
+            texts={["+977 9707861393", "+977 9707861394"]}
             isLink
-            href="tel:+9779707861393"
-          />
-          <ContactItem
-            Icon={Phone}
-            text="+977 9707861394"
-            isLink
-            href="tel:+9779707861394"
+            hrefs={["tel:+9779707861393", "tel:+9779707861394"]}
           />
 
           <ContactItem
             Icon={Mail}
-            text="info@DanpheLink.com"
+            texts={["info@DanpheLink.com.np", "support@DanpheLink.com.np"]}
             isLink
-            href="mailto:info@DanpheLink.com"
-           
-          />
-          <ContactItem
-            Icon={Mail}
-            text="support@DanpheLink.com"
-            isLink
-            href="mailto:support@DanpheLink.com"
+            hrefs={[
+              "mailto:info@DanpheLink.com.np",
+              "mailto:support@DanpheLink.com.np",
+            ]}
           />
 
           <div className="flex justify-between pr-5 pt-4">

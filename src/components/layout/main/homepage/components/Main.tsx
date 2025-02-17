@@ -311,7 +311,7 @@ function Main() {
               link: "https://www.4dvfxacademy.com/",
             },
             {
-              img: "/images/home/leaders/zuittlogo.png",
+              img: "/images/home/leaders/Academy.svg",
               link: "https://zuitt.co/",
             },
             {
