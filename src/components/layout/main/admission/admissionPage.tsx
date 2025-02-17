@@ -15,6 +15,7 @@ function AdmissionPage (){
             <AdmissionHero/>
             <HorizontalLinearStepper/>
             <ApproveSection/>
+            
             <RequirementsTab/>
             
             <Formsection/>

@@ -74,6 +74,7 @@ const QuickLinkSection = ({
 );
 
 export default function QuickLink() {
+  
   return (
     // <main className="bg-red-900 px-8" >
     // <Head/>
