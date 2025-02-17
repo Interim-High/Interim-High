@@ -18,8 +18,8 @@ export default function FormComponent() {
         interestedcourse: options[0].value,
         queries: "",
     });
-    const [error, setError] = useState<string>();
-    const [success, setSuccess] = useState<string>();
+    const [error, setError] = useState<string | null>(null);
+    const [success, setSuccess] = useState<string | null>(null);
 
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -45,11 +45,24 @@ export default function FormComponent() {
     //         interestedcourse: value
     //     }));
     // };
-    
-
-
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setError(null);
+        setSuccess(null);
+
+        if (!formData.fullname || !formData.email || !formData.phonenumber || !formData.address || !formData.queries) {
+            setError("Please fill in all fields.");
+            return;
+        }
+
+        if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+            setError("Invalid email format.");
+            return;
+        }
+
+        console.log("Form Data:", formData);
+        setSuccess("Form submitted successfully!");
+
         setFormData({
             fullname: "",
             email: "",
@@ -57,13 +70,13 @@ export default function FormComponent() {
             address: "",
             interestedcourse: options[0].value,
             queries: "",
-        })
-        console.log("Form Data:", formData);
-        alert("Form submitted successfully!");
+        });
     };
 
     return (
         <div className="flex flex-col justify-center items-center md:w-[717px] mx-auto p-4 gap-2  rounded-lg ">
+            {success && <div className="text-green-600 font-semibold">{success}</div>}
+            {error && <div className="text-red-600 font-semibold">{error}</div>}
             <h2 className="font-semibold mb-4 text-orange-600 text-4xl"><span className="text-[#164561] ">Admission</span> Form</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
                 {/* {Inputfields.map((input, index) => (
