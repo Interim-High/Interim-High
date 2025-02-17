@@ -9,7 +9,7 @@ type SelectionProps = {
 const Select: React.FC<SelectionProps> = ({options,className, onChange,value}) => {
     return (
         <div className=" border rounded-xl">
-           <select value={value} onChange={onChange} className={`rounded-lg w-full ${className}`}>
+           <select value={value} onChange={onChange} className={`rounded-lg w-full flex gap${className}`}>
                 {options.map((option) => (
                     <option key={option.value} value={option.value}>
                         {option.label}

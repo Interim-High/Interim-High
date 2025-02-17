@@ -45,7 +45,7 @@ const StorySection: React.FC = () => {
   return (
     <div className="flex w-full h-fit flex-col   mt-16 justify-center items-center ">
      
-      <div className="flex space-x-4 mb-6">
+      {/* <div className="flex space-x-4 mb-6">
         {stories.map((story) => (
           <Button
             key={story.id}
@@ -58,8 +58,8 @@ const StorySection: React.FC = () => {
             }`}
           />
         ))}
-      </div>
-      <h2 className="text-3xl mb-4 text-orange-600 font-semibold">Our Story</h2>
+      </div> */}
+      <h2 className="text-3xl mb-4 text-orange-600 font-semibold"><span className="text-[#164561] ">Our</span> Story</h2>
 
       {selectedStory && (
         <div className="max-w-7xl grid grid-rows-1 md:grid-cols-2 p-4  gap-8 rounded-lg shadow-lg">
