@@ -24,7 +24,7 @@ const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
 
   return (
     <div className="bg-gray-100 p-4 rounded-lg">
-      <h3 className="font-bold text-4xl text-orange-600 border-b pb-2">Top Stories</h3>
+      <h3 className="font-bold text-2xl text-orange-600 border-b pb-2">Top Stories</h3>
       <ul className="mt-2 space-y-4">
         {latestStories.length > 0 ? (
           latestStories.map((story, index) => (

@@ -19,7 +19,7 @@ function HeroSection() {
         <h1 className="text-3xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold">
           News and Updates
         </h1>
-        <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-orange-600">
+        <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-orange-500">
           Be notified with us.
         </p>
       </div>
