@@ -58,7 +58,7 @@ export const Requirements: StudentRequirements[] = [
   // ]},
   {
     label: "Confirmation", icon: <CheckCircleIcon />, list: [
-      "Once payment is verified, the institution issues an admission letter, confirming enrollment through email,text or phone",
+      "Once All the requirements are fulfilled, the institution issues an admission letter, confirming enrollment through email,text or phone",
     ]
   },
 ];
