@@ -1,11 +1,12 @@
+import dbConnect from "@/lib/dbConnect";
+import Contact from "@/models/Contact";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
   try {
-    console.log("checkk1");
     const { name, email, phone, message } = await req.json();
-
+    await dbConnect();
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -15,14 +16,29 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: email,
       to: process.env.EMAIL_RECEIVER,
       subject: `New Contact Form Message from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+      text: `
+        You have received a new message from your website contact form.
+
+        Here are the details:
+        Name: ${name}
+        Email: ${email}
+        Phone: ${phone}
+        Message: ${message}
+      `,
+      replyTo: email,
     };
 
     await transporter.sendMail(mailOptions);
-
+    const newContact = new Contact({
+      name,
+      email,
+      phone,
+      message,
+    });
+    await newContact.save();
     return NextResponse.json({
       success: true,
       message: "Email sent successfully!",

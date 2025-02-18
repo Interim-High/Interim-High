@@ -9,7 +9,9 @@ function Form() {
     phone: "",
     message: "",
   });
-
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -22,7 +24,9 @@ function Form() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    setError(null);
+    setSuccess(null);
+    setLoading(true);
     try {
       const res = await fetch("/api/email", {
         method: "POST",
@@ -33,21 +37,28 @@ function Form() {
       });
 
       const data = await res.json();
-      console.log("data", data);
       if (data.success) {
-        alert("Email sent successfully!");
+        setSuccess("Form submitted successfully!");
+        setLoading(false);
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
+        setLoading(false);
+        setError("Failed to submit the form.");
         alert("Failed to send email.");
       }
     } catch (error) {
       console.error("Error sending email:", error);
+      setError("Error sending email");
       alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <main className="flex flex-col xl:w-[40%]">
+      {success && <div className="text-green-600 font-semibold">{success}</div>}
+      {error && <div className="text-red-600 font-semibold">{error}</div>}
       <div className="  rounded-lg w-full space-y-6 border-black">
         <form className="space-y-10" onSubmit={handleSubmit}>
           <Input
@@ -89,7 +100,30 @@ function Form() {
             type="submit"
             className="bg-orange-500 hover:bg-orange-600 rounded-md text-white w-full h-14"
           >
-            Send
+            {loading ? (
+              <svg
+                className="animate-spin h-5 w-5 text-white mx-auto"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                ></path>
+              </svg>
+            ) : (
+              "Submit"
+            )}
           </button>
         </form>
       </div>
