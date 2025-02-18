@@ -47,19 +47,8 @@ function Form() {
   };
 
   return (
-    // <main className="flex flex-col  xl:w-[40%]">
-    //   <div className="  rounded-lg w-full space-y-6 border-black">
-    //     <div className="space-y-3">
     <main className="flex flex-col xl:w-[40%]">
       <div className="  rounded-lg w-full space-y-6 border-black">
-        {/* <div className="space-y-3">
-          <h1 className="text-4xl text-orange-600 font-semibold text-center">
-            Get in <span className="text-[#164561] ">Touch</span>
-          </h1>
-          <p className="text-gray-900 text-center text-xl mb-4">
-            Start the Conversation, We’re Here for You!
-          </p>
-          </div> */}
         <form className="space-y-10" onSubmit={handleSubmit}>
           <Input
             type="text"

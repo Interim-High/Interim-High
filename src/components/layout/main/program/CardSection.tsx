@@ -67,7 +67,7 @@ export default function CardSection() {
   return (
     <div className="py-5">
       <div className="p-4 space-y-4">
-        <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-24 py-4   gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-24 py-4 gap-4">
           <p className="text-lg font-semibold text-gray-700">{`${categoryMap[selectedCategory]} (${filteredCourses.length})`}</p>
 
           <div className="flex items-center gap-2 w-full md:w-auto">
@@ -88,9 +88,9 @@ export default function CardSection() {
           </div>
         </div>
       </div>
-      <div className="px-28 py-14">
+      <div className="md:px-28 px-6 py-8">
         <h1 className="text-4xl text-orange-600 font-bold mb-6"><span className="text-[#164561] ">Available </span>Courses</h1>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-rows-1 border-red-500 md:grid-cols-3 gap-6 md:gap-6">
           {filteredCourses.map((card, index) => (
             <Card key={index} {...card} />
           ))}
@@ -125,15 +125,15 @@ const Card = ({ imageSrc, title, description, category, slug }) => (
   </div>
 );
 
-function CardGrid({ title, data }) {
-  return (
-    <div>
-      <h1 className="text-2xl font-bold mb-6">{title}</h1>
-      <div className="grid grid-cols-3 gap-6">
-        {data.map((card, index) => (
-          <Card key={index} {...card} />
-        ))}
-      </div>
-    </div>
-  );
-}
+// function CardGrid({ title, data }) {
+//   return (
+//     <div>
+//       <h1 className="text-2xl font-bold mb-6">{title}</h1>
+//       <div className="grid grid-rows-1 md:grid-cols-3 gap-6">
+//         {data.map((card, index) => (
+//           <Card key={index} {...card} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }

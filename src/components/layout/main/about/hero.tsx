@@ -12,7 +12,7 @@ function AboutHero() {
                 />
             </div>
 
-            <div className="absolute inset-0 bg-black opacity-40"></div>
+            <div className="absolute inset-0 bg-black opacity-20"></div>
 
             <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
                 <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold text-center">

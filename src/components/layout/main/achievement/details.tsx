@@ -1,9 +1,6 @@
-type Achievement = {
-    title: string,
-    description: string,
-}
+import { Achievement, achievementProps } from "@/types/achievements.type";
 
-const Achievementdetails: Achievement[] =
+export const Achievementdetails: Achievement[] =
     [
         {
             title: "Academic Achievements",
@@ -21,24 +18,37 @@ const Achievementdetails: Achievement[] =
             description: "Our students have consistently demonstrated exceptional talent, leadership, and dedication, excelling in both academic and extracurricular pursuits. Many of our students have won national and international awards in fields such as science, technology, sports, and arts. They actively participate in community service, student organizations, and various cultural and sports events, where they exhibit teamwork, creativity, and a strong sense of responsibility. Several students have also launched their own entrepreneurial ventures, reflecting the institution's commitment to fostering innovation and preparing students to be leaders in their respective fields."
    } ]
 
-function Details() {
-    return (
-        <div className=" mt-2 lg:mt-16">
-            <div className="flex flex-col gap-8 lg:gap-16  p-4 lg:p-8 justify-center text-center items-center">
-                {
-                    Achievementdetails.map((detail,index)=>(
-                        <div className="flex flex-col justify-center items-center gap-4  max-w-7xl" key={index}>
-                            <h1 className=" text-3xl lg:text-4xl font-normal text-red-700"> {detail.title}</h1>
-                            <p className=" text-lg lg:text-2xl text-[#1D1D1D] text-justify">{detail.description}</p>
-                            </div>
-                    ))
-
-                }
-
-            </div>
-
-
-        </div>
-    )
-}
-export default Details
+ export const images: achievementProps[] = [
+  {
+    name: "academy",
+    extension: "png",
+  },
+  {
+    name: "institutional",
+    extension: "png",
+  },
+  {
+    name: "student",
+    extension: "png",
+  },
+  {
+    name: "workshop",
+    extension: "png",
+  },
+  {
+    name: "institution2",
+    extension: "png",
+  },
+  {
+    name: "student",
+    extension: "png",
+  },
+  {
+    name: "workshop",
+    extension: "png",
+  },
+  {
+    name: "institutional",
+    extension: "png",
+  },
+];
