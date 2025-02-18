@@ -88,7 +88,9 @@ export default function CardSection() {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
+      <div className="px-28 py-8">
+=========
       <div className="md:px-28 px-6 py-8">
 =======
       <div className="px-28 py-8">
