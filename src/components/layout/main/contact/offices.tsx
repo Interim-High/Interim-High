@@ -16,13 +16,13 @@ export default function Offices() {
         {/* Main Office */}
         <div className="flex flex-col space-y-4 text-xl rounded-lg">
           {/* <h2 className="text-xl font-semibold">Main Office</h2> */} 
-          <div className="flex items-center gap-4">
-            <MapPin className="w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-8 lg:h-8 text-gray-700" />
+          <div className="flex items-center gap-4 px-4">
+            <MapPin className="w-6 h-6 sm:w-6 sm:h-6 md:w-12 md:h-12 lg:w-8 lg:h-8  text-gray-700" />
             <p className="max-w-md text-wrap">
               Kamalpokhari 01, Kathmandu, Nepal
             </p>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 px-4">
             <Phone className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 g:w-8 lg:h-8 text-gray-700" />
             <p>
               <Link href="tel:+9779865326884" className="text-black hover:underline">
@@ -33,7 +33,7 @@ export default function Offices() {
               </Link>
             </p>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 px-4">
           <Mail className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-8 lg:h-8 text-gray-700" />
           <p>
               <Link href="mailto:info@DanpheLink.com" className="text-black hover:underline">
