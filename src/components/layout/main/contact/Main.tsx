@@ -14,7 +14,7 @@ export default function MainContact() {
           Get in <span className="text-[#164561] ">Touch</span>
         </h1>
         <p className="text-center text-lg md:text-xl text-gray-600">
-          Start the Conversation, We’re Here for You!
+          Start the Conversation, We're Here for You!
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-center md:p-10 gap-4 md:gap-20">
