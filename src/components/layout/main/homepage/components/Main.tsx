@@ -150,8 +150,8 @@ function Main() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center w-full mt-16 px-28">
-        <div className="flex flex-row bg-gradient-to-tl from-[#dcc7c7] to-[#afafaf] w-full  rounded-xl p-10 gap-6  ">
+      <div className="flex justify-center items-center w-full mt-16 p-2 md:px-28">
+        <div className="flex flex-col md:flex-row bg-gradient-to-tl from-[#dcc7c7] to-[#afafaf] w-fit justify-center items-center rounded-xl md:p-10 gap-6  ">
           <div className=" p-5">
             <h1 className="text-4xl font-bold text-orange-600 mb-4">
               <span className="text-[#164561]">Your College </span>Adventure
@@ -378,8 +378,8 @@ const CarouselCards = ({ items }: CarouselCardsProps) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-button-prev absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-16 z-10  rounded-full "></div>
-      <div className="swiper-button-next absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-16 z-10  "></div>
+      <div className="swiper-button-prev absolute left-3 md:left-0 top-1/2 transform -translate-y-1/2 -translate-x-16 z-10  rounded-full "></div>
+      <div className="swiper-button-next absolute left-3 md:right-0 top-1/2 transform -translate-y-1/2 translate-x-16 z-10  "></div>
       <div
         className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
         style={{

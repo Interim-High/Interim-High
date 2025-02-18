@@ -16,15 +16,34 @@ const GET_TO_KNOW = [
   "Admission",
   "Achievements",
   "Partner",
-  "Team",
+  "Teams",
   // "Terms and Condition",
 ];
 
 const SocialIcon = ({
   IconComponent,
+  color = "000000",
 }: {
   IconComponent: React.ElementType;
-}) => <IconComponent className="text-gray-500 w-6 h-6" />;
+  color?: string;
+}) => (
+  <IconComponent
+    className="text-gray-500 w-6 h-6"
+    style={{
+      borderColor: `#${color}`,
+      transition: "all 0.3s ease",
+    }}
+    onMouseEnter={(e:React.MouseEvent<HTMLElement>) => {
+      // e.currentTarget.style.borderColor = `#${color}`;
+      e.currentTarget.style.color = `#${color}`;
+    }}
+    onMouseLeave={(e:React.MouseEvent<HTMLElement>) => {
+      // e.currentTarget.style.borderColor = "gray";
+      e.currentTarget.style.color = "gray";
+    }}
+  />
+);
+
 
 // const ContactItem = ({
 //   Icon,
@@ -228,10 +247,10 @@ export default function QuickLink() {
           />
 
           <div className="flex justify-between pr-5 pt-4">
-            <SocialIcon IconComponent={LinkedIn} />
-            <SocialIcon IconComponent={YouTube} />
-            <SocialIcon IconComponent={Facebook} />
-            <SocialIcon IconComponent={Instagram} />
+         <Link href={"https://www.youtube.com/@Danphelink-o7s"}> <SocialIcon  IconComponent={LinkedIn} color="0077b5" /></Link> 
+         <Link href={"https://www.linkedin.com/company/danphelink"}><SocialIcon IconComponent={YouTube} color="FF0000" /></Link> 
+         <Link href={"https://www.facebook.com/danphelink"}><SocialIcon IconComponent={Facebook} color="1877F2" /></Link> 
+         <Link href={"https://www.instagram.com/danphelink"}><SocialIcon IconComponent={Instagram} color="E1306C" /></Link> 
           </div>
         </div>
       </div>

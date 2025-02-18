@@ -15,7 +15,7 @@ function AdventureImage() {
         //  </div>
 
         // </div>
-        <div className="relative  h-[285px] w-[345px] mt-3">
+        <div className="relative h-[285px] w-[345px]  mt-3">
            
                 <div className=" absolute h-[145px] w-[159px] bottom-0 left-0 bg-orange-500 rounded-bl-xl"></div>
                 <div className=" absolute h-[145px] w-[159px] top-1 right-1 bg-orange-500 rounded-tr-xl"></div>
