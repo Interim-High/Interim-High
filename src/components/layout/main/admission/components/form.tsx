@@ -102,7 +102,7 @@ export default function FormComponent() {
     }
 
     try {
-      const res = await fetch("/api/email", {
+      const res = await fetch("/api/admission/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
