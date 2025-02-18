@@ -88,13 +88,15 @@ export default function CardSection() {
           </div>
         </div>
       </div>
-<<<<<<<<< Temporary merge branch 1
-      <div className="px-28 py-8">
-=========
+<<<<<<< HEAD
+<<<<<<< HEAD
       <div className="md:px-28 px-6 py-8">
 =======
       <div className="px-28 py-8">
 >>>>>>> e10cbb13e06b9c9551be41d2554814f33f40d50c
+=======
+      <div className="md:px-28 px-6 py-8">
+>>>>>>> 4dee6945248dafcad0f92e5f4dd15a30b77b78bb
         <h1 className="text-4xl text-orange-600 font-bold mb-6"><span className="text-[#164561] ">Available </span>Courses</h1>
         <div className="grid grid-rows-1 border-red-500 md:grid-cols-3 gap-6 md:gap-6">
           {filteredCourses.map((card, index) => (

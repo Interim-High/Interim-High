@@ -23,13 +23,8 @@ const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
     .slice(0, 5);
 
   return (
-<<<<<<< HEAD
     <div className="bg-gray-300 p-4 rounded-xl">
       <h3 className="font-bold text-4xl text-orange-600 border-b pb-2">Top Stories</h3>
-=======
-    <div className="bg-gray-100 p-4 rounded-lg">
-      <h3 className="font-bold text-2xl text-orange-600 border-b pb-2">Top Stories</h3>
->>>>>>> e10cbb13e06b9c9551be41d2554814f33f40d50c
       <ul className="mt-2 space-y-4">
         {latestStories.length > 0 ? (
           latestStories.map((story, index) => (
