@@ -40,7 +40,7 @@ function Form() {
           <form className="space-y-10 p-4" onSubmit={handleSubmit}>
             <Input
               type="text" 
-              className="h-20 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
+              className="md:h-20 h-10 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
               name="name"
               placeholder="Name *"
               value={formdata.name}
@@ -50,7 +50,7 @@ function Form() {
             <Input
               type="email"
               name="email"
-              className="h-20 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl "
+              className="md:h-20 h-10 p-4 w-full focus:outline-2 focus:outline-orange-600 rounded-md text-xl "
               placeholder="Email *"
               value={formdata.email}
               onChange={handleInputChange}

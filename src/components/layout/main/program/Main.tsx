@@ -17,8 +17,8 @@ function Hero() {
         <div className="absolute inset-0 bg-black opacity-60"></div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <h1 className="text-white text-8xl font-bold">Our Programs</h1>
-          <p className="text-orange-600 text-4xl mt-4">Explore our programs</p>
+          <h1 className="text-white text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">Our Programs</h1>
+          <p className="text-orange-600 text-lg sm:text-2xl md:text-3xl lg:text-4xl mt-4">Explore our programs</p>
         </div>
       </div>
     </main>

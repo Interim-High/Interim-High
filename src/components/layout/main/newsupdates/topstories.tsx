@@ -23,8 +23,8 @@ const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
     .slice(0, 5);
 
   return (
-    <div className="bg-gray-300 p-4 rounded-xl">
-      <h3 className="font-bold text-4xl text-orange-600 border-b pb-2">Top Stories</h3>
+    <div className="bg-gradient-to-tl from-[#dcc7c7] to-[#afafaf] p-4 ml-4 rounded-xl shadow-md">
+      <h3 className="font-semibold text-3xl text-orange-600 pb-2">Top Stories</h3>
       <ul className="mt-2 space-y-4">
         {latestStories.length > 0 ? (
           latestStories.map((story, index) => (
@@ -33,7 +33,7 @@ const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
                 onClick={() => onSelectStory(story)}
                 className="w-full text-left text-blue-900 hover:underline"
               >
-                <div className="bg-slate-300 w-full h-fit p-4 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                <div className=" bg-slate-100 inset-shadow-indigo-500 w-full h-fit p-4 rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                   <p className="text-sm font-semibold">{story.title}</p>
                   <p className="text-xs text-gray-500">Published: {story.date}</p>
                 </div>
