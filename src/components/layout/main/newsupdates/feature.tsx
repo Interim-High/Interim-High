@@ -13,7 +13,7 @@ const Features: React.FC<{ feature: Feature }> = ({ feature }) => {
       <img
         src={feature.image}
         alt={feature.title}
-        className="w-full h-fit object-cover rounded mt-2"
+        className="w-full h-fit object-cover rounded-xl mt-2"
       />
       <p className="text-sm mt-2 text-left">{feature.title}</p>
     </div>

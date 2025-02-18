@@ -10,9 +10,10 @@ type Story = {
 type Props = {
   stories: Story[];
   onSelectStory: (story: Story) => void;
+  selectedStoryTitle: string;
 };
 
-const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
+const TopStories: React.FC<Props> = ({ stories, onSelectStory, selectedStoryTitle }) => {
   const sevenDaysAgo = new Date();
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
@@ -31,17 +32,21 @@ const TopStories: React.FC<Props> = ({ stories, onSelectStory }) => {
             <li key={index}>
               <button
                 onClick={() => onSelectStory(story)}
-                className="w-full text-left text-blue-900 hover:underline"
+                className={`w-full text-left transition-transform duration-300 hover:scale-105 hover:shadow-lg p-4 rounded-xl ${
+                  selectedStoryTitle === story.title ? "bg-slate-100 text-orange-600" : "bg-slate-100 text-blue-900"
+                }`}
               >
-                <div className=" bg-slate-100 inset-shadow-indigo-500 w-full h-fit p-4 rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                  <p className="text-sm font-semibold">{story.title}</p>
+                <div>
+                  <p className="text-sm font-semibold hover:underline">
+                    {story.title}
+                  </p>
                   <p className="text-xs text-gray-500">Published: {story.date}</p>
                 </div>
               </button>
             </li>
           ))
         ) : (
-          <p className="text-gray-50 text-sm">No recent stories avaiable.</p>
+          <p className="text-gray-50 text-sm">No recent stories available.</p>
         )}
       </ul>
     </div>
