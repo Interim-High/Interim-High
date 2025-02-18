@@ -17,11 +17,13 @@ const RequirementsTab: React.FC = () => {
     };
 
     return (
+        <div className="space-y-12 mt-16">
+            <h1 className="text-orange-600 text-center text-4xl"><span className="text-[#164561]">Admission</span> Requirements</h1>
+      
        
         <div className="flex flex-col-reverse lg:flex-row mt-16 p-2 xl:p-4 justify-evenly lg:items-center gap-10">
-            
             <div className=" border-2 bg-[#EDEDED] w-full lg:w-1/2 rounded-2xl shadow-slate-500">
-                <Box sx={{ width: "100%", typography: "body1" }}>
+                <Box sx={{ width: "100 %", typography: "body1" }}>
                     <TabContext value={value}>
                         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
                             <TabList onChange={handleChange} aria-label="Admission Requirements Tabs">
@@ -79,7 +81,7 @@ const RequirementsTab: React.FC = () => {
             </div>
 
         </div>
-
+        </div>
                      
     );
 };

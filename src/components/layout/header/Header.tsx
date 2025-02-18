@@ -400,7 +400,7 @@ function Header() {
 
           <Link
             href="/admission"
-            className="px-5 py-1 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="px-5 py-1 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-full hover:bg-orange-600 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             Apply Now
           </Link>
