@@ -7,6 +7,7 @@ export default function Map(){
           height="460"
           style={{
             border: 0,
+            
           }}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
