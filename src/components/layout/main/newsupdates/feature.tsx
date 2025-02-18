@@ -7,8 +7,9 @@ type Feature = {
 
 const Features: React.FC<{ feature: Feature }> = ({ feature }) => {
   return (
-    <div className="bg-gray-100 rounded w-full p-4">
-      <h3 className="font-bold text-2xl text-orange-600 border-b pb-2">Features</h3>
+    <div className="bg-gray-300 rounded-xl w-full p-4">
+      <h3 className="font-bold text-4xl text-orange-600 border-b pb-2">Features</h3>
+
       <img
         src={feature.image}
         alt={feature.title}

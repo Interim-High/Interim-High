@@ -37,7 +37,7 @@ function Form() {
             Start the Conversation, We’re Here for You!
           </p>
           </div> */}
-          <form className="space-y-10" onSubmit={handleSubmit}>
+          <form className="space-y-10 p-4" onSubmit={handleSubmit}>
             <Input
               type="text" 
               className="h-20 max-lg:h-16 focus:outline-2 focus:outline-orange-600 p-4 w-full rounded-md text-xl"
